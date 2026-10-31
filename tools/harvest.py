@@ -125,55 +125,64 @@ def sweep(page: int) -> list[dict]:
     return out
 
 
-def sweep_xkom() -> list[dict]:
-    """x-kom renders its product tiles into window.__INITIAL_STATE__.
+def sweep_xkom(pages: int = 3, delay: float = 0.0) -> list[dict]:
+    """x-kom renders product tiles into window.__INITIAL_STATE__.
 
-    One request yields the whole first page: name, price, availability, outlet
-    flag and the product link. No specs though - those still come from morele.
+    Unlike morele it paginates server-side: ?page=N returns a genuinely different
+    set (about 29 new GPUs per page, 134 across five). No specs though - the
+    listing carries only tracking ids in productParameters.
     """
-    html = fetch(XKOM_CATEGORY)
-    match = re.search(r"window\.__INITIAL_STATE__\['app'\]\s*=\s*", html)
-    if not match:
-        return []
-    state, _ = json.JSONDecoder().raw_decode(html, match.end())
-
     out: list[dict] = []
 
-    def walk(node):
-        if isinstance(node, dict):
-            name = node.get("fullName") or node.get("name")
-            price = node.get("price")
-            link = node.get("productLink")
-            if (
-                isinstance(name, str)
-                and isinstance(price, (int, float))
-                and "priceInfo" in node
-                and link
-            ):
-                chip_match = CHIP.search(name)
-                if chip_match:
-                    vram_match = VRAM.search(name)
-                    status = str(node.get("availabilityStatus") or "")
-                    out.append(
-                        {
-                            "store": "x-kom",
-                            "url": "https://www.x-kom.pl" + link,
-                            "name": name,
-                            "chip": normalise_chip(chip_match.group(1)),
-                            "vram_gb": int(vram_match.group(1)) if vram_match else None,
-                            "price_pln": float(price),
-                            "currency": "PLN",
-                            "in_stock": status.lower().startswith("avail") or None,
-                            "is_outlet": bool(node.get("isOutlet")),
-                        }
-                    )
-            for value in node.values():
-                walk(value)
-        elif isinstance(node, list):
-            for value in node:
-                walk(value)
+    for page in range(1, pages + 1):
+        url = XKOM_CATEGORY if page == 1 else f"{XKOM_CATEGORY}?page={page}"
+        html = fetch(url)
+        match = re.search(r"window\.__INITIAL_STATE__\['app'\]\s*=\s*", html)
+        if not match:
+            break
+        state, _ = json.JSONDecoder().raw_decode(html, match.end())
+        before = len(out)
 
-    walk(state)
+        def walk(node):
+            if isinstance(node, dict):
+                name = node.get("fullName") or node.get("name")
+                price = node.get("price")
+                link = node.get("productLink")
+                if (
+                    isinstance(name, str)
+                    and isinstance(price, (int, float))
+                    and "priceInfo" in node
+                    and link
+                ):
+                    chip_match = CHIP.search(name)
+                    if chip_match:
+                        vram_match = VRAM.search(name)
+                        status = str(node.get("availabilityStatus") or "")
+                        out.append(
+                            {
+                                "store": "x-kom",
+                                "url": "https://www.x-kom.pl" + link,
+                                "name": name,
+                                "chip": normalise_chip(chip_match.group(1)),
+                                "vram_gb": int(vram_match.group(1)) if vram_match else None,
+                                "price_pln": float(price),
+                                "currency": "PLN",
+                                "in_stock": status.lower().startswith("avail"),
+                                "is_outlet": bool(node.get("isOutlet")),
+                            }
+                        )
+                for value in node.values():
+                    walk(value)
+            elif isinstance(node, list):
+                for value in node:
+                    walk(value)
+
+        walk(state)
+        if len(out) == before:
+            break
+        if page < pages:
+            time.sleep(delay)
+
     return out
 
 
@@ -206,6 +215,7 @@ def main() -> int:
     # Raising this only repeats the same 30 products (they are deduped below).
     ap.add_argument("--pages", type=int, default=1)
     ap.add_argument("--details", type=int, default=14)
+    ap.add_argument("--xkom-pages", type=int, default=3)
     ap.add_argument("--delay", type=float, default=4.0)
     ap.add_argument("--data", default="data")
     args = ap.parse_args()
@@ -218,8 +228,8 @@ def main() -> int:
         listings += got
         time.sleep(args.delay)
 
-    xkom = sweep_xkom()
-    print(f"x-kom: {len(xkom)} gpu listings")
+    xkom = sweep_xkom(args.xkom_pages, args.delay)
+    print(f"x-kom: {len(xkom)} gpu listings over {args.xkom_pages} page(s)")
     listings += xkom
     time.sleep(args.delay)
 
