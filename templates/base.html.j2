@@ -5,6 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{% block title %}Komper — co kupić{% endblock %}</title>
 <meta name="description" content="{% block desc %}Ranking kart graficznych według wydajności na złotówkę, liczonej z aktualnych cen w polskich sklepach.{% endblock %}">
+<link rel="canonical" href="{{ site }}{{ path }}">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="komper">
+<meta property="og:title" content="{% block ogtitle %}Komper{% endblock %}">
+<meta property="og:url" content="{{ site }}{{ path }}">
 <link rel="stylesheet" href="/assets/style.css">
 </head>
 <body>

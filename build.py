@@ -14,6 +14,7 @@ from __future__ import annotations
 
 import csv
 import json
+import os
 import shutil
 import sys
 from datetime import datetime, timedelta, timezone
@@ -24,6 +25,7 @@ from jinja2 import Environment, FileSystemLoader, select_autoescape
 
 ROOT = Path(__file__).resolve().parent
 DIST = ROOT / "dist"
+SITE = os.environ.get("SITE_URL", "https://komper.pages.dev").rstrip("/")
 MAX_AGE = timedelta(hours=8)
 # one listing is a listing, not a market price. Two is the minimum for ranking.
 MIN_OFFERS = 2
@@ -170,20 +172,45 @@ def main() -> int:
         "unpriced": unpriced,
         "incomplete": incomplete,
         "single": single,
+        "site": SITE,
         "compute_exp": COMPUTE_EXP,
         "bandwidth_exp": BANDWIDTH_EXP,
     }
 
-    (DIST / "index.html").write_text(env.get_template("index.html.j2").render(**ctx))
+    paths: list[str] = []
+
+    (DIST / "index.html").write_text(
+        env.get_template("index.html.j2").render(path="/", **ctx)
+    )
+    paths.append("/")
+
     (DIST / "metodologia").mkdir()
     (DIST / "metodologia" / "index.html").write_text(
-        env.get_template("metodologia.html.j2").render(**ctx)
+        env.get_template("metodologia.html.j2").render(path="/metodologia/", **ctx)
     )
+    paths.append("/metodologia/")
+
     (DIST / "gpu").mkdir()
     for chip in rows:
-        (DIST / "gpu" / f"{chip['key']}.html").write_text(
-            env.get_template("chip.html.j2").render(chip=chip, **ctx)
+        rel = f"/gpu/{chip['key']}.html"
+        (DIST / rel.lstrip("/")).write_text(
+            env.get_template("chip.html.j2").render(chip=chip, path=rel, **ctx)
         )
+        paths.append(rel)
+
+    # sitemap and robots: an unindexed price comparison is worth nothing
+    lastmod = scraped.strftime("%Y-%m-%d")
+    urls = "".join(
+        f"<url><loc>{SITE}{p}</loc><lastmod>{lastmod}</lastmod></url>" for p in paths
+    )
+    (DIST / "sitemap.xml").write_text(
+        '<?xml version="1.0" encoding="UTF-8"?>\n'
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
+        f"{urls}</urlset>\n"
+    )
+    (DIST / "robots.txt").write_text(
+        "User-agent: *\nAllow: /\n" f"\nSitemap: {SITE}/sitemap.xml\n"
+    )
 
     print(f"built {1 + 1 + len(rows)} pages from {len(listings)} listings")
     print(f"  ranked: {len(rows)}   unpriced: {len(unpriced)}   incomplete: {len(incomplete)}")
