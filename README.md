@@ -2,7 +2,7 @@
 
 **GPU price/performance for Poland — answers "what is a good buy".**
 
-Live: **https://komper-b22.pages.dev**
+Live: **https://komper-git.pages.dev** — deployed from `main` by Cloudflare Pages on every push.
 
 Status: planning, with a first working build. No code in this repository yet, by design. The
 reasoning, the data model, the constraints and the build order are in
