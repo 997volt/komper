@@ -311,15 +311,30 @@ prices for a handful of products, not a copy of anyone's catalogue.
 
 ## 11. Open questions (these decide the build)
 
-1. **Do x-kom / Morele publish JSON-LD with `price` and `gtin13`/`mpn`?**
-   If yes at both, matching becomes close to a join and the project gets
-   materially cheaper. *Probe: one product page per store.* — next action.
-2. **May Ceneo partner data be stored/cached/displayed outside links and
+1. **May Ceneo partner data be stored/cached/displayed outside links and
    wishlists?** Read the regulamin; get it in writing from `partnerzy@ceneo.pl`.
-3. **Where does performance data come from long-term** — measure, or keep the
+2. **Where does performance data come from long-term** — measure, or keep the
    labelled spec proxy? This is the difference between an asset and a wrapper.
-4. **Does anyone want this?** A hand-curated v1 answers it for the price of a
+3. **Does anyone want this?** A hand-curated v1 answers it for the price of a
    weekend; no scraper needed to find out.
+
+### Resolved
+
+**JSON-LD probe, 2026-10-31.** Both stores publish `Product` JSON-LD carrying
+`offers.price`, `priceCurrency`, `availability` and `itemCondition`.
+
+- **morele** also publishes `gtin13`, `mpn`, `model`, `additionalProperty`
+  (including *Rodzaj chipsetu* — the chip, machine-readable), a first-party
+  `seller`, and `shippingDetails` with a cost range.
+- **x-kom** publishes `mpn`, `sku`, `brand` and `name` only — **no `gtin13`, no
+  chipset property, no seller.**
+
+Consequence: **cross-store matching cannot rely on EAN**, and the two `mpn`
+values are different schemes (an AIB model code on one side, the AIB's own SKU on
+the other). Matching must normalise on `chip + VRAM + AIB`, which both stores
+expose in the product URL slug and the name. The hope that "matching becomes a
+join" is dead — the slug/name parser is the project. Within a single store,
+JSON-LD is a clean and complete record, which keeps the per-store side simple.
 
 ---
 
@@ -375,6 +390,10 @@ Checked 2026-10-31:
 - Vercel Hobby: "restricts users to non-commercial, personal use only".
 - Ceneo Partner Program scope: PID links, Ceneo-hosted wishlists, price-history
   links, app/scanner — **no product feed or API for publishers found.**
+- Both storefronts serve `Product` JSON-LD with price and availability. morele
+  additionally exposes `gtin13`, chipset and seller; x-kom does not (see §11).
+- morele's `shippingDetails` carries a shipping cost range (0–25.99 zł on the
+  sampled listing), so shipping can enter the comparison without extra requests.
 
 These are point-in-time facts. Robots files, free tiers and storefront markup all
 change; re-verify before depending on any of them.

@@ -10,7 +10,14 @@ Rule: do not skip ahead. Each item has a definition of done — if you cannot sa
 
 ## Now — before any code (~45 min total)
 
-### 1. JSON-LD probe
+### 1. JSON-LD probe — done 2026-10-31
+
+**Result:** both stores serve `Product` JSON-LD. morele also gives `gtin13`,
+the chipset as a structured property, the seller and a shipping range; x-kom
+gives `mpn`/`sku`/`brand` only. Cross-store matching therefore cannot use EAN —
+it normalises on `chip + VRAM + AIB` from the URL slug and name. Full answer in
+`PLAN.md` §11; working one-shot extractor in `tools/extract.py`.
+
 Fetch one GPU product page from each store and check whether it publishes
 structured data with a price and an identifier.
 

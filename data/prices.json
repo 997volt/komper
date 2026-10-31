@@ -1,0 +1,87 @@
+{
+  "scraped_at": "2026-10-31T09:14:32+00:00",
+  "records": [
+    {
+      "store": "x-kom",
+      "url": "https://www.x-kom.pl/p/1455300-karta-graficzna-amd-asrock-radeon-rx-9070-xt-challenger-16gb-gddr6.html",
+      "store_sku": "1455300",
+      "mpn": "RX9070XT CL 16G",
+      "gtin13": null,
+      "brand": "ASRock",
+      "name": "ASRock Radeon RX 9070 XT Challenger 16GB GDDR6",
+      "chip": "Radeon RX 9070 XT",
+      "vram_gb": 16,
+      "price_pln": 4699,
+      "currency": "PLN",
+      "in_stock": true,
+      "condition": "NewCondition",
+      "seller": null,
+      "first_party": null,
+      "shipping_pln": null,
+      "scraped_at": "2026-10-31T09:14:30+00:00"
+    },
+    {
+      "store": "x-kom",
+      "url": "https://www.x-kom.pl/p/1339801-karta-graficzna-amd-gigabyte-radeon-rx-9060-xt-gaming-oc-8gb-gddr6.html",
+      "store_sku": "1339801",
+      "mpn": "GV-R9060XTGAMING OC-8GD",
+      "gtin13": null,
+      "brand": "Gigabyte",
+      "name": "Gigabyte Radeon RX 9060 XT Gaming OC 8GB GDDR6",
+      "chip": "Radeon RX 9060 XT",
+      "vram_gb": 8,
+      "price_pln": 2299,
+      "currency": "PLN",
+      "in_stock": true,
+      "condition": "NewCondition",
+      "seller": null,
+      "first_party": null,
+      "shipping_pln": null,
+      "scraped_at": "2026-10-31T09:14:30+00:00"
+    },
+    {
+      "store": "morele",
+      "url": "https://www.morele.net/karta-graficzna-asrock-radeon-rx-9070-challenger-16gb-gddr6-rx9070-cl-16g-14732569/",
+      "store_sku": "14732569",
+      "mpn": "90-GA5NZZ-00UANF",
+      "gtin13": "4711581490475",
+      "brand": "ASRock",
+      "name": "Karta graficzna ASRock Radeon RX 9070 Challenger 16GB GDDR6 (RX9070 CL 16G)",
+      "chip": "Radeon RX 9070",
+      "vram_gb": 16,
+      "price_pln": 3599,
+      "currency": "PLN",
+      "in_stock": true,
+      "condition": "NewCondition",
+      "seller": "Morele.net Sp. z o.o.",
+      "first_party": true,
+      "shipping_pln": [
+        0,
+        25.99
+      ],
+      "scraped_at": "2026-10-31T09:14:31+00:00"
+    },
+    {
+      "store": "morele",
+      "url": "https://www.morele.net/karta-graficzna-asus-dual-geforce-rtx-5060-ti-oc-8gb-gddr7-dlss4-dual-rtx5060ti-o8g-14853313/",
+      "store_sku": "14853313",
+      "mpn": "DUAL-RTX5060TI-O8G",
+      "gtin13": "4711387994290",
+      "brand": "Asus",
+      "name": "Karta graficzna Asus Dual GeForce RTX 5060 Ti OC 8GB GDDR7 DLSS4 (DUAL-RTX5060TI-O8G)",
+      "chip": "GeForce RTX 5060 Ti",
+      "vram_gb": 8,
+      "price_pln": 2658.89,
+      "currency": "PLN",
+      "in_stock": true,
+      "condition": "NewCondition",
+      "seller": "Morele.net Sp. z o.o.",
+      "first_party": true,
+      "shipping_pln": [
+        0,
+        25.99
+      ],
+      "scraped_at": "2026-10-31T09:14:32+00:00"
+    }
+  ]
+}
