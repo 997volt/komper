@@ -25,7 +25,7 @@
   {% for chip in rows %}
     <tr>
       <td class="rank">{{ loop.index }}</td>
-      <td><a href="/gpu/{{ chip.key }}.html">{{ chip.chip }}</a>
+      <td><a href="/gpu/{{ chip.key }}">{{ chip.chip }}</a>
           <span class="muted">{{ chip.vram_gb|int }} GB</span></td>
       <td class="num">{{ chip.perf }}</td>
       <td class="num">{{ chip.stats.p_buy|money }}</td>

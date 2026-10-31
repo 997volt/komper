@@ -2,7 +2,9 @@
 
 **GPU price/performance for Poland — answers "what is a good buy".**
 
-Status: **planning only.** No code in this repository yet, by design. The
+Live: **https://komper-b22.pages.dev**
+
+Status: planning, with a first working build. No code in this repository yet, by design. The
 reasoning, the data model, the constraints and the build order are in
 [PLAN.md](PLAN.md).
 

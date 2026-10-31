@@ -54,7 +54,7 @@ is in writing.
 | 4. `data/overrides.yaml` | **not needed yet** — morele exposes the chipset as a structured property and the slug parser covered all 14 groups with no manual mapping |
 | 5. manual price pass | **done, but automated** — `tools/harvest.py` reads prices from the listing ItemList instead of copying them by hand |
 | 6. `build.py` + templates | **done** — 9 pages, ranking, per-chip offers, methodology |
-| 7. deploy | **blocked** — needs a Cloudflare account and `wrangler` on the operator's side |
+| 7. deploy | **done** — https://komper-b22.pages.dev (`./deploy.sh`) |
 | 8. `/metodologia/` | **done** — formula, calibration constant and limitations published |
 
 Finding that changed the data path: the stores render only the first page of a

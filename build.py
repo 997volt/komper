@@ -192,8 +192,8 @@ def main() -> int:
 
     (DIST / "gpu").mkdir()
     for chip in rows:
-        rel = f"/gpu/{chip['key']}.html"
-        (DIST / rel.lstrip("/")).write_text(
+        rel = f"/gpu/{chip['key']}"
+        (DIST / f"gpu/{chip['key']}.html").write_text(
             env.get_template("chip.html.j2").render(chip=chip, path=rel, **ctx)
         )
         paths.append(rel)
