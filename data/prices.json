@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-10-31T10:25:47+00:00",
+  "scraped_at": "2026-10-31T11:17:13+00:00",
   "records": [
     {
       "store": "morele",
@@ -270,6 +270,303 @@
       "vram_gb": 32,
       "price_pln": 43843.84,
       "currency": "PLN"
+    },
+    {
+      "store": "x-kom",
+      "url": "https://www.x-kom.pl/p/714836-karta-graficzna-amd-gigabyte-radeon-rx-6500-xt-eagle-4gb-gddr6.html",
+      "name": "Gigabyte Radeon RX 6500 XT EAGLE 4GB GDDR6",
+      "chip": "Radeon RX 6500 XT",
+      "vram_gb": 4,
+      "price_pln": 549.0,
+      "currency": "PLN",
+      "in_stock": true,
+      "is_outlet": false
+    },
+    {
+      "store": "x-kom",
+      "url": "https://www.x-kom.pl/p/1157827-karta-graficzna-amd-gigabyte-radeon-rx-7600-gaming-oc-8gb-gddr6.html",
+      "name": "Gigabyte Radeon RX 7600 Gaming OC 8GB GDDR6",
+      "chip": "Radeon RX 7600",
+      "vram_gb": 8,
+      "price_pln": 1699.0,
+      "currency": "PLN",
+      "in_stock": true,
+      "is_outlet": false
+    },
+    {
+      "store": "x-kom",
+      "url": "https://www.x-kom.pl/p/1300166-karta-graficzna-intel-asrock-arc-b580-challenger-oc-12gb-gddr6.html",
+      "name": "ASRock Arc B580 Challenger OC 12GB GDDR6",
+      "chip": "Arc B580",
+      "vram_gb": 12,
+      "price_pln": 1799.0,
+      "currency": "PLN",
+      "in_stock": true,
+      "is_outlet": false
+    },
+    {
+      "store": "x-kom",
+      "url": "https://www.x-kom.pl/p/1300167-karta-graficzna-intel-asrock-arc-b570-challenger-10gb-oc.html",
+      "name": "ASRock Arc B570 Challenger 10GB OC",
+      "chip": "Arc B570",
+      "vram_gb": 10,
+      "price_pln": 1599.0,
+      "currency": "PLN",
+      "in_stock": true,
+      "is_outlet": false
+    },
+    {
+      "store": "x-kom",
+      "url": "https://www.x-kom.pl/p/1314559-karta-graficzna-nvidia-msi-geforce-rtx-5090-gaming-trio-oc-32gb-gddr7-dlss5.html",
+      "name": "MSI GeForce RTX 5090 Gaming Trio OC 32GB GDDR7 DLSS5",
+      "chip": "GeForce RTX 5090",
+      "vram_gb": 32,
+      "price_pln": 45999.0,
+      "currency": "PLN",
+      "in_stock": true,
+      "is_outlet": false
+    },
+    {
+      "store": "x-kom",
+      "url": "https://www.x-kom.pl/p/1317828-karta-graficzna-nvidia-msi-geforce-rtx-5070-ti-ventus-3x-oc-16gb-gddr7-dlss5.html",
+      "name": "MSI GeForce RTX 5070 Ti Ventus 3X OC 16GB GDDR7 DLSS5",
+      "chip": "GeForce RTX 5070 Ti",
+      "vram_gb": 16,
+      "price_pln": 6399.0,
+      "currency": "PLN",
+      "in_stock": true,
+      "is_outlet": false
+    },
+    {
+      "store": "x-kom",
+      "url": "https://www.x-kom.pl/p/1318500-karta-graficzna-nvidia-msi-geforce-rtx-5070-gaming-trio-oc-12gb-gddr7-dlss5.html",
+      "name": "MSI GeForce RTX 5070 Gaming Trio OC 12GB GDDR7 DLSS5",
+      "chip": "GeForce RTX 5070",
+      "vram_gb": 12,
+      "price_pln": 4499.0,
+      "currency": "PLN",
+      "in_stock": true,
+      "is_outlet": false
+    },
+    {
+      "store": "x-kom",
+      "url": "https://www.x-kom.pl/p/1318526-karta-graficzna-nvidia-gigabyte-geforce-rtx-5070-ti-gaming-oc-16gb-gddr7-dlss5.html",
+      "name": "Gigabyte GeForce RTX 5070 Ti Gaming OC 16GB GDDR7 DLSS5",
+      "chip": "GeForce RTX 5070 Ti",
+      "vram_gb": 16,
+      "price_pln": 6499.0,
+      "currency": "PLN",
+      "in_stock": true,
+      "is_outlet": false
+    },
+    {
+      "store": "x-kom",
+      "url": "https://www.x-kom.pl/p/1318530-karta-graficzna-nvidia-gigabyte-geforce-rtx-5070-gaming-oc-12gb-gddr7-dlss5.html",
+      "name": "Gigabyte GeForce RTX 5070 Gaming OC 12GB GDDR7 DLSS5",
+      "chip": "GeForce RTX 5070",
+      "vram_gb": 12,
+      "price_pln": 4599.0,
+      "currency": "PLN",
+      "in_stock": true,
+      "is_outlet": false
+    },
+    {
+      "store": "x-kom",
+      "url": "https://www.x-kom.pl/p/1318534-karta-graficzna-nvidia-gigabyte-geforce-rtx-5070-windforce-oc-12gb-gddr7-dlss5.html",
+      "name": "Gigabyte GeForce RTX 5070 Windforce OC 12GB GDDR7 DLSS5",
+      "chip": "GeForce RTX 5070",
+      "vram_gb": 12,
+      "price_pln": 4399.0,
+      "currency": "PLN",
+      "in_stock": true,
+      "is_outlet": false
+    },
+    {
+      "store": "x-kom",
+      "url": "https://www.x-kom.pl/p/1318535-karta-graficzna-nvidia-gigabyte-geforce-rtx-3050-windforce-oc-v2-6gb-gddr6.html",
+      "name": "Gigabyte GeForce RTX 3050 Windforce OC V2 6GB GDDR6",
+      "chip": "GeForce RTX 3050",
+      "vram_gb": 6,
+      "price_pln": 1499.0,
+      "currency": "PLN",
+      "in_stock": true,
+      "is_outlet": false
+    },
+    {
+      "store": "x-kom",
+      "url": "https://www.x-kom.pl/p/1321563-karta-graficzna-amd-gigabyte-radeon-rx-9070-xt-aorus-elite-16gb-gddr6.html",
+      "name": "Gigabyte Radeon RX 9070 XT AORUS Elite 16GB GDDR6",
+      "chip": "Radeon RX 9070 XT",
+      "vram_gb": 16,
+      "price_pln": 4799.0,
+      "currency": "PLN",
+      "in_stock": true,
+      "is_outlet": false
+    },
+    {
+      "store": "x-kom",
+      "url": "https://www.x-kom.pl/p/1321564-karta-graficzna-amd-gigabyte-radeon-rx-9070-xt-gaming-oc-16gb-gddr6.html",
+      "name": "Gigabyte Radeon RX 9070 XT Gaming OC 16GB GDDR6",
+      "chip": "Radeon RX 9070 XT",
+      "vram_gb": 16,
+      "price_pln": 4399.0,
+      "currency": "PLN",
+      "in_stock": true,
+      "is_outlet": false
+    },
+    {
+      "store": "x-kom",
+      "url": "https://www.x-kom.pl/p/1321565-karta-graficzna-amd-gigabyte-radeon-rx-9070-gaming-oc-16gb-gddr6.html",
+      "name": "Gigabyte Radeon RX 9070 Gaming OC 16GB GDDR6",
+      "chip": "Radeon RX 9070",
+      "vram_gb": 16,
+      "price_pln": 3999.0,
+      "currency": "PLN",
+      "in_stock": true,
+      "is_outlet": false
+    },
+    {
+      "store": "x-kom",
+      "url": "https://www.x-kom.pl/p/1321580-karta-graficzna-amd-powercolor-radeon-rx-9070-xt-reaper-16gb-gddr6.html",
+      "name": "PowerColor Radeon RX 9070 XT Reaper 16GB GDDR6",
+      "chip": "Radeon RX 9070 XT",
+      "vram_gb": 16,
+      "price_pln": 4899.0,
+      "currency": "PLN",
+      "in_stock": true,
+      "is_outlet": false
+    },
+    {
+      "store": "x-kom",
+      "url": "https://www.x-kom.pl/p/1321593-karta-graficzna-amd-xfx-radeon-rx-9070-xt-swift-gaming-16gb-gddr6.html",
+      "name": "XFX Radeon RX 9070 XT Swift Gaming 16GB GDDR6",
+      "chip": "Radeon RX 9070 XT",
+      "vram_gb": 16,
+      "price_pln": 4099.0,
+      "currency": "PLN",
+      "in_stock": true,
+      "is_outlet": false
+    },
+    {
+      "store": "x-kom",
+      "url": "https://www.x-kom.pl/p/1321596-karta-graficzna-amd-asus-radeon-rx-9070-xt-prime-oc-16gb-gddr6.html",
+      "name": "ASUS Radeon RX 9070 XT Prime OC 16GB GDDR6",
+      "chip": "Radeon RX 9070 XT",
+      "vram_gb": 16,
+      "price_pln": 4299.0,
+      "currency": "PLN",
+      "in_stock": true,
+      "is_outlet": false
+    },
+    {
+      "store": "x-kom",
+      "url": "https://www.x-kom.pl/p/1323290-karta-graficzna-nvidia-zotac-geforce-rtx-5070-solid-oc-12gb-gddr7-dlss5.html",
+      "name": "Zotac GeForce RTX 5070 Solid OC 12GB GDDR7 DLSS5",
+      "chip": "GeForce RTX 5070",
+      "vram_gb": 12,
+      "price_pln": 4199.0,
+      "currency": "PLN",
+      "in_stock": true,
+      "is_outlet": false
+    },
+    {
+      "store": "x-kom",
+      "url": "https://www.x-kom.pl/p/1323295-karta-graficzna-nvidia-zotac-geforce-rtx-5080-solid-core-oc-16gb-gddr7-dlss5.html",
+      "name": "Zotac GeForce RTX 5080 Solid Core OC 16GB GDDR7 DLSS5",
+      "chip": "GeForce RTX 5080",
+      "vram_gb": 16,
+      "price_pln": 8999.0,
+      "currency": "PLN",
+      "in_stock": true,
+      "is_outlet": false
+    },
+    {
+      "store": "x-kom",
+      "url": "https://www.x-kom.pl/p/1331028-karta-graficzna-nvidia-inno3d-geforce-rtx-5060-ti-twin-x2-8gb-gddr7-dlss5.html",
+      "name": "INNO3D GeForce RTX 5060 Ti Twin X2 8GB GDDR7 DLSS5",
+      "chip": "GeForce RTX 5060 Ti",
+      "vram_gb": 8,
+      "price_pln": 2499.0,
+      "currency": "PLN",
+      "in_stock": true,
+      "is_outlet": false
+    },
+    {
+      "store": "x-kom",
+      "url": "https://www.x-kom.pl/p/1331410-karta-graficzna-nvidia-asus-geforce-rtx-5060-ti-dual-oc-16gb-gddr7-dlss5.html",
+      "name": "ASUS GeForce RTX 5060 Ti Dual OC 16GB GDDR7 DLSS5",
+      "chip": "GeForce RTX 5060 Ti",
+      "vram_gb": 16,
+      "price_pln": 3699.0,
+      "currency": "PLN",
+      "in_stock": true,
+      "is_outlet": false
+    },
+    {
+      "store": "x-kom",
+      "url": "https://www.x-kom.pl/p/1332824-karta-graficzna-nvidia-msi-geforce-rtx-5060-ventus-2x-oc-8gb-gddr7-dlss5.html",
+      "name": "MSI GeForce RTX 5060 Ventus 2X OC 8GB GDDR7 DLSS5",
+      "chip": "GeForce RTX 5060",
+      "vram_gb": 8,
+      "price_pln": 2299.0,
+      "currency": "PLN",
+      "in_stock": true,
+      "is_outlet": false
+    },
+    {
+      "store": "x-kom",
+      "url": "https://www.x-kom.pl/p/1335470-karta-graficzna-nvidia-gainward-geforce-rtx-5060-ghost-8gb-gddr7-dlss5.html",
+      "name": "Gainward GeForce RTX 5060 Ghost 8GB GDDR7 DLSS5",
+      "chip": "GeForce RTX 5060",
+      "vram_gb": 8,
+      "price_pln": 2199.0,
+      "currency": "PLN",
+      "in_stock": true,
+      "is_outlet": false
+    },
+    {
+      "store": "x-kom",
+      "url": "https://www.x-kom.pl/p/1339811-karta-graficzna-amd-asrock-radeon-rx-9060-xt-challenger-oc-16gb-gddr6.html",
+      "name": "ASRock Radeon RX 9060 XT Challenger OC 16GB GDDR6",
+      "chip": "Radeon RX 9060 XT",
+      "vram_gb": 16,
+      "price_pln": 2999.0,
+      "currency": "PLN",
+      "in_stock": true,
+      "is_outlet": false
+    },
+    {
+      "store": "x-kom",
+      "url": "https://www.x-kom.pl/p/1346259-karta-graficzna-nvidia-gigabyte-geforce-rtx-5060-ti-eagle-max-oc-8gb-gddr7-dlss5.html",
+      "name": "Gigabyte GeForce RTX 5060 Ti Eagle Max OC 8GB GDDR7 DLSS5",
+      "chip": "GeForce RTX 5060 Ti",
+      "vram_gb": 8,
+      "price_pln": 2599.0,
+      "currency": "PLN",
+      "in_stock": true,
+      "is_outlet": false
+    },
+    {
+      "store": "x-kom",
+      "url": "https://www.x-kom.pl/p/1471855-karta-graficzna-amd-gigabyte-radeon-rx-9070-xt-gaming-oc-ice-16g-gddr6.html",
+      "name": "Gigabyte Radeon RX 9070 XT Gaming OC ICE 16G GDDR6",
+      "chip": "Radeon RX 9070 XT",
+      "vram_gb": null,
+      "price_pln": 4399.0,
+      "currency": "PLN",
+      "in_stock": true,
+      "is_outlet": false
+    },
+    {
+      "store": "x-kom",
+      "url": "https://www.x-kom.pl/p/1533740-karta-graficzna-amd-gigabyte-radeon-rx-9070-gre-gaming-oc-12gb-gddr6.html",
+      "name": "Gigabyte Radeon RX 9070 GRE GAMING OC 12GB GDDR6",
+      "chip": "Radeon RX 9070 GRE",
+      "vram_gb": 12,
+      "price_pln": 2899.0,
+      "currency": "PLN",
+      "in_stock": true,
+      "is_outlet": false
     }
   ]
 }

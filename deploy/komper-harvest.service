@@ -1,0 +1,13 @@
+# User unit. Install to ~/.config/systemd/user/
+#   systemctl --user daemon-reload
+#   systemctl --user enable --now komper-harvest.timer
+#   loginctl enable-linger "$USER"     # so it runs while you are logged out
+[Unit]
+Description=Harvest GPU prices for komper
+After=network-online.target
+
+[Service]
+Type=oneshot
+WorkingDirectory=%h/komper
+ExecStart=%h/komper/tools/update.sh
+TimeoutStartSec=900

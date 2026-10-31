@@ -84,6 +84,8 @@ def price_stats(chips: list[dict], listings: list[dict]) -> dict:
             continue
         if rec.get("url") and rec["url"] in seen:
             continue  # the store's pagination repeats the same page server-side
+        if rec.get("is_outlet") or rec.get("in_stock") is False:
+            continue  # outlet units and unavailable listings are not market prices
         seen.add(rec.get("url") or "")
         by_chip.setdefault((rec["chip"], int(rec["vram_gb"])), []).append(rec)
 
@@ -107,6 +109,8 @@ def price_stats(chips: list[dict], listings: list[dict]) -> dict:
             "stores": len(per_store),
             "p_buy": p_buy,
             "p_ref": p_ref,
+            # only meaningful with two or more stores; with one, p_ref == p_buy
+            "deal": (p_buy / p_ref - 1) if len(per_store) >= 2 else None,
             "spread": offers[-1]["price_pln"] / offers[0]["price_pln"] - 1,
             "cheapest": offers[0],
             "all": offers,

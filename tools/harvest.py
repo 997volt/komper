@@ -33,6 +33,7 @@ UA = (
     "(KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
 )
 CATEGORY = "https://www.morele.net/kategoria/karty-graficzne-12/"
+XKOM_CATEGORY = "https://www.x-kom.pl/g-5/c/345-karty-graficzne.html"
 LD = re.compile(r'<script[^>]*type="application/ld\+json"[^>]*>(.*?)</script>', re.S)
 
 CHIP = re.compile(
@@ -124,6 +125,58 @@ def sweep(page: int) -> list[dict]:
     return out
 
 
+def sweep_xkom() -> list[dict]:
+    """x-kom renders its product tiles into window.__INITIAL_STATE__.
+
+    One request yields the whole first page: name, price, availability, outlet
+    flag and the product link. No specs though - those still come from morele.
+    """
+    html = fetch(XKOM_CATEGORY)
+    match = re.search(r"window\.__INITIAL_STATE__\['app'\]\s*=\s*", html)
+    if not match:
+        return []
+    state, _ = json.JSONDecoder().raw_decode(html, match.end())
+
+    out: list[dict] = []
+
+    def walk(node):
+        if isinstance(node, dict):
+            name = node.get("fullName") or node.get("name")
+            price = node.get("price")
+            link = node.get("productLink")
+            if (
+                isinstance(name, str)
+                and isinstance(price, (int, float))
+                and "priceInfo" in node
+                and link
+            ):
+                chip_match = CHIP.search(name)
+                if chip_match:
+                    vram_match = VRAM.search(name)
+                    status = str(node.get("availabilityStatus") or "")
+                    out.append(
+                        {
+                            "store": "x-kom",
+                            "url": "https://www.x-kom.pl" + link,
+                            "name": name,
+                            "chip": normalise_chip(chip_match.group(1)),
+                            "vram_gb": int(vram_match.group(1)) if vram_match else None,
+                            "price_pln": float(price),
+                            "currency": "PLN",
+                            "in_stock": status.lower().startswith("avail") or None,
+                            "is_outlet": bool(node.get("isOutlet")),
+                        }
+                    )
+            for value in node.values():
+                walk(value)
+        elif isinstance(node, list):
+            for value in node:
+                walk(value)
+
+    walk(state)
+    return out
+
+
 def details(url: str) -> dict:
     html = fetch(url)
     for block in ld_blocks(html):
@@ -149,7 +202,9 @@ def details(url: str) -> dict:
 
 def main() -> int:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--pages", type=int, default=3)
+    # morele paginates client-side, so only page 1 exists server-side.
+    # Raising this only repeats the same 30 products (they are deduped below).
+    ap.add_argument("--pages", type=int, default=1)
     ap.add_argument("--details", type=int, default=14)
     ap.add_argument("--delay", type=float, default=4.0)
     ap.add_argument("--data", default="data")
@@ -159,9 +214,14 @@ def main() -> int:
     listings: list[dict] = []
     for page in range(1, args.pages + 1):
         got = sweep(page)
-        print(f"page {page}: {len(got)} gpu listings")
+        print(f"morele page {page}: {len(got)} gpu listings")
         listings += got
         time.sleep(args.delay)
+
+    xkom = sweep_xkom()
+    print(f"x-kom: {len(xkom)} gpu listings")
+    listings += xkom
+    time.sleep(args.delay)
 
     # the category page renders one server-side ItemList and paginates client-side,
     # so sweep pages repeat the same 30 products. Dedupe on url before anything else.
@@ -186,7 +246,11 @@ def main() -> int:
     for (chip, vram), members in sorted(groups.items(), key=lambda kv: kv[0][0]):
         if len(rows) >= args.details:
             break
-        cheapest = min(members, key=lambda r: r["price_pln"] or 1e9)
+        with_specs = [r for r in members if r["store"] == "morele"]
+        if not with_specs:
+            print(f"  {chip:<18} {vram:>2}GB  no morele listing, specs unavailable")
+            continue
+        cheapest = min(with_specs, key=lambda r: r["price_pln"] or 1e9)
         spec = details(cheapest["url"])
         time.sleep(args.delay)
         print(f"  {chip:<18} {vram:>2}GB  {spec.get('shaders') or '?':>5} sp  {spec.get('price_pln')}")
@@ -204,7 +268,8 @@ def main() -> int:
                 "length_mm": spec.get("length_mm"),
                 "arch_eff": 1.0,
                 "perf_adj": 1.0,
-                "note": f"specs from morele listing {cheapest['url'].rsplit('-', 1)[-1].strip('/')}",
+                "note": f"specs from morele listing {cheapest['url'].rsplit('-', 1)[-1].strip('/')}; "
+                f"{len(members)} offers across {len({r['store'] for r in members})} store(s)",
             }
         )
 

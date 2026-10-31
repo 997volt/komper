@@ -18,7 +18,7 @@
     <tr>
       <th>#</th><th>Karta</th><th class="num">Wydajność</th>
       <th class="num">Cena</th><th class="num">Pkt / 1000 zł</th>
-      <th class="num">Ofert</th><th class="num">Długość</th>
+      <th class="num">Ofert</th><th class="num">Sklepy</th><th class="num">Długość</th>
     </tr>
   </thead>
   <tbody>
@@ -28,9 +28,13 @@
       <td><a href="/gpu/{{ chip.key }}">{{ chip.chip }}</a>
           <span class="muted">{{ chip.vram_gb|int }} GB</span></td>
       <td class="num">{{ chip.perf }}</td>
-      <td class="num">{{ chip.stats.p_buy|money }}</td>
+      <td class="num">{{ chip.stats.p_buy|money }}
+        {% if chip.stats.deal is not none and chip.stats.deal < -0.001 %}
+          <span class="badge">−{{ (chip.stats.deal * -100)|round|int }}%</span>
+        {% endif %}</td>
       <td class="num strong">{{ chip.value }}</td>
       <td class="num">{{ chip.stats.offers }}</td>
+      <td class="num">{{ chip.stats.stores }}</td>
       <td class="num">{{ chip.length_mm|int }} mm</td>
     </tr>
   {% endfor %}

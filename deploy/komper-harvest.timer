@@ -1,0 +1,12 @@
+# Four runs a day, off the hour, with jitter. Persistent=true catches up after
+# the machine was asleep, so a laptop does not silently stop updating.
+[Unit]
+Description=Harvest GPU prices four times a day
+
+[Timer]
+OnCalendar=*-*-* 00/6:07:00
+RandomizedDelaySec=300
+Persistent=true
+
+[Install]
+WantedBy=timers.target
