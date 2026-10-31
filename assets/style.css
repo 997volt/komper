@@ -16,6 +16,7 @@ h2 { font-size:1.1rem; margin:2rem 0 .75rem; }
 a { color:var(--accent); }
 .notice { border-left:3px solid var(--accent); background:#fffbeb; padding:.75rem 1rem;
           font-size:.92rem; margin:1.25rem 0; }
+.notice.stale { border-left-color:#b91c1c; background:#fef2f2; }
 table { width:100%; border-collapse:collapse; font-size:.95rem; }
 th, td { text-align:left; padding:.5rem .4rem; border-bottom:1px solid var(--line); }
 thead th { font-size:.8rem; text-transform:uppercase; letter-spacing:.04em; color:var(--muted); }

@@ -55,11 +55,13 @@ def load_listings() -> tuple[list[dict], datetime]:
     scraped = datetime.fromisoformat(blob["scraped_at"])
     age = datetime.now(timezone.utc) - scraped
     if age > MAX_AGE:
-        sys.exit(
-            f"refusing to build: prices are {age} old (limit {MAX_AGE}). "
-            "Re-run tools/harvest.py."
+        print(
+            f"WARNING: prices are {age} old (target {MAX_AGE}). "
+            "Building anyway and flagging it on the page - a stale build with a "
+            "visible warning beats a broken deploy.",
+            file=sys.stderr,
         )
-    return blob["records"], scraped
+    return blob["records"], scraped, age > MAX_AGE
 
 
 def proxy(chip: dict) -> float:
@@ -120,7 +122,7 @@ def money(value: float | None) -> str:
 
 def main() -> int:
     chips = load_chips()
-    listings, scraped = load_listings()
+    listings, scraped, stale = load_listings()
 
     ranked_raw = [c for c in chips if c["complete"]]
     top = max(proxy(c) for c in ranked_raw) if ranked_raw else 1.0
@@ -173,6 +175,7 @@ def main() -> int:
         "incomplete": incomplete,
         "single": single,
         "site": SITE,
+        "stale": stale,
         "compute_exp": COMPUTE_EXP,
         "bandwidth_exp": BANDWIDTH_EXP,
     }

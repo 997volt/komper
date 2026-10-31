@@ -18,6 +18,12 @@
   <nav><a href="/metodologia/">metodologia</a></nav>
 </header>
 <main>
+{% if stale %}
+<div class="notice stale">
+  <strong>Dane mogą być nieaktualne.</strong> Ceny pochodzą z {{ scraped }}
+  i nie były odświeżane w oczekiwanym czasie. Sprawdź cenę w sklepie.
+</div>
+{% endif %}
 {% block content %}{% endblock %}
 </main>
 <footer class="site">
