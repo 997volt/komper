@@ -1,0 +1,42 @@
+{% extends "base.html.j2" %}
+{% block title %}{{ chip.chip }} {{ chip.vram_gb|int }} GB — cena i wydajność{% endblock %}
+{% block desc %}{{ chip.chip }} {{ chip.vram_gb|int }} GB: najtańsza oferta {{ chip.stats.p_buy|money }}, {{ chip.perf }} pkt wydajności.{% endblock %}
+{% block content %}
+<p><a href="/">← ranking</a></p>
+<h1>{{ chip.chip }} <span class="muted">{{ chip.vram_gb|int }} GB</span></h1>
+
+<dl class="facts">
+  <div><dt>Najtańsza oferta</dt><dd class="strong">{{ chip.stats.p_buy|money }}</dd></div>
+  <div><dt>Wydajność</dt><dd>{{ chip.perf }} <span class="muted">pkt</span></dd></div>
+  <div><dt>Punkty / 1000 zł</dt><dd>{{ chip.value }}</dd></div>
+  <div><dt>Ofert</dt><dd>{{ chip.stats.offers }} ({{ chip.stats.stores }} sklep)</dd></div>
+  <div><dt>Rozstrzał cen</dt><dd>{{ (chip.stats.spread * 100)|round|int }}%</dd></div>
+  <div><dt>Długość / zasilacz</dt><dd>{{ chip.length_mm|int }} mm / {{ chip.psu_w|int }} W</dd></div>
+</dl>
+
+<h2>Oferty</h2>
+<table class="offers">
+  <thead><tr><th>Produkt</th><th>Sklep</th><th class="num">Cena</th></tr></thead>
+  <tbody>
+  {% for offer in chip.stats.all %}
+    <tr>
+      <td><a href="{{ offer.url }}" rel="noopener nofollow" target="_blank">{{ offer.name }}</a></td>
+      <td>{{ offer.store }}</td>
+      <td class="num">{{ offer.price_pln|money }}</td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+
+<h2>Specyfikacja</h2>
+<table class="specs">
+  <tbody>
+    <tr><th>Architektura</th><td>{{ chip.arch }}</td></tr>
+    <tr><th>Procesory strumieniowe</th><td>{{ chip.shaders|int }}</td></tr>
+    <tr><th>Taktowanie boost</th><td>{{ chip.boost_mhz|int }} MHz</td></tr>
+    <tr><th>Szyna / taktowanie pamięci</th><td>{{ chip.bus_bits|int }} bit / {{ chip.mem_mhz|int }} MHz</td></tr>
+    <tr><th>Współczynnik architektury</th><td>{{ chip.arch_eff }}</td></tr>
+  </tbody>
+</table>
+<p class="muted">Specyfikacja pochodzi z karty produktu w sklepie. Model: proxy v0.</p>
+{% endblock %}

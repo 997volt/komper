@@ -1,0 +1,57 @@
+{% extends "base.html.j2" %}
+{% block title %}Metodologia — jak liczymy wydajność na złotówkę{% endblock %}
+{% block content %}
+<h1>Metodologia</h1>
+
+<h2>1. Co porównujemy</h2>
+<p>
+  Jednostką jest <strong>układ + ilość pamięci</strong> (np. „RTX 5070 12 GB”), a nie
+  konkretny model producenta. Wersje Gigabyte, ASUS czy Zotac tego samego układu różnią się
+  ceną o 15–30%, a wydajnością o 1–3%. Ranking po modelach producenta byłby rankingiem
+  tego, kto taniej chłodzi, a nie tego, co się opłaca.
+</p>
+<p>
+  Ceną układu jest <strong>najtańsza dostępna oferta</strong>. Oferty tego samego układu
+  są pokazywane na stronie karty.
+</p>
+
+<h2>2. Model wydajności (proxy v0)</h2>
+<p>Nie jest to pomiar FPS. Wzór jest jawny:</p>
+<pre><code>tflops    = shadery × 2 × taktowanie_boost[GHz] / 1000
+bandwidth = (szyna[bit] / 8) × taktowanie_pamięci[MT/s] / 1000    [GB/s]
+
+proxy = tflops^{{ compute_exp }} × bandwidth^{{ bandwidth_exp }}
+        × współczynnik_architektury × korekta_ręczna
+
+wynik = 100 × proxy / max(proxy)</code></pre>
+<p>
+  Współczynnik architektury koryguje to, że liczba TFLOPs nie przekłada się tak samo
+  na klatki w różnych rodzinach układów. Jest to <strong>stała redakcyjna</strong>,
+  a nie wynik pomiaru — dlatego jest publikowana obok danych i można ją zakwestionować.
+</p>
+
+<h2>3. Czego ten model nie robi</h2>
+<ul>
+  <li>Nie przewiduje FPS w konkretnej grze ani w konkretnej rozdzielczości.</li>
+  <li>Nie uwzględnia DLSS/FSR, ray tracingu ani sterowników.</li>
+  <li>Nie jest pomiarem — jest uporządkowaniem znanych specyfikacji.</li>
+</ul>
+
+<h2>4. Zasady, których pilnujemy</h2>
+<ul>
+  <li>Karta bez pełnej specyfikacji nie jest rankowana, zamiast być rankowana inaczej.</li>
+  <li>Karta bez ceny nie jest rankowana.</li>
+  <li>Karta z jedną ofertą nie jest rankowana — jedna cena to nie cena rynkowa.</li>
+  <li>Statystyka ceny jest ta sama dla każdej karty.</li>
+  <li>Każda cena ma znacznik czasu, a strona nie buduje się, gdy dane są starsze niż 8 godzin.</li>
+</ul>
+
+<h2>5. Ograniczenia tej wersji</h2>
+<ul>
+  <li>Jedno źródło cen w tej chwili — porównanie między sklepami pojawi się wraz z drugim.</li>
+  <li>Dostępność pochodzi z listy ofert sklepu; nie jest sprawdzana sztuka po sztuce.</li>
+  <li>Sklep renderuje tylko pierwszą stronę listingu po stronie serwera, więc jedna
+      kategoria daje 30 ofert. Strony są deduplikowane po adresie URL.</li>
+  <li>Wydajność to proxy, nie pomiar.</li>
+</ul>
+{% endblock %}

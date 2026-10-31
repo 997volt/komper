@@ -46,6 +46,23 @@ is in writing.
 
 ## P1 — prove the model by hand (this week)
 
+**Status 2026-10-31**
+
+| Item | State |
+|---|---|
+| 3. `data/gpus.csv` | **done** — 12 chips, specs harvested from store listings, not typed by hand |
+| 4. `data/overrides.yaml` | **not needed yet** — morele exposes the chipset as a structured property and the slug parser covered all 14 groups with no manual mapping |
+| 5. manual price pass | **done, but automated** — `tools/harvest.py` reads prices from the listing ItemList instead of copying them by hand |
+| 6. `build.py` + templates | **done** — 9 pages, ranking, per-chip offers, methodology |
+| 7. deploy | **blocked** — needs a Cloudflare account and `wrangler` on the operator's side |
+| 8. `/metodologia/` | **done** — formula, calibration constant and limitations published |
+
+Finding that changed the data path: the stores render only the first page of a
+category listing server-side and paginate client-side. Sweeping "pages" returns
+the same 30 products, so listings are deduplicated by URL and a chip needs at
+least two offers before it is ranked.
+
+
 No scraper. No automation. The point is to find out whether the ranking is any
 good before building a pipe for it.
 

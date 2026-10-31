@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% block title %}Komper — co kupić{% endblock %}</title>
+<meta name="description" content="{% block desc %}Ranking kart graficznych według wydajności na złotówkę, liczonej z aktualnych cen w polskich sklepach.{% endblock %}">
+<link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+<header class="site">
+  <a class="brand" href="/">komper</a>
+  <nav><a href="/metodologia/">metodologia</a></nav>
+</header>
+<main>
+{% block content %}{% endblock %}
+</main>
+<footer class="site">
+  <p>
+    Ceny: {{ scraped }} · {{ listings }} ofert · model wydajności: <strong>proxy v0</strong>,
+    nie pomiar (szczegóły w <a href="/metodologia/">metodologii</a>).
+  </p>
+  <p class="muted">
+    Serwis niezależny. Strony sklepów otwierają się w nowej karcie.
+  </p>
+</footer>
+</body>
+</html>
