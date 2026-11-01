@@ -21,10 +21,10 @@ import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
 
-UA = (
-    "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
-    "(KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
-)
+# Identifies itself, as PLAN.md section 10 promises. A named crawler with a
+# contact URL is more likely to be emailed than silently blocked - and being
+# blockable is the price of being honest about what this is.
+UA = "Komper/0.1 (+https://komper-git.pages.dev/metodologia/)"
 
 STORES = {"x-kom.pl": "x-kom", "www.x-kom.pl": "x-kom", "morele.net": "morele", "www.morele.net": "morele"}
 

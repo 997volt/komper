@@ -13,3 +13,7 @@ radeon-rx-9060-xt-16gb,Radeon RX 9060 XT,16,RDNA4,2048.0,,128.0,20000.0,550.0,30
 radeon-rx-9070-16gb,Radeon RX 9070,16,RDNA4,3584.0,2520.0,256.0,20000.0,700.0,290.0,1.0,1.0,specs from morele listing 14732569; 4 offers across 2 store(s)
 radeon-rx-9070-gre-12gb,Radeon RX 9070 GRE,12,RDNA4,3072.0,2920.0,192.0,18000.0,750.0,288.0,1.0,1.0,specs from morele listing 600077015; 2 offers across 2 store(s)
 radeon-rx-9070-xt-16gb,Radeon RX 9070 XT,16,RDNA4,4096.0,3100.0,256.0,20000.0,800.0,360.0,1.0,1.0,specs from morele listing 14771925; 12 offers across 2 store(s)
+geforce-rtx-3050-6gb,GeForce RTX 3050,6,Ada,2304,1492,96,14000,300,174,1.0,1.0,specs from morele sitemap detail page; arch_eff Ada=1.0
+geforce-rtx-3060-12gb,GeForce RTX 3060,12,Ada,3584,1867,192,15000,650,200,1.0,1.0,specs from morele sitemap detail page; arch_eff Ada=1.0
+geforce-rtx-5060-ti-16gb,GeForce RTX 5060 Ti,16,Blackwell,4608,2692,128,28000,650,262,1.0,1.0,specs from morele sitemap detail page; arch_eff Blackwell=1.0
+radeon-rx-9060-xt-8gb,Radeon RX 9060 XT,8,RDNA4,2048,3130,128,20000,450,200,1.45,1.0,specs from morele sitemap detail page; arch_eff RDNA4=1.45

@@ -28,10 +28,10 @@ import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
 
-UA = (
-    "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
-    "(KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
-)
+# Identifies itself, as PLAN.md section 10 promises. A named crawler with a
+# contact URL is more likely to be emailed than silently blocked - and being
+# blockable is the price of being honest about what this is.
+UA = "Komper/0.1 (+https://komper-git.pages.dev/metodologia/)"
 CATEGORY = "https://www.morele.net/kategoria/karty-graficzne-12/"
 XKOM_CATEGORY = "https://www.x-kom.pl/g-5/c/345-karty-graficzne.html"
 LD = re.compile(r'<script[^>]*type="application/ld\+json"[^>]*>(.*?)</script>', re.S)
@@ -78,11 +78,21 @@ def number(value) -> float | None:
     return float(match.group(0).replace(",", ".")) if match else None
 
 
+# Canonical casing per token. Slugs arrive entirely lowercase, product names do
+# not, and the two must produce the same key or one chip becomes two.
+CASE = {
+    "geforce": "GeForce", "radeon": "Radeon", "arc": "Arc",
+    "rtx": "RTX", "rx": "RX", "gtx": "GTX", "gt": "GT",
+    "ti": "Ti", "super": "SUPER", "xt": "XT", "gre": "GRE", "xtx": "XTX",
+}
+
+
 def normalise_chip(raw: str) -> str:
-    s = re.sub(r"(?i)\brtx\b", "RTX", raw.strip())
-    s = re.sub(r"(?i)\bsuper\b", "SUPER", s)
-    s = re.sub(r"(?i)\bti\b", "Ti", s)
-    return re.sub(r"\s+", " ", s)
+    words = [CASE.get(w.lower(), w) for w in raw.strip().split()]
+    out = " ".join(words)
+    # slug form "arc b580" -> "Arc B580"
+    out = re.sub(r"\b([ab])(\d{3})\b", lambda m: m.group(1).upper() + m.group(2), out)
+    return re.sub(r"\s+", " ", out)
 
 
 def arch_of(chip: str) -> str:

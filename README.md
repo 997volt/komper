@@ -31,3 +31,15 @@ git add data && git commit -m "prices: $(date -u +%F)" && git push
 
 `./deploy.sh` still works as a manual fallback (it builds and uploads `dist/`
 without git), but normal deploys need no credential at all.
+
+## Adding a chip that has prices but no specs
+
+Prices come from category listings, which cap at 30 products per store page.
+Specs are per chip, so they are fetched separately from Morele's declared product
+sitemap — one request per chip, and only for chips that are missing:
+
+```bash
+python3 tools/specs.py        # appends to data/gpus.csv, never overwrites
+```
+
+A chip with no spec sheet stays unranked rather than being estimated.
