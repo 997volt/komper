@@ -38,3 +38,20 @@ ul { padding-left:1.2rem; }
 footer.site { border-top:1px solid var(--line); color:var(--muted); font-size:.85rem; }
 @media (max-width:600px){ .ranking th:nth-child(6), .ranking td:nth-child(6),
   .ranking th:nth-child(7), .ranking td:nth-child(7) { display:none; } }
+
+.picks { margin:2rem 0 1.5rem; }
+.picks h2 { margin:0 0 .75rem; font-size:1rem; text-transform:uppercase;
+            letter-spacing:.05em; color:var(--muted); }
+.pick-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(190px,1fr)); gap:.75rem; }
+.pick { display:flex; flex-direction:column; gap:.15rem; padding:.8rem .9rem;
+        border:1px solid var(--line); border-radius:8px; text-decoration:none; color:var(--fg); }
+.pick:hover { border-color:var(--accent); }
+.pick-label { font-size:.72rem; text-transform:uppercase; letter-spacing:.05em; color:var(--muted); }
+.pick-name { font-weight:600; }
+.pick-price { font-size:1.15rem; font-variant-numeric:tabular-nums; }
+.pick-value { font-size:.85rem; color:var(--accent); font-weight:600; }
+.stamp { color:var(--muted); font-size:.85rem; margin:.2rem 0 1rem; }
+.legend { color:var(--muted); font-size:.82rem; line-height:1.5; margin-top:.75rem; max-width:70ch; }
+.cta { display:inline-block; padding:.6rem 1rem; background:var(--accent); color:#fff;
+       border-radius:6px; text-decoration:none; font-weight:600; }
+.cta:hover { background:#92400e; }

@@ -13,6 +13,23 @@
   kart <em>między sobą</em>, nie do przewidywania FPS w konkretnej grze.
 </div>
 
+<section class="picks">
+  <h2>Co kupić</h2>
+  <div class="pick-grid">
+  {% for pick in picks %}
+    <a class="pick" href="/gpu/{{ pick.chip.key }}">
+      <span class="pick-label">{{ pick.label }}</span>
+      <span class="pick-name">{{ pick.chip.chip }} <span class="muted">{{ pick.chip.vram_gb|int }} GB</span></span>
+      <span class="pick-price">{{ pick.chip.stats.p_buy|money }}</span>
+      <span class="pick-value">{{ pick.chip.value }} pkt / 1000 zł</span>
+    </a>
+  {% endfor %}
+  </div>
+  <p class="muted">Najwyższa wartość w danym przedziale cenowym, bez względu na klasę karty.</p>
+</section>
+
+<p class="stamp">Ceny sprawdzone: {{ scraped }}</p>
+
 <table class="ranking">
   <thead>
     <tr>
@@ -40,6 +57,13 @@
   {% endfor %}
   </tbody>
 </table>
+
+<p class="legend">
+  <strong>Pkt / 1000 zł</strong> — wydajność dzielona przez najtańszą cenę.
+  <strong>−N%</strong> — o ile najtańsza oferta jest poniżej typowej ceny rynkowej
+  (mediana najtańszych ofert w sklepach). Pokazywane tylko wtedy, gdy karta jest
+  w co najmniej dwóch sklepach.
+</p>
 
 {% if unpriced %}
 <p class="muted">

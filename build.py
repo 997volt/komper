@@ -34,6 +34,23 @@ MIN_OFFERS = 2
 COMPUTE_EXP = 0.5
 BANDWIDTH_EXP = 0.25
 REF = 100.0
+# Budget bands for the "what to buy" summary. A ranking is not a recommendation:
+# people arrive with a budget, not a column to sort.
+BANDS = [
+    (0, 2000, "do 2 000 zł"),
+    (2000, 3000, "2 000 – 3 000 zł"),
+    (3000, 4500, "3 000 – 4 500 zł"),
+    (4500, 10**9, "powyżej 4 500 zł"),
+]
+
+
+def pl_plural(n: int, one: str, few: str, many: str) -> str:
+    n = abs(int(n))
+    if n == 1:
+        return one
+    if n % 10 in (2, 3, 4) and n % 100 not in (12, 13, 14):
+        return few
+    return many
 
 
 def load_chips() -> list[dict]:
@@ -143,6 +160,12 @@ def main() -> int:
             rows.append(chip)
 
     rows.sort(key=lambda c: c["value"], reverse=True)
+
+    picks = []
+    for low, high, label in BANDS:
+        candidates = [c for c in rows if low <= c["stats"]["p_buy"] < high]
+        if candidates:
+            picks.append({"label": label, "chip": max(candidates, key=lambda c: c["value"])})
     # a chip without prices is reported, never ranked (PLAN.md section 3, rule 1)
     unpriced = [
         c["chip"] + f" {int(c['vram_gb'])}GB"
@@ -170,9 +193,11 @@ def main() -> int:
         lstrip_blocks=True,
     )
     env.filters["money"] = money
+    env.filters["pl_plural"] = pl_plural
 
     ctx = {
         "rows": rows,
+        "picks": picks,
         "scraped": scraped.astimezone(timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
         "listings": len(listings),
         "unpriced": unpriced,
