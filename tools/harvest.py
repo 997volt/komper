@@ -95,6 +95,10 @@ def normalise_chip(raw: str) -> str:
     return re.sub(r"\s+", " ", out)
 
 
+def key_of(chip: str, vram: int) -> str:
+    return re.sub(r"[^a-z0-9]+", "-", f"{chip} {vram}gb".lower()).strip("-")
+
+
 def arch_of(chip: str) -> str:
     """Label the architecture. Every RTX 30xx was being called Ada, which is a
     mislabel that only shows up once the calibration constants diverge."""
@@ -277,10 +281,23 @@ def main() -> int:
             groups.setdefault((rec["chip"], rec["vram_gb"]), []).append(rec)
     print(f"{len(groups)} distinct chip+vram groups from {len(listings)} listings")
 
+    # Specs do not change. If the chip already has a complete row, do not ask for
+    # its detail page again - that request buys nothing and is pure load.
+    known: dict[str, dict] = {}
+    existing_csv = data / "gpus.csv"
+    if existing_csv.exists():
+        for row in csv.DictReader(existing_csv.open()):
+            known[row["key"]] = row
+
     rows = []
+    reused = 0
     for (chip, vram), members in sorted(groups.items(), key=lambda kv: kv[0][0]):
         if len(rows) >= args.details:
             break
+        prior = known.get(key_of(chip, vram))
+        if prior and all(prior.get(c) for c in ("shaders", "boost_mhz", "bus_bits", "mem_mhz")):
+            reused += 1
+            continue
         with_specs = [r for r in members if r["store"] == "morele"]
         if not with_specs:
             print(f"  {chip:<18} {vram:>2}GB  no morele listing, specs unavailable")
@@ -291,7 +308,7 @@ def main() -> int:
         print(f"  {chip:<18} {vram:>2}GB  {spec.get('shaders') or '?':>5} sp  {spec.get('price_pln')}")
         rows.append(
             {
-                "key": re.sub(r"[^a-z0-9]+", "-", f"{chip} {vram}gb".lower()).strip("-"),
+                "key": key_of(chip, vram),
                 "chip": chip,
                 "vram_gb": vram,
                 "arch": arch_of(chip),
@@ -310,6 +327,7 @@ def main() -> int:
 
     data.mkdir(exist_ok=True)
     csv_path = data / "gpus.csv"
+    print(f"specs reused from gpus.csv: {reused} (no detail requests)")
     # Merge, never truncate: tools/specs.py adds chips that this listing path
     # cannot reach, and rewriting the file would silently delete them.
     existing: dict[str, dict] = {}
