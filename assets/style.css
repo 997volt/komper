@@ -1,4 +1,4 @@
-:root { --fg:#14171a; --muted:#6b7280; --line:#e5e7eb; --accent:#b45309; --bg:#fff; }
+:root { --fg:#14171a; --muted:#6b7280; --line:#e5e7eb; --accent:#b45309; --green:#047857; --bg:#fff; }
 * { box-sizing:border-box; }
 body { margin:0; font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
        color:var(--fg); background:var(--bg); }
@@ -14,28 +14,14 @@ h2 { font-size:1.1rem; margin:2rem 0 .75rem; }
 .muted { color:var(--muted); font-size:.9rem; }
 .strong { font-weight:650; }
 a { color:var(--accent); }
+
 .notice { border-left:3px solid var(--accent); background:#fffbeb; padding:.75rem 1rem;
           font-size:.92rem; margin:1.25rem 0; }
 .notice.stale { border-left-color:#b91c1c; background:#fef2f2; }
-table { width:100%; border-collapse:collapse; font-size:.95rem; }
-th, td { text-align:left; padding:.5rem .4rem; border-bottom:1px solid var(--line); }
-thead th { font-size:.8rem; text-transform:uppercase; letter-spacing:.04em; color:var(--muted); }
-.num { text-align:right; font-variant-numeric:tabular-nums; }
-.rank { color:var(--muted); width:2rem; }
-.ranking tbody tr:first-child { background:#fffbeb; }
-.facts { display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:1rem;
-         margin:1.25rem 0 2rem; padding:0; }
-.facts div { border:1px solid var(--line); border-radius:6px; padding:.7rem .8rem; }
-.facts dt { font-size:.78rem; text-transform:uppercase; letter-spacing:.04em; color:var(--muted); }
-.facts dd { margin:.25rem 0 0; font-size:1.05rem; }
-.specs th { width:45%; font-weight:400; color:var(--muted); }
-pre { background:#f9fafb; border:1px solid var(--line); border-radius:6px; padding:1rem;
-      overflow-x:auto; font-size:.88rem; }
-ul { padding-left:1.2rem; }
-footer.site { border-top:1px solid var(--line); color:var(--muted); font-size:.85rem; }
-@media (max-width:600px){ .ranking th:nth-child(6), .ranking td:nth-child(6),
-  .ranking th:nth-child(7), .ranking td:nth-child(7) { display:none; } }
+.stamp { color:var(--muted); font-size:.85rem; margin:.2rem 0 1rem; }
+.legend { color:var(--muted); font-size:.82rem; line-height:1.5; margin-top:.75rem; max-width:70ch; }
 
+/* "co kupic" band cards */
 .picks { margin:2rem 0 1.5rem; }
 .picks h2 { margin:0 0 .75rem; font-size:1rem; text-transform:uppercase;
             letter-spacing:.05em; color:var(--muted); }
@@ -47,10 +33,50 @@ footer.site { border-top:1px solid var(--line); color:var(--muted); font-size:.8
 .pick-name { font-weight:600; }
 .pick-price { font-size:1.15rem; font-variant-numeric:tabular-nums; }
 .pick-value { font-size:.85rem; color:var(--accent); font-weight:600; }
-.stamp { color:var(--muted); font-size:.85rem; margin:.2rem 0 1rem; }
-.legend { color:var(--muted); font-size:.82rem; line-height:1.5; margin-top:.75rem; max-width:70ch; }
+
+/* tables */
+table { width:100%; border-collapse:collapse; font-size:.95rem; }
+th, td { text-align:left; padding:.5rem .4rem; border-bottom:1px solid var(--line); }
+thead th { font-size:.8rem; text-transform:uppercase; letter-spacing:.04em; color:var(--muted); }
+.num { text-align:right; font-variant-numeric:tabular-nums; }
+.rank { color:var(--muted); width:2rem; }
+.ranking tbody tr:first-child { background:#fffbeb; }
+
+/* inline scale bars: performance (amber) and value (green) */
+.bar { display:inline-block; width:54px; height:6px; background:#e5e7eb;
+       border-radius:3px; margin-right:.4rem; vertical-align:middle; overflow:hidden; }
+.bar > span { display:block; height:100%; background:var(--accent); }
+.bar-value > span { background:var(--green); }
+
+.tag { display:inline-block; margin-left:.35rem; padding:.05rem .4rem; border:1px solid var(--line);
+       border-radius:4px; font-size:.72rem; color:var(--muted); vertical-align:middle; }
+
+.facts { display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:1rem;
+         margin:1.25rem 0 2rem; padding:0; }
+.facts div { border:1px solid var(--line); border-radius:6px; padding:.7rem .8rem; }
+.facts dt { font-size:.78rem; text-transform:uppercase; letter-spacing:.04em; color:var(--muted); }
+.facts dd { margin:.25rem 0 0; font-size:1.05rem; }
+.specs th { width:45%; font-weight:400; color:var(--muted); }
+
 .cta { display:inline-block; padding:.6rem 1rem; background:var(--accent); color:#fff;
        border-radius:6px; text-decoration:none; font-weight:600; }
 .cta:hover { background:#92400e; }
 
-.bar-value > span { background:#047857; }
+pre { background:#f9fafb; border:1px solid var(--line); border-radius:6px; padding:1rem;
+      overflow-x:auto; font-size:.88rem; }
+ul { padding-left:1.2rem; }
+footer.site { border-top:1px solid var(--line); color:var(--muted); font-size:.85rem; }
+
+/* One card per row on a phone. Every cell keeps its label via data-label.
+   This replaces an older 600px rule that merely hid two columns. */
+@media (max-width:640px) {
+  .ranking thead { display:none; }
+  .ranking tr { display:block; border:1px solid var(--line); border-radius:8px;
+                padding:.5rem .7rem; margin-bottom:.6rem; }
+  .ranking td { display:flex; justify-content:space-between; align-items:baseline;
+                gap:1rem; border:0; padding:.2rem 0; }
+  .ranking td:before { content:attr(data-label); color:var(--muted); font-size:.8rem; }
+  .ranking tbody tr:first-child { background:#fffbeb; }
+  .ranking td.rank { font-size:.85rem; }
+  .ranking td.rank:before { content:""; }
+}
