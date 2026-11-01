@@ -96,13 +96,28 @@ def normalise_chip(raw: str) -> str:
 
 
 def arch_of(chip: str) -> str:
+    """Label the architecture. Every RTX 30xx was being called Ada, which is a
+    mislabel that only shows up once the calibration constants diverge."""
     if "Radeon" in chip:
-        return "RDNA4" if int(chip.split()[2]) >= 9000 else "RDNA3"
+        number = int(chip.split()[2])
+        if number >= 9000:
+            return "RDNA4"
+        if number >= 7000:
+            return "RDNA3"
+        if number >= 6000:
+            return "RDNA2"
+        return "RDNA1"
     if "RTX" in chip:
         gen = int(re.search(r"\d{4}", chip).group(0))
-        return "Blackwell" if gen >= 5000 else "Ada"
+        if gen >= 5000:
+            return "Blackwell"
+        if gen >= 4000:
+            return "Ada"
+        if gen >= 3000:
+            return "Ampere"
+        return "Turing"
     if "Arc" in chip:
-        return "Battlemage"
+        return "Battlemage" if chip.split()[-1].upper().startswith("B") else "Alchemist"
     return "?"
 
 

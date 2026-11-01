@@ -35,7 +35,10 @@ FIELDS = [
     "mem_mhz", "psu_w", "length_mm", "arch_eff", "perf_adj", "note",
 ]
 # Calibration constants live here so they are visible next to the data.
-ARCH_EFF = {"Blackwell": 1.00, "RDNA4": 1.45, "RDNA3": 1.30, "Battlemage": 0.78, "Ada": 1.00}
+ARCH_EFF = {
+    "Blackwell": 1.00, "Ada": 1.00, "Ampere": 1.00, "Turing": 1.00,
+    "RDNA4": 1.45, "RDNA3": 1.30, "RDNA2": 1.15, "Battlemage": 0.78,
+}
 
 
 def gpu_urls() -> list[str]:
@@ -70,7 +73,7 @@ def main() -> int:
 
     csv_path = ROOT / "data" / "gpus.csv"
     rows = list(csv.DictReader(csv_path.open()))
-    have = {row["key"] for row in rows}
+    by_key = {row["key"]: row for row in rows}
 
     prices = json.loads((ROOT / "data" / "prices.json").read_text())["records"]
     wanted: set[tuple[str, int]] = set()
@@ -80,7 +83,12 @@ def main() -> int:
         if not rec.get("chip") or not rec.get("vram_gb"):
             continue
         chip, vram = rec["chip"], int(rec["vram_gb"])
-        if key_of(chip, vram) not in have:
+        key = key_of(chip, vram)
+        row = by_key.get(key)
+        broken = row is None or not all(
+            row.get(c) for c in ("shaders", "boost_mhz", "bus_bits", "mem_mhz")
+        )
+        if broken:
             wanted.add((chip, vram))
 
     if not wanted:
@@ -112,8 +120,7 @@ def main() -> int:
             print(f"  {chip} {vram}GB: incomplete spec sheet, skipped")
             continue
         arch = harvest.arch_of(chip)
-        rows.append(
-            {
+        entry = {
                 "key": key_of(chip, vram),
                 "chip": chip,
                 "vram_gb": vram,
@@ -129,7 +136,12 @@ def main() -> int:
                 "note": "specs from morele sitemap detail page; "
                 f"arch_eff {arch}={ARCH_EFF.get(arch, 1.0)}",
             }
-        )
+        existing = by_key.get(entry["key"])
+        if existing:
+            entry["key"] = existing["key"]
+            rows = [entry if r["key"] == existing["key"] else r for r in rows]
+        else:
+            rows.append(entry)
         added += 1
         print(f"  {chip} {vram}GB: {int(spec['shaders'])} sp, {int(spec['boost_mhz'])} MHz")
 
