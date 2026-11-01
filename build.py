@@ -164,6 +164,10 @@ def main() -> int:
             rows.append(chip)
 
     rows.sort(key=lambda c: c["value"], reverse=True)
+    # the table is sorted by value, so that is the column that needs a visual scale
+    top_value = max((c["value"] for c in rows), default=1) or 1
+    for chip in rows:
+        chip["value_pct"] = round(chip["value"] / top_value * 100, 1)
 
     picks = []
     for low, high, label in BANDS:

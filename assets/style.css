@@ -52,3 +52,5 @@ footer.site { border-top:1px solid var(--line); color:var(--muted); font-size:.8
 .cta { display:inline-block; padding:.6rem 1rem; background:var(--accent); color:#fff;
        border-radius:6px; text-decoration:none; font-weight:600; }
 .cta:hover { background:#92400e; }
+
+.bar-value > span { background:#047857; }
