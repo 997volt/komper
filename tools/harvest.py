@@ -225,7 +225,7 @@ def main() -> int:
     # Raising this only repeats the same 30 products (they are deduped below).
     ap.add_argument("--pages", type=int, default=1)
     ap.add_argument("--details", type=int, default=14)
-    ap.add_argument("--xkom-pages", type=int, default=3)
+    ap.add_argument("--xkom-pages", type=int, default=4)
     ap.add_argument("--delay", type=float, default=4.0)
     ap.add_argument("--data", default="data")
     args = ap.parse_args()
@@ -294,10 +294,20 @@ def main() -> int:
         )
 
     data.mkdir(exist_ok=True)
-    with (data / "gpus.csv").open("w", newline="") as fh:
-        writer = csv.DictWriter(fh, fieldnames=list(rows[0].keys()))
+    csv_path = data / "gpus.csv"
+    # Merge, never truncate: tools/specs.py adds chips that this listing path
+    # cannot reach, and rewriting the file would silently delete them.
+    existing: dict[str, dict] = {}
+    if csv_path.exists():
+        for row in csv.DictReader(csv_path.open()):
+            existing[row["key"]] = row
+    for row in rows:
+        existing[row["key"]] = row
+    merged = sorted(existing.values(), key=lambda r: r["key"])
+    with csv_path.open("w", newline="") as fh:
+        writer = csv.DictWriter(fh, fieldnames=list(merged[0].keys()))
         writer.writeheader()
-        writer.writerows(rows)
+        writer.writerows(merged)
     (data / "prices.json").write_text(
         json.dumps(
             {
@@ -309,7 +319,7 @@ def main() -> int:
         )
         + "\n"
     )
-    print(f"\n{len(rows)} chips -> {data/'gpus.csv'}")
+    print(f"\n{len(rows)} harvested, {len(merged)} rows in {csv_path}")
     print(f"{len(listings)} listings -> {data/'prices.json'}")
     return 0
 
