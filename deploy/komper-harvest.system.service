@@ -1,0 +1,23 @@
+# System unit - for a headless home box that should harvest regardless of who is
+# logged in. Needs root once to install, and avoids the user-manager + linger
+# problem entirely.
+#
+#   sudo cp deploy/komper-harvest.system.service /etc/systemd/system/komper-harvest.service
+#   sudo cp deploy/komper-harvest.timer          /etc/systemd/system/
+#   sudo systemctl daemon-reload
+#   sudo systemctl enable --now komper-harvest.timer
+#   systemctl list-timers komper-harvest.timer
+#
+# Runs as the user that owns the clone, so git can use that user's SSH key.
+[Unit]
+Description=Harvest GPU prices for komper
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=dev
+Group=dev
+WorkingDirectory=/home/dev/komper
+ExecStart=/home/dev/komper/tools/update.sh
+TimeoutStartSec=900

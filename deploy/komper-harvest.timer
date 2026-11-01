@@ -10,3 +10,6 @@ Persistent=true
 
 [Install]
 WantedBy=timers.target
+
+# The same timer file works for both installs: as a user unit from
+# ~/.config/systemd/user/, or as a system unit in /etc/systemd/system/.
