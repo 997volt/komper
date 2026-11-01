@@ -43,3 +43,17 @@ python3 tools/specs.py        # appends to data/gpus.csv, never overwrites
 ```
 
 A chip with no spec sheet stays unranked rather than being estimated.
+
+## Price history
+
+`data/history/YYYY-MM.jsonl` — one row per store + chip + VRAM per harvest run,
+holding the cheapest price and the number of offers seen.
+
+```json
+{"t":"2026-11-01T21:52:02+00:00","s":"morele","c":"Arc B570","v":10,"p":1599.0,"n":1}
+```
+
+Append-only and sharded by month so git stores each month's file once. Nothing
+reads it yet: the site is built from `data/prices.json` alone, so recording
+history changes no page. It exists so that "cheapest in 30 days" is possible
+later without a backfill — history cannot be reconstructed after the fact.

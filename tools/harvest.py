@@ -215,6 +215,48 @@ def sweep_xkom(pages: int = 3, delay: float = 0.0) -> list[dict]:
     return out
 
 
+def append_history(data_dir: Path, listings: list[dict], scraped_at: str) -> tuple[Path, int]:
+    """Append one row per store+chip+VRAM per run, cheapest price and offer count.
+
+    Deliberately not per-listing: the product needs "what did this chip cost at
+    this store over time", and per-listing rows would be ~10x the volume for
+    detail that prices.json already snapshots in git.
+
+    Sharded by month so git stores each month's file once. A single growing file
+    would be rewritten in full on every commit, and Cloudflare clones the repo on
+    every build.
+    """
+    month = scraped_at[:7]
+    path = data_dir / "history" / f"{month}.jsonl"
+    path.parent.mkdir(exist_ok=True)
+
+    agg: dict[tuple[str, str, int], tuple[float, int]] = {}
+    seen: set[str] = set()
+    for rec in listings:
+        if rec.get("is_outlet") or rec.get("in_stock") is False:
+            continue
+        if not rec.get("chip") or not rec.get("vram_gb") or not rec.get("price_pln"):
+            continue
+        if rec.get("url") in seen:
+            continue
+        seen.add(rec.get("url"))
+        key = (rec["store"], rec["chip"], int(rec["vram_gb"]))
+        low, count = agg.get(key, (rec["price_pln"], 0))
+        agg[key] = (min(low, rec["price_pln"]), count + 1)
+
+    with path.open("a") as fh:
+        for (store, chip, vram), (low, count) in sorted(agg.items()):
+            fh.write(
+                json.dumps(
+                    {"t": scraped_at, "s": store, "c": chip, "v": vram,
+                     "p": round(low, 2), "n": count},
+                    ensure_ascii=False,
+                )
+                + "\n"
+            )
+    return path, len(agg)
+
+
 def details(url: str) -> dict:
     html = fetch(url)
     for block in ld_blocks(html):
@@ -341,17 +383,17 @@ def main() -> int:
         writer = csv.DictWriter(fh, fieldnames=list(merged[0].keys()))
         writer.writeheader()
         writer.writerows(merged)
+    scraped_at = datetime.now(timezone.utc).isoformat(timespec="seconds")
     (data / "prices.json").write_text(
         json.dumps(
-            {
-                "scraped_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
-                "records": listings,
-            },
+            {"scraped_at": scraped_at, "records": listings},
             indent=2,
             ensure_ascii=False,
         )
         + "\n"
     )
+    hist_path, hist_rows = append_history(data, listings, scraped_at)
+    print(f"{hist_rows} rows appended -> {hist_path}")
     print(f"\n{len(rows)} harvested, {len(merged)} rows in {csv_path}")
     print(f"{len(listings)} listings -> {data/'prices.json'}")
     return 0
