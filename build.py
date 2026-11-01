@@ -44,6 +44,15 @@ BANDS = [
 ]
 
 
+def target_of(perf: float, vram: float) -> str:
+    """Rough resolution band. Editorial, and stated as such in /metodologia/."""
+    if perf >= 45 and vram >= 16:
+        return "4K"
+    if perf >= 28 and vram >= 8:
+        return "1440p"
+    return "1080p"
+
+
 def pl_plural(n: int, one: str, few: str, many: str) -> str:
     n = abs(int(n))
     if n == 1:
@@ -153,6 +162,7 @@ def main() -> int:
     for chip in ranked_raw:
         perf = proxy(chip) / top * REF
         chip["perf"] = round(perf, 1)
+        chip["target"] = target_of(perf, chip["vram_gb"] or 0)
         stat = stats.get(chip["key"])
         chip["stats"] = stat
         if stat and stat["offers"] >= MIN_OFFERS:

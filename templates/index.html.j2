@@ -1,4 +1,5 @@
 {% extends "base.html.j2" %}
+{% block ogtitle %}Komper — wydajność na złotówkę: ranking kart graficznych{% endblock %}
 {% block title %}Komper — które GPU daje najwięcej wydajności za złotówkę{% endblock %}
 {% block content %}
 <h1>Wydajność na złotówkę</h1>
@@ -6,13 +7,6 @@
   Ranking kart graficznych dostępnych teraz w polskich sklepach.
   Liczy się jedna rzecz: ile wydajności dostajesz za swoje pieniądze.
 </p>
-<div class="notice">
-  <strong>Model wydajności to proxy, nie pomiar.</strong>
-  Wartości są liczone ze specyfikacji (liczba procesorów strumieniowych, taktowanie,
-  szyna pamięci) i kalibrowane współczynnikiem architektury. Służą do porównania
-  kart <em>między sobą</em>, nie do przewidywania FPS w konkretnej grze.
-</div>
-
 <section class="picks">
   <h2>Co kupić</h2>
   <div class="pick-grid">
@@ -30,6 +24,12 @@
 
 <p class="stamp">Ceny sprawdzone: {{ scraped }}</p>
 
+<div class="notice">
+  <strong>Wydajność to proxy, nie pomiar FPS.</strong> Liczona ze specyfikacji
+  i kalibrowana współczynnikiem architektury — służy do porównania kart
+  <em>między sobą</em>. <a href="/metodologia/">Jak to liczymy</a>.
+</div>
+
 <table class="ranking">
   <thead>
     <tr>
@@ -41,18 +41,19 @@
   <tbody>
   {% for chip in rows %}
     <tr>
-      <td class="rank">{{ loop.index }}</td>
-      <td><a href="/gpu/{{ chip.key }}">{{ chip.chip }}</a>
-          <span class="muted">{{ chip.vram_gb|int }} GB</span></td>
-      <td class="num">{{ chip.perf }}</td>
-      <td class="num">{{ chip.stats.p_buy|money }}
+      <td class="rank" data-label="Miejsce">{{ loop.index }}</td>
+      <td data-label="Karta"><a href="/gpu/{{ chip.key }}">{{ chip.chip }}</a>
+          <span class="muted">{{ chip.vram_gb|int }} GB</span>
+          <span class="tag">{{ chip.target }}</span></td>
+      <td class="num" data-label="Wydajność"><span class="bar"><span style="width:{{ chip.perf }}%"></span></span> {{ chip.perf }}</td>
+      <td class="num" data-label="Cena">{{ chip.stats.p_buy|money }}
         {% if chip.stats.deal is not none and chip.stats.deal < -0.001 %}
           <span class="badge">−{{ (chip.stats.deal * -100)|round|int }}%</span>
         {% endif %}</td>
-      <td class="num strong">{{ chip.value }}</td>
-      <td class="num">{{ chip.stats.offers }}</td>
-      <td class="num">{{ chip.stats.stores }}</td>
-      <td class="num">{{ chip.length_mm|int }} mm</td>
+      <td class="num strong" data-label="Pkt / 1000 zł">{{ chip.value }}</td>
+      <td class="num" data-label="Ofert">{{ chip.stats.offers }}</td>
+      <td class="num" data-label="Sklepy">{{ chip.stats.stores }}</td>
+      <td class="num" data-label="Długość">{{ chip.length_mm|int }} mm</td>
     </tr>
   {% endfor %}
   </tbody>
