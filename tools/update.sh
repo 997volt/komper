@@ -9,6 +9,8 @@
 # timestamp is meaningful: it is what the page shows as "prices from ...". At four
 # runs a day that is ~120 builds a month against the 500 the free plan allows.
 set -euo pipefail
+# cron and TrueNAS give a minimal PATH; be explicit rather than lucky
+export PATH="/usr/local/bin:/usr/bin:/bin:${PATH:-}"
 cd "$(dirname "$0")/.."
 
 python3 tools/harvest.py --pages 1 --details 14
