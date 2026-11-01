@@ -46,10 +46,7 @@
           <span class="muted">{{ chip.vram_gb|int }} GB</span>
           <span class="tag">{{ chip.target }}</span></td>
       <td class="num" data-label="Wydajność"><span class="bar"><span style="width:{{ chip.perf }}%"></span></span> {{ chip.perf }}</td>
-      <td class="num" data-label="Cena">{{ chip.stats.p_buy|money }}
-        {% if chip.stats.deal is not none and chip.stats.deal < -0.001 %}
-          <span class="badge">−{{ (chip.stats.deal * -100)|round|int }}%</span>
-        {% endif %}</td>
+      <td class="num" data-label="Cena">{{ chip.stats.p_buy|money }}</td>
       <td class="num strong" data-label="Pkt / 1000 zł">{{ chip.value }}</td>
       <td class="num" data-label="Ofert">{{ chip.stats.offers }}</td>
       <td class="num" data-label="Sklepy">{{ chip.stats.stores }}</td>
@@ -61,9 +58,6 @@
 
 <p class="legend">
   <strong>Pkt / 1000 zł</strong> — wydajność dzielona przez najtańszą cenę.
-  <strong>−N%</strong> — o ile najtańsza oferta jest poniżej typowej ceny rynkowej
-  (mediana najtańszych ofert w sklepach). Pokazywane tylko wtedy, gdy karta jest
-  w co najmniej dwóch sklepach.
 </p>
 
 {% if unpriced %}

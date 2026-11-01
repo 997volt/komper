@@ -19,7 +19,6 @@ import shutil
 import sys
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
-from statistics import median
 
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
@@ -128,15 +127,10 @@ def price_stats(chips: list[dict], listings: list[dict]) -> dict:
             store = rec["store"]
             per_store[store] = min(per_store.get(store, 1e9), rec["price_pln"])
         p_buy = min(per_store.values())
-        # median of per-store minima: each store votes once (PLAN.md section 3)
-        p_ref = median(per_store.values())
         stats[chip["key"]] = {
             "offers": len(offers),
             "stores": len(per_store),
             "p_buy": p_buy,
-            "p_ref": p_ref,
-            # only meaningful with two or more stores; with one, p_ref == p_buy
-            "deal": (p_buy / p_ref - 1) if len(per_store) >= 2 else None,
             "spread": offers[-1]["price_pln"] / offers[0]["price_pln"] - 1,
             "cheapest": offers[0],
             "all": offers,
