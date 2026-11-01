@@ -1,8 +1,8 @@
 key,chip,vram_gb,arch,shaders,boost_mhz,bus_bits,mem_mhz,psu_w,length_mm,arch_eff,perf_adj,note
 arc-b570-10gb,Arc B570,10,Battlemage,2304.0,2600.0,160.0,19000.0,600.0,249.0,1.0,1.0,specs from morele listing 14453145; 2 offers across 2 store(s)
 arc-b580-12gb,Arc B580,12,Battlemage,2560.0,2740.0,192.0,19000.0,650.0,249.0,1.0,1.0,specs from morele listing 14450505; 2 offers across 2 store(s)
-geforce-rtx-3050-6gb,GeForce RTX 3050,6,Ada,2304,1492,96,14000,300,174,1.0,1.0,specs from morele sitemap detail page; arch_eff Ada=1.0
-geforce-rtx-3060-12gb,GeForce RTX 3060,12,Ada,3584,1867,192,15000,650,200,1.0,1.0,specs from morele sitemap detail page; arch_eff Ada=1.0
+geforce-rtx-3050-6gb,GeForce RTX 3050,6,Ampere,2304,1492,96,14000,300,174,1.0,1.0,arch_eff Ampere=1.0; specs transcribed earlier
+geforce-rtx-3060-12gb,GeForce RTX 3060,12,Ampere,3584,1867,192,15000,650,200,1.0,1.0,arch_eff Ampere=1.0; specs transcribed earlier
 geforce-rtx-5050-8gb,GeForce RTX 5050,8,Blackwell,2560.0,2617.0,128.0,14000.0,550.0,197.0,1.0,1.0,specs from morele listing 15418243; 2 offers across 2 store(s)
 geforce-rtx-5060-8gb,GeForce RTX 5060,8,Blackwell,3840.0,2527.0,128.0,28000.0,550.0,197.0,1.0,1.0,specs from morele listing 15233914; 14 offers across 2 store(s)
 geforce-rtx-5060-ti-16gb,GeForce RTX 5060 Ti,16,Blackwell,4608,2692,128,28000,650,262,1.0,1.0,specs from morele sitemap detail page; arch_eff Blackwell=1.0
