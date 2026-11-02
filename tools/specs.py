@@ -10,7 +10,9 @@ clocks and bus width.
     python3 tools/specs.py            # only chips that are missing specs
     python3 tools/specs.py --limit 5  # go slowly
 
-Appends to data/gpus.csv. Existing rows are never overwritten.
+Writes data/gpus.csv, adding missing chips and repairing rows that are missing
+a model input. Calibration constants and the row schema live in harvest.py so
+there is only one copy of each.
 """
 
 from __future__ import annotations
@@ -18,6 +20,7 @@ from __future__ import annotations
 import argparse
 import csv
 import json
+import re
 import sys
 import time
 from pathlib import Path
@@ -30,20 +33,13 @@ COMPONENTS_SITEMAP = (
     "https://www.morele.net/product_active_sitemap_13_podzespoly_komputerowe.xml"
 )
 GPU_IN_URL = "karta-graficzna"
-FIELDS = [
-    "key", "chip", "vram_gb", "arch", "shaders", "boost_mhz", "bus_bits",
-    "mem_mhz", "psu_w", "length_mm", "arch_eff", "perf_adj", "note",
-]
-# Calibration constants live here so they are visible next to the data.
-ARCH_EFF = {
-    "Blackwell": 1.00, "Ada": 1.00, "Ampere": 1.00, "Turing": 1.00,
-    "RDNA4": 1.45, "RDNA3": 1.30, "RDNA2": 1.15, "Battlemage": 0.78,
-}
+FIELDS = harvest.ROW_FIELDS
+ARCH_EFF = harvest.ARCH_EFF
+key_of = harvest.key_of
 
 
 def gpu_urls() -> list[str]:
     html = harvest.fetch(COMPONENTS_SITEMAP, timeout=60)
-    import re
     return [
         url
         for url in re.findall(r"<loc>([^<]+)</loc>", html)
@@ -58,11 +54,6 @@ def chip_of(url: str) -> tuple[str, int] | None:
     if not chip or not vram:
         return None
     return harvest.normalise_chip(chip.group(1)), int(vram.group(1))
-
-
-def key_of(chip: str, vram: int) -> str:
-    import re
-    return re.sub(r"[^a-z0-9]+", "-", f"{chip} {vram}gb".lower()).strip("-")
 
 
 def main() -> int:
@@ -136,12 +127,12 @@ def main() -> int:
                 "note": "specs from morele sitemap detail page; "
                 f"arch_eff {arch}={ARCH_EFF.get(arch, 1.0)}",
             }
-        existing = by_key.get(entry["key"])
-        if existing:
-            entry["key"] = existing["key"]
-            rows = [entry if r["key"] == existing["key"] else r for r in rows]
+        if entry["key"] in by_key:
+            # replace in place: the row exists but was missing a model input
+            rows = [entry if r["key"] == entry["key"] else r for r in rows]
         else:
             rows.append(entry)
+        by_key[entry["key"]] = entry
         added += 1
         print(f"  {chip} {vram}GB: {int(spec['shaders'])} sp, {int(spec['boost_mhz'])} MHz")
 

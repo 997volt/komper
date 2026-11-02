@@ -24,7 +24,7 @@ from jinja2 import Environment, FileSystemLoader, select_autoescape
 
 ROOT = Path(__file__).resolve().parent
 DIST = ROOT / "dist"
-SITE = os.environ.get("SITE_URL", "https://komper.pages.dev").rstrip("/")
+SITE = os.environ.get("SITE_URL", "https://komper-git.pages.dev").rstrip("/")
 MAX_AGE = timedelta(hours=8)
 # one listing is a listing, not a market price. Two is the minimum for ranking.
 MIN_OFFERS = 2
@@ -52,6 +52,11 @@ def target_of(perf: float, vram: float) -> str:
     return "1080p"
 
 
+def chip_label(chip: dict) -> str:
+    vram = chip.get("vram_gb")
+    return f"{chip['chip']} {int(vram)}GB" if vram else chip["chip"]
+
+
 def pl_plural(n: int, one: str, few: str, many: str) -> str:
     n = abs(int(n))
     if n == 1:
@@ -67,7 +72,13 @@ def load_chips() -> list[dict]:
         for col in ("vram_gb", "shaders", "boost_mhz", "bus_bits", "mem_mhz",
                     "psu_w", "length_mm", "arch_eff", "perf_adj"):
             raw = row.get(col) or ""
-            row[col] = float(raw) if raw.strip() else None
+            value = float(raw) if raw.strip() else None
+            # calibration columns default to neutral rather than None: proxy()
+            # multiplies by them, and a blank cell in a hand-edited CSV should
+            # mean "no adjustment", not a traceback
+            if value is None and col in ("arch_eff", "perf_adj"):
+                value = 1.0
+            row[col] = value
         row["complete"] = all(
             row[c] for c in ("shaders", "boost_mhz", "bus_bits", "mem_mhz")
         )
@@ -75,7 +86,7 @@ def load_chips() -> list[dict]:
     return rows
 
 
-def load_listings() -> tuple[list[dict], datetime]:
+def load_listings() -> tuple[list[dict], datetime, bool]:
     blob = json.loads((ROOT / "data" / "prices.json").read_text())
     scraped = datetime.fromisoformat(blob["scraped_at"])
     age = datetime.now(timezone.utc) - scraped
@@ -139,9 +150,13 @@ def price_stats(chips: list[dict], listings: list[dict]) -> dict:
 
 
 def money(value: float | None) -> str:
+    """Polish formatting. Keeps grosze when there are any: a price comparison
+    that rounds 2 658,89 to 2 659 is wrong by a złoty."""
     if value is None:
         return "—"
-    return f"{value:,.0f}".replace(",", " ") + " zł"
+    if abs(value - round(value)) < 0.005:
+        return f"{value:,.0f}".replace(",", " ") + " zł"
+    return f"{value:,.2f}".replace(",", " ").replace(".", ",") + " zł"
 
 
 def main() -> int:
@@ -175,16 +190,10 @@ def main() -> int:
         if candidates:
             picks.append({"label": label, "chip": max(candidates, key=lambda c: c["value"])})
     # a chip without prices is reported, never ranked (PLAN.md section 3, rule 1)
-    unpriced = [
-        c["chip"] + f" {int(c['vram_gb'])}GB"
-        for c in ranked_raw
-        if c["key"] not in stats
-    ]
-    incomplete = [
-        c["chip"] + f" {int(c['vram_gb'])}GB" for c in chips if not c["complete"]
-    ]
+    unpriced = [chip_label(c) for c in ranked_raw if c["key"] not in stats]
+    incomplete = [chip_label(c) for c in chips if not c["complete"]]
     single = [
-        c["chip"] + f" {int(c['vram_gb'])}GB"
+        chip_label(c)
         for c in ranked_raw
         if c["key"] in stats and stats[c["key"]]["offers"] < MIN_OFFERS
     ]

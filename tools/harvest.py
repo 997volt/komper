@@ -1,17 +1,22 @@
 #!/usr/bin/env python3
-"""Harvest GPU listings and per-chip specs from morele.
+"""Harvest GPU listings and per-chip specs.
 
-Two-level fetch, as PLAN.md section 7 describes:
-  1. category sweep  - one request per page, 30 listings with prices each
-  2. detail fetch    - one request per chip, for the machine-readable spec sheet
+Two stores, two very different mechanisms:
+  morele  schema.org ItemList on the category page. Server-side pagination does
+          not work there, so one page yields 30 products.
+  x-kom   product tiles inside window.__INITIAL_STATE__. Paginates properly.
+
+Specs come from a morele product page, one request per chip, and are cached in
+data/gpus.csv - a chip whose specs are already known costs no request.
 
 Outputs:
-  data/prices.json  every listing seen, with price and stock
-  data/gpus.csv     one row per chip + VRAM, with the specs the proxy needs
+  data/prices.json              every listing seen, with price and stock
+  data/history/YYYY-MM.jsonl    cheapest price per store+chip, appended
+  data/gpus.csv                 one row per chip + VRAM (merged, never truncated)
 
-Nothing here is scheduled or retried. It is a harvesting tool, run by hand.
+Nothing here is scheduled or retried. Run by hand or from a timer.
 
-    python3 tools/harvest.py --pages 3 --details 14
+    python3 tools/harvest.py --pages 1 --xkom-pages 4
 """
 
 from __future__ import annotations
@@ -20,7 +25,6 @@ import argparse
 import csv
 import json
 import re
-import statistics
 import sys
 import time
 import urllib.parse
@@ -93,6 +97,21 @@ def normalise_chip(raw: str) -> str:
     # slug form "arc b580" -> "Arc B580"
     out = re.sub(r"\b([ab])(\d{3})\b", lambda m: m.group(1).upper() + m.group(2), out)
     return re.sub(r"\s+", " ", out)
+
+
+# Calibration constant per architecture family. Single source of truth: both the
+# harvest path and tools/specs.py read this, because two copies drifted once and
+# left six chips calibrated at 1.00 regardless of their architecture.
+ARCH_EFF = {
+    "Blackwell": 1.00, "Ada": 1.00, "Ampere": 1.00, "Turing": 1.00,
+    "RDNA4": 1.45, "RDNA3": 1.30, "RDNA2": 1.15, "Battlemage": 0.78,
+}
+
+# Column order of data/gpus.csv. tools/specs.py writes with the same list.
+ROW_FIELDS = [
+    "key", "chip", "vram_gb", "arch", "shaders", "boost_mhz", "bus_bits",
+    "mem_mhz", "psu_w", "length_mm", "arch_eff", "perf_adj", "note",
+]
 
 
 def key_of(chip: str, vram: int) -> str:
@@ -237,9 +256,10 @@ def append_history(data_dir: Path, listings: list[dict], scraped_at: str) -> tup
             continue
         if not rec.get("chip") or not rec.get("vram_gb") or not rec.get("price_pln"):
             continue
-        if rec.get("url") in seen:
+        url = rec.get("url")
+        if not url or url in seen:
             continue
-        seen.add(rec.get("url"))
+        seen.add(url)
         key = (rec["store"], rec["chip"], int(rec["vram_gb"]))
         low, count = agg.get(key, (rec["price_pln"], 0))
         agg[key] = (min(low, rec["price_pln"]), count + 1)
@@ -297,7 +317,8 @@ def main() -> int:
         got = sweep(page)
         print(f"morele page {page}: {len(got)} gpu listings")
         listings += got
-        time.sleep(args.delay)
+        if page < args.pages:
+            time.sleep(args.delay)
 
     xkom = sweep_xkom(args.xkom_pages, args.delay)
     print(f"x-kom: {len(xkom)} gpu listings over {args.xkom_pages} page(s)")
@@ -309,7 +330,7 @@ def main() -> int:
     seen: set[str] = set()
     unique = []
     for rec in listings:
-        if rec["url"] and rec["url"] not in seen:
+        if rec.get("url") and rec["url"] not in seen:
             seen.add(rec["url"])
             unique.append(rec)
     if len(unique) != len(listings):
@@ -360,9 +381,10 @@ def main() -> int:
                 "mem_mhz": spec.get("mem_mhz"),
                 "psu_w": spec.get("psu_w"),
                 "length_mm": spec.get("length_mm"),
-                "arch_eff": 1.0,
+                "arch_eff": ARCH_EFF.get(arch_of(chip), 1.0),
                 "perf_adj": 1.0,
                 "note": f"specs from morele listing {cheapest['url'].rsplit('-', 1)[-1].strip('/')}; "
+                f"arch_eff {arch_of(chip)}={ARCH_EFF.get(arch_of(chip), 1.0)}; "
                 f"{len(members)} offers across {len({r['store'] for r in members})} store(s)",
             }
         )

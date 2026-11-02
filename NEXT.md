@@ -16,7 +16,7 @@ Rule: do not skip ahead. Each item has a definition of done — if you cannot sa
 the chipset as a structured property, the seller and a shipping range; x-kom
 gives `mpn`/`sku`/`brand` only. Cross-store matching therefore cannot use EAN —
 it normalises on `chip + VRAM + AIB` from the URL slug and name. Full answer in
-`PLAN.md` §11; working one-shot extractor in `tools/extract.py`.
+`PLAN.md` §11; `tools/harvest.py` carries the extraction now.
 
 Fetch one GPU product page from each store and check whether it publishes
 structured data with a price and an identifier.
@@ -87,7 +87,7 @@ mapped by hand.
 Two stores, every chip, prices fetched by hand and timestamped.
 
 **Done when:** every chip has at least one credible offer (in stock, first-party,
-new, not a bundle), and `p_buy` / `p_ref` can be computed for all of them.
+new, not a bundle), and `p_buy` can be computed for every chip.
 
 ### 6. `build.py` + templates
 Jinja2 → `dist/index.html` (leaderboard) + `dist/gpu/<slug>.html` (one per chip).

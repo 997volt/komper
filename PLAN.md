@@ -83,11 +83,14 @@ quarantine if p_buy < 0.7 × p_ref           # hold, do not publish as a bargain
 
 - **`p_buy` is the headline price** and the ranking input. It is what a buyer
   actually pays, and it is what the Ceneo link points at.
-- **`p_ref` is "typical street price"** — used for the `−6% vs typowa` badge and
-  as the outlier sanity check. It is deliberately **not** the median of all
-  listings: with 15 variants at one store and 3 at another, the median of
-  listings is just "which store carries the most AIB SKUs". Per-store minima
-  give each store one vote.
+- **`p_ref` is "typical street price"** — kept as the outlier sanity check, and
+  deliberately **not** the median of all listings: with 15 variants at one store
+  and 3 at another, the median of listings is just "which store carries the most
+  AIB SKUs". Per-store minima give each store one vote.
+- **A `−N% vs typowa` badge was built and then removed.** It shipped for one
+  round: a percentage with no visible scale, whose meaning needed a four-line
+  legend, and which silently disappeared on single-store cards. The page now
+  shows the cheapest price and the store count, and nothing else.
 - **The median is a filter, not a value.** At n≈5–15 observations per chip, the
   median of 5 values is literally the 3rd value — it offers no robustness. The
   actual defence against garbage is the filter list plus the quarantine rule.
@@ -103,8 +106,10 @@ quarantine if p_buy < 0.7 × p_ref           # hold, do not publish as a bargain
 3. **Variant-aware:** the price of a chip is the cheapest *in-stock* variant,
    which is what a buyer does.
 
-The `−% vs typowa cena` badge is valuable because it **works on day one, with a
-single snapshot and no history.**
+The cross-store comparison was the one signal that worked on day one, without
+history — which is why it was built first. It turned out to be unreadable in
+that form. The same data is still there (`p_ref`, per-store minima); it just is
+not surfaced as a percentage yet.
 
 ---
 
@@ -369,7 +374,7 @@ and if nobody uses it, stop rather than build the scraper.
 | AIB handling | offer attribute, never a page | price spread ≫ perf spread |
 | Price statistic | `p_buy` = filtered min | it is what the buyer pays; median adds no robustness at n≈5 |
 | Reference price | median of per-store minima | avoids weighting by catalogue size |
-| Deal signal at launch | `−% vs typowa` | works on a single snapshot, no history needed |
+| Deal signal at launch | `−% vs typowa`, then removed | worked on a snapshot, but needed a legend to be legible |
 | History in v1 | excluded | it is the commodity Ceneo already gives away |
 | Rendering | static, prices baked in | SEO needs price in HTML; Ceneo clicks come from search |
 | Data freshness | rebuild on update, a few times a day | well under the 500 builds/month ceiling; hourly would exceed it |
