@@ -20,7 +20,7 @@ import sys
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
-from jinja2 import Environment, FileSystemLoader, select_autoescape
+from jinja2 import Environment, FileSystemLoader, StrictUndefined, select_autoescape
 
 ROOT = Path(__file__).resolve().parent
 DIST = ROOT / "dist"
@@ -208,6 +208,8 @@ def main() -> int:
         autoescape=select_autoescape(["html"]),
         trim_blocks=True,
         lstrip_blocks=True,
+        # a template that references a missing variable is a bug, not a blank
+        undefined=StrictUndefined,
     )
     env.filters["money"] = money
     env.filters["pl_plural"] = pl_plural
