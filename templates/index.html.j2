@@ -30,26 +30,43 @@
   <em>między sobą</em>. <a href="/metodologia/">Jak to liczymy</a>.
 </div>
 
+<div class="sortbar">
+  <label>Sortuj:
+    <select id="sort">
+      <option value="value:desc" selected>Punkty / 1000 zł — najwyżej</option>
+      <option value="price:asc">Cena — od najniższej</option>
+      <option value="price:desc">Cena — od najwyższej</option>
+      <option value="perf:desc">Wydajność — od najwyższej</option>
+      <option value="perf:asc">Wydajność — od najniższej</option>
+      <option value="name:asc">Nazwa</option>
+    </select>
+  </label>
+</div>
+
 <table class="ranking">
   <thead>
     <tr>
-      <th>#</th><th>Karta</th><th class="num">Wydajność</th>
-      <th class="num">Cena</th><th class="num">Pkt / 1000 zł</th>
-      <th class="num">Ofert</th><th class="num">Sklepy</th>
+      <th>#</th>
+      <th><button class="sort" data-sort="name" data-first="asc">Karta</button></th>
+      <th class="num"><button class="sort" data-sort="perf" data-first="desc">Wydajność</button></th>
+      <th class="num"><button class="sort" data-sort="price" data-first="asc">Cena</button></th>
+      <th class="num"><button class="sort" data-sort="value" data-first="desc">Pkt / 1000 zł</button></th>
+      <th class="num"><button class="sort" data-sort="offers" data-first="desc">Ofert</button></th>
+      <th class="num"><button class="sort" data-sort="stores" data-first="desc">Sklepy</button></th>
     </tr>
   </thead>
   <tbody>
   {% for chip in rows %}
-    <tr>
+    <tr{% if loop.first %} class="top"{% endif %}>
       <td class="rank" data-label="Miejsce">{{ loop.index }}</td>
-      <td data-label="Karta"><a href="/gpu/{{ chip.key }}">{{ chip.chip }}</a>
+      <td data-label="Karta" data-sort="name" data-value="{{ chip.chip }} {{ chip.vram_gb|int }}"><a href="/gpu/{{ chip.key }}">{{ chip.chip }}</a>
           <span class="muted">{{ chip.vram_gb|int }} GB</span>
           <span class="tag">{{ chip.target }}</span></td>
-      <td class="num" data-label="Wydajność"><span class="bar"><span style="width:{{ chip.perf }}%"></span></span> {{ chip.perf }}</td>
-      <td class="num" data-label="Cena">{{ chip.stats.p_buy|money }}</td>
-      <td class="num strong" data-label="Pkt / 1000 zł"><span class="bar bar-value"><span style="width:{{ chip.value_pct }}%"></span></span> {{ chip.value }}</td>
-      <td class="num" data-label="Ofert">{{ chip.stats.offers }}</td>
-      <td class="num" data-label="Sklepy">{{ chip.stats.stores }}</td>
+      <td class="num" data-label="Wydajność" data-sort="perf" data-value="{{ chip.perf }}"><span class="bar"><span style="width:{{ chip.perf }}%"></span></span> {{ chip.perf }}</td>
+      <td class="num" data-label="Cena" data-sort="price" data-value="{{ chip.stats.p_buy }}">{{ chip.stats.p_buy|money }}</td>
+      <td class="num strong" data-label="Pkt / 1000 zł" data-sort="value" data-value="{{ chip.value }}"><span class="bar bar-value"><span style="width:{{ chip.value_pct }}%"></span></span> {{ chip.value }}</td>
+      <td class="num" data-label="Ofert" data-sort="offers" data-value="{{ chip.stats.offers }}">{{ chip.stats.offers }}</td>
+      <td class="num" data-label="Sklepy" data-sort="stores" data-value="{{ chip.stats.stores }}">{{ chip.stats.stores }}</td>
     </tr>
   {% endfor %}
   </tbody>
@@ -57,6 +74,8 @@
 
 <p class="legend">
   <strong>Pkt / 1000 zł</strong> — wydajność dzielona przez najtańszą cenę.
+  Kliknij nagłówek, żeby posortować. <strong>#</strong> to miejsce w rankingu
+  wartości — sortowanie zmienia kolejność wierszy, nie ten numer.
 </p>
 
 {% if unpriced %}
@@ -76,4 +95,57 @@
   Karta jest liczona tylko wtedy, gdy wszystkie wejścia modelu są znane.
 </p>
 {% endif %}
+{% endblock %}
+
+{% block scripts %}
+<script>
+(function () {
+  var table = document.querySelector('.ranking');
+  if (!table || !table.tBodies.length) return;
+  var tbody = table.tBodies[0];
+  var rows = Array.prototype.slice.call(tbody.rows);
+  var headers = Array.prototype.slice.call(table.querySelectorAll('button.sort'));
+  var select = document.getElementById('sort');
+
+  function sortBy(key, ascending) {
+    var sorted = rows.slice().sort(function (a, b) {
+      var ca = a.querySelector('[data-sort="' + key + '"]');
+      var cb = b.querySelector('[data-sort="' + key + '"]');
+      var av = ca ? ca.getAttribute('data-value') : '';
+      var bv = cb ? cb.getAttribute('data-value') : '';
+      var an = parseFloat(av), bn = parseFloat(bv);
+      if (!isNaN(an) && !isNaN(bn)) return ascending ? an - bn : bn - an;
+      return (ascending ? 1 : -1) * String(av).localeCompare(String(bv), 'pl');
+    });
+    sorted.forEach(function (row) { tbody.appendChild(row); });
+    headers.forEach(function (h) {
+      if (h.getAttribute('data-sort') === key) h.setAttribute('data-dir', ascending ? 'asc' : 'desc');
+      else h.removeAttribute('data-dir');
+    });
+    if (select) {
+      var wanted = key + ':' + (ascending ? 'asc' : 'desc');
+      var exists = Array.prototype.some.call(select.options, function (o) { return o.value === wanted; });
+      if (exists) select.value = wanted;
+    }
+  }
+
+  headers.forEach(function (h) {
+    h.addEventListener('click', function () {
+      var key = h.getAttribute('data-sort');
+      var current = h.getAttribute('data-dir');
+      var first = h.getAttribute('data-first') || 'desc';
+      // first click uses the column's natural direction, then toggles
+      var ascending = current ? current !== 'asc' : first === 'asc';
+      sortBy(key, ascending);
+    });
+  });
+
+  if (select) {
+    select.addEventListener('change', function () {
+      var parts = select.value.split(':');
+      sortBy(parts[0], parts[1] === 'asc');
+    });
+  }
+})();
+</script>
 {% endblock %}
