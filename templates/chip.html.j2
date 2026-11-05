@@ -13,13 +13,19 @@
   <div><dt>Punkty / 1000 zł</dt><dd>{{ chip.value }}</dd></div>
   <div><dt>Ofert</dt><dd>{{ chip.stats.offers }} w {{ chip.stats.stores }} {{ chip.stats.stores|pl_plural("sklepie","sklepach","sklepach") }}</dd></div>
   <div><dt>Rozstrzał cen</dt><dd>{{ (chip.stats.spread * 100)|round|int }}%</dd></div>
-  <div><dt>Długość / zasilacz</dt><dd>{{ chip.length_mm|int }} mm / {{ chip.psu_w|int }} W</dd></div>
+  <div><dt>Najtańsza wersja</dt><dd>{{ chip.length_mm|int }} mm / {{ chip.psu_w|int }} W</dd></div>
 </dl>
 
 <p>
   <a class="cta" href="{{ chip.stats.all[0].url }}" rel="noopener nofollow" target="_blank">
     Najtaniej: {{ chip.stats.p_buy|money }} w {{ chip.stats.all[0].store }} →
   </a>
+</p>
+
+<p class="muted">
+  Długość i zasilacz powyżej dotyczą konkretnie najtańszej wersji tego układu.
+  Inne wersje (inny producent, inny cooler) mogą mieć inną długość i inne
+  wymagania zasilania — sprawdź kartę produktu przy wybranej ofercie.
 </p>
 
 <h2>Oferty</h2>
