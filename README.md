@@ -57,3 +57,10 @@ Append-only and sharded by month so git stores each month's file once. Nothing
 reads it yet: the site is built from `data/prices.json` alone, so recording
 history changes no page. It exists so that "cheapest in 30 days" is possible
 later without a backfill — history cannot be reconstructed after the fact.
+
+## Measurement
+
+Cloudflare Web Analytics is enabled on the Pages project (dashboard → Workers &
+Pages → project → Metrics). The beacon is injected by Cloudflare at deploy time,
+so nothing in this repository adds it — the first deployment after enabling is
+what puts it on the page.
