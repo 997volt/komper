@@ -122,8 +122,8 @@ def main() -> int:
                 "mem_mhz": int(spec["mem_mhz"]),
                 "psu_w": int(spec["psu_w"]) if spec.get("psu_w") else "",
                 "length_mm": int(spec["length_mm"]) if spec.get("length_mm") else "",
-                "arch_eff": ARCH_EFF.get(arch, 1.0),
-                "perf_adj": 1.0,
+                "arch_eff": harvest.as_int(ARCH_EFF.get(arch, 1.0)),
+                "perf_adj": harvest.as_int(1.0),
                 "note": "specs from morele sitemap detail page; "
                 f"arch_eff {arch}={ARCH_EFF.get(arch, 1.0)}",
             }

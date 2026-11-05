@@ -107,6 +107,26 @@ ARCH_EFF = {
     "RDNA4": 1.45, "RDNA3": 1.30, "RDNA2": 1.15, "Battlemage": 0.78,
 }
 
+# Numeric columns, normalised on write so the CSV reads as data rather than as
+# a float dump: 4608.0 and 4608 are the same number but only one is pleasant to
+# read and grep. Both writers go through as_int().
+NUMERIC_FIELDS = (
+    "vram_gb", "shaders", "boost_mhz", "bus_bits", "mem_mhz",
+    "psu_w", "length_mm", "arch_eff", "perf_adj",
+)
+
+
+def as_int(value):
+    """Integral values become ints; everything else is left alone."""
+    if value is None or value == "":
+        return value
+    try:
+        number = float(value)
+    except (TypeError, ValueError):
+        return value
+    return int(number) if number.is_integer() else number
+
+
 # Column order of data/gpus.csv. tools/specs.py writes with the same list.
 ROW_FIELDS = [
     "key", "chip", "vram_gb", "arch", "shaders", "boost_mhz", "bus_bits",
@@ -401,6 +421,10 @@ def main() -> int:
     for row in rows:
         existing[row["key"]] = row
     merged = sorted(existing.values(), key=lambda r: r["key"])
+    for row in merged:
+        for field in NUMERIC_FIELDS:
+            if field in row:
+                row[field] = as_int(row[field])
     with csv_path.open("w", newline="") as fh:
         writer = csv.DictWriter(fh, fieldnames=list(merged[0].keys()))
         writer.writeheader()
