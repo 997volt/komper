@@ -1,0 +1,68 @@
+key,chip,vram_gb,url
+arc-b570-10gb,Arc B570,10,https://www.morele.net/karta-graficzna-asrock-arc-b570-challenger-oc-10gb-gddr6-b570-cl-10go-14453145/
+arc-b570-10gb,Arc B570,10,https://www.morele.net/karta-graficzna-sparkle-arc-b570-guardian-oc-10gb-gddr6-sb570g-10goc-14492974/
+arc-b580-12gb,Arc B580,12,https://www.morele.net/karta-graficzna-asrock-arc-b580-challenger-oc-12gb-gddr6-b580-cl-12go-14450505/
+geforce-rtx-3050-6gb,GeForce RTX 3050,6,https://www.morele.net/karta-graficzna-asus-dual-geforce-rtx-3050-oc-6gb-gddr6-dual-rtx3050-o6g-13177948/
+geforce-rtx-3050-6gb,GeForce RTX 3050,6,https://www.morele.net/karta-graficzna-asus-geforce-rtx-3050-oc-6gb-gddr6-rtx3050-o6g-lp-brk-13192155/
+geforce-rtx-3050-6gb,GeForce RTX 3050,6,https://www.morele.net/karta-graficzna-gainward-geforce-rtx-3050-pegasus-6gb-gddr6-ne63050018je-1072e-15588544/
+geforce-rtx-3050-6gb,GeForce RTX 3050,6,https://www.morele.net/karta-graficzna-gigabyte-geforce-rtx-3050-oc-low-profile-6gb-gddr6-gv-n3050oc-6gl-13174073/
+geforce-rtx-3060-12gb,GeForce RTX 3060,12,https://www.morele.net/karta-graficzna-arktek-geforce-rtx-3060-hyperion-v4-12gb-akn3060d6s12gh1-600170393/
+geforce-rtx-3060-12gb,GeForce RTX 3060,12,https://www.morele.net/karta-graficzna-asus-dual-geforce-rtx-3060-12gb-gddr6-dual-rtx3060-12g-v2-8653010/
+geforce-rtx-3060-12gb,GeForce RTX 3060,12,https://www.morele.net/karta-graficzna-asus-dual-geforce-rtx-3060-gaming-oc-12gb-gddr6-dual-rtx3060-o12g-v2-5948085/
+geforce-rtx-3060-12gb,GeForce RTX 3060,12,https://www.morele.net/karta-graficzna-biostar-geforce-rtx-3060-12gb-gddr6-vn3606rml9-13130114/
+geforce-rtx-5050-8gb,GeForce RTX 5050,8,https://www.morele.net/karta-graficzna-asus-dual-geforce-rtx-5050-oc-8gb-gddr6-dlss4-dual-rtx5050-o8g-15412094/
+geforce-rtx-5050-8gb,GeForce RTX 5050,8,https://www.morele.net/karta-graficzna-asus-prime-geforce-rtx-5050-oc-8gb-gddr6-dlss4-prime-rtx5050-o8g-15413957/
+geforce-rtx-5050-8gb,GeForce RTX 5050,8,https://www.morele.net/karta-graficzna-gigabyte-geforce-rtx-5050-d6-8gb-gddr6-dlss4-gv-n5050d6-8gd-15565355/
+geforce-rtx-5050-8gb,GeForce RTX 5050,8,https://www.morele.net/karta-graficzna-gigabyte-geforce-rtx-5050-gaming-oc-8gb-gddr6-dlss4-gv-n5050gaming-oc-8gd-15376030/
+geforce-rtx-5060-8gb,GeForce RTX 5060,8,https://www.morele.net/karta-graficzna-asus-dual-geforce-rtx-5060-oc-8gb-gddr7-dlss4-dual-rtx5060-o8g-15106721/
+geforce-rtx-5060-8gb,GeForce RTX 5060,8,https://www.morele.net/karta-graficzna-asus-dual-geforce-rtx-5060-oc-advanced-8gb-gddr7-dlss4-dual-rtx5060-o8g-a-600163028/
+geforce-rtx-5060-8gb,GeForce RTX 5060,8,https://www.morele.net/karta-graficzna-asus-dual-geforce-rtx-5060-white-oc-8gb-gddr7-dlss4-dual-rtx5060-o8g-white-15471897/
+geforce-rtx-5060-8gb,GeForce RTX 5060,8,https://www.morele.net/karta-graficzna-asus-prime-geforce-rtx-5060-oc-8gb-gddr7-dlss4-prime-rtx5060-o8g-15106720/
+geforce-rtx-5060-ti-8gb,GeForce RTX 5060 Ti,8,https://www.morele.net/karta-graficzna-asus-dual-geforce-rtx-5060-ti-oc-8gb-gddr7-dlss4-dual-rtx5060ti-o8g-14853313/
+geforce-rtx-5060-ti-8gb,GeForce RTX 5060 Ti,8,https://www.morele.net/karta-graficzna-gainward-geforce-rtx-5060-ti-ghost-8gb-gddr7-dlss4-ne7506t019p1-gb2062b-15000974/
+geforce-rtx-5060-ti-8gb,GeForce RTX 5060 Ti,8,https://www.morele.net/karta-graficzna-gainward-geforce-rtx-5060-ti-ghost-oc-8gb-gddr7-dlss4-ne7506tt19p1-gb2062b-15376100/
+geforce-rtx-5060-ti-8gb,GeForce RTX 5060 Ti,8,https://www.morele.net/karta-graficzna-gigabyte-geforce-rtx-5060-ti-aero-oc-8gb-gddr7-dlss4-gv-n506taero-oc-8gd-14848072/
+geforce-rtx-5060-ti-16gb,GeForce RTX 5060 Ti,16,https://www.morele.net/karta-graficzna-asus-dual-geforce-rtx-5060-ti-oc-16gb-gddr7-dlss4-dual-rtx5060ti-o16g-14853321/
+geforce-rtx-5060-ti-16gb,GeForce RTX 5060 Ti,16,https://www.morele.net/karta-graficzna-asus-prime-geforce-rtx-5060-ti-oc-16gb-gddr7-dlss4-prime-rtx5060ti-o16g-14853320/
+geforce-rtx-5060-ti-16gb,GeForce RTX 5060 Ti,16,https://www.morele.net/karta-graficzna-asus-tuf-geforce-rtx-5060-ti-oc-16gb-gddr7-dlss4-tuf-rtx5060ti-o16g-gaming-14853319/
+geforce-rtx-5060-ti-16gb,GeForce RTX 5060 Ti,16,https://www.morele.net/karta-graficzna-gainward-geforce-rtx-5060-ti-ghost-oc-16gb-gddr7-dlss4-ne7506tu19t1-gb2061b-15533805/
+geforce-rtx-5070-12gb,GeForce RTX 5070,12,https://www.morele.net/karta-graficzna-asus-dual-geforce-rtx-5070-oc-12gb-gddr7-dlss4-dual-rtx5070-o12g-15276552/
+geforce-rtx-5070-12gb,GeForce RTX 5070,12,https://www.morele.net/karta-graficzna-asus-prime-geforce-rtx-5070-oc-12gb-gddr7-dlss4-prime-rtx5070-o12g-14735376/
+geforce-rtx-5070-12gb,GeForce RTX 5070,12,https://www.morele.net/karta-graficzna-asus-tuf-geforce-rtx-5070-oc-12gb-gddr7-dlss4-tuf-rtx5070-o12g-gaming-14735375/
+geforce-rtx-5070-12gb,GeForce RTX 5070,12,https://www.morele.net/karta-graficzna-gainward-geforce-rtx-5070-python-iii-12gb-gddr7-dlss4-ne75070019k9-gb2050t-14779521/
+geforce-rtx-5070-ti-16gb,GeForce RTX 5070 Ti,16,https://www.morele.net/karta-graficzna-asus-prime-geforce-rtx-5070-ti-oc-16gb-gddr7-dlss4-prime-rtx5070ti-o16g-14486804/
+geforce-rtx-5070-ti-16gb,GeForce RTX 5070 Ti,16,https://www.morele.net/karta-graficzna-asus-proart-geforce-rtx-5070-ti-oc-16gb-gddr7-dlss4-proart-rtx5070ti-o16g-15527661/
+geforce-rtx-5070-ti-16gb,GeForce RTX 5070 Ti,16,https://www.morele.net/karta-graficzna-gainward-geforce-rtx-5070-ti-phoenix-s-16gb-gddr7-dlss4-ne7507t019t2-gb2031k-15413629/
+geforce-rtx-5070-ti-16gb,GeForce RTX 5070 Ti,16,https://www.morele.net/karta-graficzna-gigabyte-geforce-rtx-5070-ti-aero-oc-16gb-gddr7-dlss4-gv-n507taero-oc-16gd-14485810/
+geforce-rtx-5080-16gb,GeForce RTX 5080,16,https://www.morele.net/karta-graficzna-asus-prime-geforce-rtx-5080-oc-16gb-gddr7-dlss4-prime-rtx5080-o16g-14485259/
+geforce-rtx-5080-16gb,GeForce RTX 5080,16,https://www.morele.net/karta-graficzna-asus-rog-astral-geforce-rtx-5080-oc-16gb-gddr7-dlss4-rog-astral-rtx5080-o16g-gaming-14485389/
+geforce-rtx-5080-16gb,GeForce RTX 5080,16,https://www.morele.net/karta-graficzna-asus-tuf-gaming-geforce-rtx-5080-oc-16gb-gddr7-dlss4-tuf-rtx5080-o16g-gaming-14485133/
+geforce-rtx-5080-16gb,GeForce RTX 5080,16,https://www.morele.net/karta-graficzna-gainward-geforce-rtx-5080-python-iii-16gb-gddr7-dlss4-ne75080019t2-gb2035t-600229188/
+geforce-rtx-5090-32gb,GeForce RTX 5090,32,https://www.morele.net/karta-graficzna-asus-proart-geforce-rtx-5090-oc-32gb-gddr7-dlss4-proart-rtx5090-o32g-600147680/
+geforce-rtx-5090-32gb,GeForce RTX 5090,32,https://www.morele.net/karta-graficzna-asus-rog-astral-geforce-rtx-5090-oc-32gb-gddr7-rog-astral-rtx5090-o32g-gaming-14486829/
+geforce-rtx-5090-32gb,GeForce RTX 5090,32,https://www.morele.net/karta-graficzna-asus-rog-astral-geforce-rtx-5090-white-oc-32gb-gddr7-dlss4-rog-astral-rtx5090-o32g-white-15448064/
+geforce-rtx-5090-32gb,GeForce RTX 5090,32,https://www.morele.net/karta-graficzna-asus-rog-astral-lc-geforce-rtx-5090-oc-32gb-gddr7-dlss4-rog-astral-lc-rtx5090-o32g-gaming-14499245/
+radeon-rx-7600-8gb,Radeon RX 7600,8,https://www.morele.net/karta-graficzna-asrock-radeon-rx-7600-challenger-oc-8gb-gddr6-rx-7600-cl-8go-12899796/
+radeon-rx-7600-8gb,Radeon RX 7600,8,https://www.morele.net/karta-graficzna-asus-dual-radeon-rx-7600-evo-oc-8gb-gddr6-dual-rx7600-o8g-evo-14405446/
+radeon-rx-7600-8gb,Radeon RX 7600,8,https://www.morele.net/karta-graficzna-biostar-radeon-rx-7600-8gb-gddr6-va76s6rm81-15831588/
+radeon-rx-7600-8gb,Radeon RX 7600,8,https://www.morele.net/karta-graficzna-gigabyte-radeon-rx-7600-gaming-oc-8gb-gddr6-gv-r76gaming-oc-8gd-12899799/
+radeon-rx-9060-xt-8gb,Radeon RX 9060 XT,8,https://www.morele.net/karta-graficzna-asrock-radeon-rx-9060-xt-steel-legend-8gb-gddr6-rx9060xt-sl-8go-15420935/
+radeon-rx-9060-xt-8gb,Radeon RX 9060 XT,8,https://www.morele.net/karta-graficzna-powercolor-reaper-radeon-rx-9060-xt-8gb-gddr6-rx9060xt-8g-a-15250939/
+radeon-rx-9060-xt-8gb,Radeon RX 9060 XT,8,https://www.morele.net/karta-graficzna-sapphire-pulse-radeon-rx-9060-xt-8gb-gddr6-11350-05-20g-15568610/
+radeon-rx-9060-xt-8gb,Radeon RX 9060 XT,8,https://www.morele.net/karta-graficzna-sapphire-pulse-radeon-rx-9060-xt-oc-8gb-gddr6-11350-04-20g-15250947/
+radeon-rx-9060-xt-16gb,Radeon RX 9060 XT,16,https://www.morele.net/karta-graficzna-asrock-radeon-rx-9060-xt-challenger-oc-16gb-gddr6-rx9060xt-cl-16go-15273447/
+radeon-rx-9060-xt-16gb,Radeon RX 9060 XT,16,https://www.morele.net/karta-graficzna-asrock-radeon-rx-9060-xt-steel-legend-oc-16gb-gddr6-rx9060xt-sl-16go-15250935/
+radeon-rx-9060-xt-16gb,Radeon RX 9060 XT,16,https://www.morele.net/karta-graficzna-asus-dual-radeon-rx-9060-xt-16gb-gddr6-dual-rx9060xt-16g-15471896/
+radeon-rx-9060-xt-16gb,Radeon RX 9060 XT,16,https://www.morele.net/karta-graficzna-asus-dual-radeon-rx-9060-xt-white-16gb-gddr6-dual-rx9060xt-16g-white-15512768/
+radeon-rx-9070-16gb,Radeon RX 9070,16,https://www.morele.net/karta-graficzna-asrock-radeon-rx-9070-challenger-16gb-gddr6-rx9070-cl-16g-14732569/
+radeon-rx-9070-16gb,Radeon RX 9070,16,https://www.morele.net/karta-graficzna-asus-prime-radeon-rx-9070-oc-16gb-gddr6-prime-rx9070-o16g-14731767/
+radeon-rx-9070-16gb,Radeon RX 9070,16,https://www.morele.net/karta-graficzna-asus-prime-radeon-rx-9070-oc-evo-16gb-gddr6-prime-rx9070-o16g-evo-15482469/
+radeon-rx-9070-16gb,Radeon RX 9070,16,https://www.morele.net/karta-graficzna-gigabyte-radeon-rx-9070-gaming-16gb-gddr6-gv-r9070gaming-16gd-15741167/
+radeon-rx-9070-gre-12gb,Radeon RX 9070 GRE,12,https://www.morele.net/karta-graficzna-asus-prime-radeon-rx-9070-gre-oc-12gb-gddr6-prime-rx9070gre-o12g-600118436/
+radeon-rx-9070-gre-12gb,Radeon RX 9070 GRE,12,https://www.morele.net/karta-graficzna-gigabyte-radeon-rx-9070-gre-gaming-oc-12gb-gddr6-gv-r907gregaming-oc-12gd-600077015/
+radeon-rx-9070-gre-12gb,Radeon RX 9070 GRE,12,https://www.morele.net/karta-graficzna-powercolor-hellhound-radeon-rx-9070-gre-12gb-gddr6-rx9070gre-12g-l-oc-600118440/
+radeon-rx-9070-gre-12gb,Radeon RX 9070 GRE,12,https://www.morele.net/karta-graficzna-powercolor-reaper-radeon-rx-9070-gre-12gb-gddr6-rx9070gre-12g-a-600118441/
+radeon-rx-9070-xt-16gb,Radeon RX 9070 XT,16,https://www.morele.net/karta-graficzna-asrock-radeon-rx-9070-xt-challenger-16gb-gddr6-rx9070xt-cl-16g-15611695/
+radeon-rx-9070-xt-16gb,Radeon RX 9070 XT,16,https://www.morele.net/karta-graficzna-asrock-radeon-rx-9070-xt-steel-legend-16gb-gddr6-rx9070xt-sl-16g-14732565/
+radeon-rx-9070-xt-16gb,Radeon RX 9070 XT,16,https://www.morele.net/karta-graficzna-asrock-radeon-rx-9070-xt-taichi-oc-16gb-gddr6-rx9070xt-tc-16go-14732564/
+radeon-rx-9070-xt-16gb,Radeon RX 9070 XT,16,https://www.morele.net/karta-graficzna-asus-prime-radeon-rx-9070-xt-oc-16gb-gddr6-prime-rx9070xt-o16g-14731754/
