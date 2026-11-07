@@ -165,7 +165,14 @@ def arch_of(chip: str) -> str:
 
 
 def sweep(page: int) -> list[dict]:
-    url = CATEGORY if page == 1 else f"{CATEGORY}?page={page}"
+    """One page of the category listing.
+
+    morele paginates through the path, not a query string: ?page=2 returns page
+    one, while /,,,,,,,,0,,,,/2/ returns page two. The whole GPU catalogue is
+    17 pages of 30, so a full sweep is ~17 requests rather than one per product.
+    """
+    base = CATEGORY.rstrip("/")
+    url = f"{base}/" if page == 1 else f"{base}/,,,,,,,,0,,,,/{page}/"
     html = fetch(url)
     out = []
     for block in ld_blocks(html):
@@ -322,9 +329,8 @@ def details(url: str) -> dict:
 
 def main() -> int:
     ap = argparse.ArgumentParser()
-    # morele paginates client-side, so only page 1 exists server-side.
-    # Raising this only repeats the same 30 products (they are deduped below).
-    ap.add_argument("--pages", type=int, default=1)
+    # 17 pages cover the whole GPU catalogue; the loop stops early on an empty page.
+    ap.add_argument("--pages", type=int, default=17)
     ap.add_argument("--details", type=int, default=14)
     ap.add_argument("--xkom-pages", type=int, default=4)
     ap.add_argument("--delay", type=float, default=4.0)
@@ -333,10 +339,18 @@ def main() -> int:
     data = Path(args.data)
 
     listings: list[dict] = []
+    seen_urls: set[str] = set()
     for page in range(1, args.pages + 1):
         got = sweep(page)
-        print(f"morele page {page}: {len(got)} gpu listings")
-        listings += got
+        fresh = [r for r in got if r.get("url") and r["url"] not in seen_urls]
+        print(f"morele page {page}: {len(got)} gpu listings, {len(fresh)} new")
+        # morele wraps around past the last page, so an empty page is not the
+        # termination condition - a page with nothing new is.
+        if not fresh:
+            print("  nothing new - catalogue exhausted")
+            break
+        seen_urls.update(r["url"] for r in fresh)
+        listings += fresh
         if page < args.pages:
             time.sleep(args.delay)
 

@@ -59,8 +59,9 @@ wynik = 100 × proxy / max(proxy)</code></pre>
   <li>Dwa sklepy — pokazujemy najtańszą ofertę i liczbę sklepów, w których karta
       jest dostępna.</li>
   <li>Dostępność pochodzi z listy ofert sklepu; nie jest sprawdzana sztuka po sztuce.</li>
-  <li>Sklep renderuje tylko pierwszą stronę listingu po stronie serwera, więc jedna
-      kategoria daje 30 ofert. Strony są deduplikowane po adresie URL.</li>
+  <li>Przeglądamy cały katalog morele (17 stron po 30 ofert) i cztery strony x-komu,
+      więc minimum ceny pochodzi z całej oferty sklepu, a nie z pierwszej strony.
+      Zniknięcie produktu z listingu jest osobnym zdarzeniem, nie obniżką ceny.</li>
   <li>Wydajność to proxy, nie pomiar.</li>
 </ul>
 {% endblock %}

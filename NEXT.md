@@ -57,10 +57,10 @@ is in writing.
 | 7. deploy | **done** — https://komper-git.pages.dev, auto-deployed from `main` by Cloudflare Pages Git integration |
 | 8. `/metodologia/` | **done** — formula, calibration constant and limitations published |
 
-Finding that changed the data path: the stores render only the first page of a
-category listing server-side and paginate client-side. Sweeping "pages" returns
-the same 30 products, so listings are deduplicated by URL and a chip needs at
-least two offers before it is ranked.
+Finding that changed the data path: morele paginates through the URL path
+(`/,,,,,,,,0,,,,/2/`), not a query string — `?page=2` returns page one, which is
+what made it look client-side. The full GPU catalogue is 17 pages of 30. Sweeping
+it costs ~17 requests and finds minima that page one hides (RX 7600: 1699 -> 1499).
 
 
 No scraper. No automation. The point is to find out whether the ranking is any
