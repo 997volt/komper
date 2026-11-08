@@ -7,6 +7,12 @@
 <h1>{{ chip.chip }} <span class="muted">{{ chip.vram_gb|int }} GB</span></h1>
 <p class="stamp">Ceny sprawdzone: {{ scraped }}</p>
 
+{% if chip.excluded_reason %}
+<div class="notice">
+  <strong>Ta karta nie jest w rankingu</strong> — {{ chip.excluded_reason }}.
+  Cena i wydajność poniżej są prawdziwe, ale nie porównujemy jej z resztą.
+</div>
+{% endif %}
 <dl class="facts">
   <div><dt>Najtańsza oferta</dt><dd class="strong">{{ chip.stats.p_buy|money }}</dd></div>
   <div><dt>Wydajność</dt><dd>{{ chip.perf }} <span class="muted">pkt / 100</span></dd></div>

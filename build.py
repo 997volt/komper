@@ -28,6 +28,9 @@ SITE = os.environ.get("SITE_URL", "https://komper-git.pages.dev").rstrip("/")
 MAX_AGE = timedelta(hours=8)
 # one listing is a listing, not a market price. Two is the minimum for ranking.
 MIN_OFFERS = 2
+# Below this, a card cannot hold a modern 1080p texture set, so a high
+# points-per-zloty score is arithmetically true and practically useless.
+MIN_VRAM_GB = 8
 
 # Documented in /metodologia/. The proxy is not a measurement and says so.
 COMPUTE_EXP = 0.5
@@ -167,16 +170,26 @@ def main() -> int:
     top = max(proxy(c) for c in ranked_raw) if ranked_raw else 1.0
 
     stats = price_stats(chips, listings)
-    rows = []
+    page_chips = []
     for chip in ranked_raw:
         perf = proxy(chip) / top * REF
         chip["perf"] = round(perf, 1)
         chip["target"] = target_of(perf, chip["vram_gb"] or 0)
         stat = stats.get(chip["key"])
         chip["stats"] = stat
-        if stat and stat["offers"] >= MIN_OFFERS:
-            chip["value"] = round(perf / stat["p_buy"] * 1000, 1)
-            rows.append(chip)
+        if not stat:
+            continue
+        chip["value"] = round(perf / stat["p_buy"] * 1000, 1)
+        # a page for every chip with a price, but only some are ranked
+        if (chip["vram_gb"] or 0) < MIN_VRAM_GB:
+            chip["excluded_reason"] = f"mniej niż {MIN_VRAM_GB} GB pamięci"
+        elif stat["offers"] < MIN_OFFERS:
+            chip["excluded_reason"] = "tylko jedna oferta w sklepach"
+        else:
+            chip["excluded_reason"] = None
+        page_chips.append(chip)
+
+    rows = [c for c in page_chips if c["excluded_reason"] is None]
 
     rows.sort(key=lambda c: c["value"], reverse=True)
     # the table is sorted by value, so that is the column that needs a visual scale
@@ -193,9 +206,12 @@ def main() -> int:
     unpriced = [chip_label(c) for c in ranked_raw if c["key"] not in stats]
     incomplete = [chip_label(c) for c in chips if not c["complete"]]
     single = [
-        chip_label(c)
-        for c in ranked_raw
-        if c["key"] in stats and stats[c["key"]]["offers"] < MIN_OFFERS
+        chip_label(c) for c in page_chips
+        if c["excluded_reason"] == "tylko jedna oferta w sklepach"
+    ]
+    low_vram = [
+        chip_label(c) for c in page_chips
+        if c["excluded_reason"] and c["excluded_reason"].startswith("mniej niż")
     ]
 
     if DIST.exists():
@@ -222,6 +238,8 @@ def main() -> int:
         "unpriced": unpriced,
         "incomplete": incomplete,
         "single": single,
+        "low_vram": low_vram,
+        "min_vram": MIN_VRAM_GB,
         "site": SITE,
         "stale": stale,
         "compute_exp": COMPUTE_EXP,
@@ -242,7 +260,7 @@ def main() -> int:
     paths.append("/metodologia/")
 
     (DIST / "gpu").mkdir()
-    for chip in rows:
+    for chip in page_chips:
         rel = f"/gpu/{chip['key']}"
         (DIST / f"gpu/{chip['key']}.html").write_text(
             env.get_template("chip.html.j2").render(chip=chip, path=rel, **ctx)
@@ -263,8 +281,9 @@ def main() -> int:
         "User-agent: *\nAllow: /\n" f"\nSitemap: {SITE}/sitemap.xml\n"
     )
 
-    print(f"built {1 + 1 + len(rows)} pages from {len(listings)} listings")
-    print(f"  ranked: {len(rows)}   unpriced: {len(unpriced)}   incomplete: {len(incomplete)}")
+    print(f"built {2 + len(page_chips)} pages from {len(listings)} listings")
+    print(f"  ranked: {len(rows)}  pages: {len(page_chips)}  low-vram: {len(low_vram)}"
+          f"  single-offer: {len(single)}  unpriced: {len(unpriced)}  incomplete: {len(incomplete)}")
     for chip in rows[:5]:
         print(
             f"  {chip['chip']:<18}{int(chip['vram_gb']):>3}GB"

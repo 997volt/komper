@@ -49,6 +49,10 @@ wynik = 100 × proxy / max(proxy)</code></pre>
   <li>Karta bez pełnej specyfikacji nie jest rankowana, zamiast być rankowana inaczej.</li>
   <li>Karta bez ceny nie jest rankowana.</li>
   <li>Karta z jedną ofertą nie jest rankowana — jedna cena to nie cena rynkowa.</li>
+  <li><strong>Karty poniżej {{ min_vram }} GB nie są rankowane.</strong> Mają własne
+      strony, ale nie konkurują o miejsca. Powód: punktacja nie zawiera składnika
+      pojemności pamięci, więc karta z 4 GB wygrywałaby na punktach za złotówkę,
+      nie mogąc uciągnąć współczesnych tekstur w 1080p.</li>
   <li>Statystyka ceny jest ta sama dla każdej karty.</li>
   <li>Każda cena ma znacznik czasu. Gdy dane są starsze niż 8 godzin, strona pokazuje
       wyraźne ostrzeżenie zamiast udawać świeżość.</li>

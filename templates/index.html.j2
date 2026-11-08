@@ -83,6 +83,12 @@
   Bez ceny w tej chwili (nie rankowane): {{ unpriced|join(", ") }}.
 </p>
 {% endif %}
+{% if low_vram %}
+<p class="muted">
+  Nie rozważamy — mniej niż {{ min_vram }} GB pamięci, za mało na współczesne
+  tekstury w 1080p: {{ low_vram|join(", ") }}.
+</p>
+{% endif %}
 {% if single %}
 <p class="muted">
   Nie rankowane — tylko jedna oferta w sklepie, więc cena nie jest rynkowa:
