@@ -13,7 +13,9 @@ set -euo pipefail
 export PATH="/usr/local/bin:/usr/bin:/bin:${PATH:-}"
 cd "$(dirname "$0")/.."
 
-python3 tools/harvest.py --pages 1 --details 14
+# --pages 20 with the no-new-page stop: the catalogue is 17 pages, the extra
+# allowance lets it grow without silently truncating coverage.
+python3 tools/harvest.py --pages 20 --xkom-pages 4 --details 30
 
 git add data
 git commit -q -m "prices: $(date -u '+%Y-%m-%d %H:%M UTC')"
