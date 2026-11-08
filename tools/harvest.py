@@ -23,6 +23,7 @@ from __future__ import annotations
 
 import argparse
 import csv
+import gzip
 import json
 import re
 import sys
@@ -61,11 +62,26 @@ SPEC_MAP = {
 
 
 def fetch(url: str, timeout: int = 30) -> str:
+    """Fetch a page, asking for compression.
+
+    Both stores serve gzip and urllib does not request it by default: the morele
+    category page is 1.2 MB uncompressed and 95 KB compressed. Same number of
+    requests, ~12x less data - which is the part of politeness we can actually
+    control, since the 30-products-per-page cap is fixed server-side.
+    """
     req = urllib.request.Request(
-        url, headers={"User-Agent": UA, "Accept-Language": "pl-PL,pl;q=0.9"}
+        url,
+        headers={
+            "User-Agent": UA,
+            "Accept-Language": "pl-PL,pl;q=0.9",
+            "Accept-Encoding": "gzip",
+        },
     )
     with urllib.request.urlopen(req, timeout=timeout) as resp:
-        return resp.read().decode("utf-8", "ignore")
+        raw = resp.read()
+        if (resp.headers.get("Content-Encoding") or "").lower() == "gzip":
+            raw = gzip.decompress(raw)
+    return raw.decode("utf-8", "ignore")
 
 
 def ld_blocks(html: str):
