@@ -13,6 +13,7 @@ geforce-rtx-3070-8gb,GeForce RTX 3070,8,Ampere,5888,1725,256,14000,650,270,1,1,s
 geforce-rtx-3070-ti-8gb,GeForce RTX 3070 Ti,8,Ampere,6144,1770,384,19000,750,304,1,1,specs from morele listing 5948149; arch_eff Ampere=1.0; 2 offers across 1 store(s)
 geforce-rtx-3080-10gb,GeForce RTX 3080,10,Ampere,8704,1770,320,19000,700,330,1,1,specs from morele listing 12899442; arch_eff Ampere=1.0; 1 offers across 1 store(s)
 geforce-rtx-3080-ti-12gb,GeForce RTX 3080 Ti,12,Ampere,10240,1785,384,19000,750,300,1,1,specs from morele listing 600525052; arch_eff Ampere=1.0; 1 offers across 1 store(s)
+geforce-rtx-4080-16gb,GeForce RTX 4080,16,Ada,9728,2625,256,22400,750,348,1,1,specs from morele listing 600525271; arch_eff Ada=1.0; 1 offers across 1 store(s)
 geforce-rtx-5050-8gb,GeForce RTX 5050,8,Blackwell,2560,2617,128,14000,550,197,1,1,specs from morele listing 15418243; 2 offers across 2 store(s)
 geforce-rtx-5060-8gb,GeForce RTX 5060,8,Blackwell,3840,2527,128,28000,550,197,1,1,specs from morele listing 15233914; 14 offers across 2 store(s)
 geforce-rtx-5060-ti-16gb,GeForce RTX 5060 Ti,16,Blackwell,4608,2692,128,28000,650,262,1,1,specs from morele sitemap detail page; arch_eff Blackwell=1.0
