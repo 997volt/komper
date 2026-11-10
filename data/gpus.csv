@@ -1,6 +1,7 @@
 key,chip,vram_gb,arch,shaders,boost_mhz,bus_bits,mem_mhz,psu_w,length_mm,arch_eff,perf_adj,note
 arc-a310-4gb,Arc A310,4,Alchemist,768,,96,15500,350,145,1,1,specs from morele listing 14483430; arch_eff Alchemist=1.0; 1 offers across 1 store(s)
 arc-a380-6gb,Arc A380,6,Alchemist,1024,,96,15500,450,153,1,1,specs from morele listing 13118012; arch_eff Alchemist=1.0; 2 offers across 1 store(s)
+arc-a770-16gb,Arc A770,16,Alchemist,4096,2300,256,17500,650,281,1,1,specs from morele listing 13273511; arch_eff Alchemist=1.0; 1 offers across 1 store(s)
 arc-b570-10gb,Arc B570,10,Battlemage,2304,2600,160,19000,600,249,0.78,1,arch_eff Battlemage=0.78; specs from morele
 arc-b580-12gb,Arc B580,12,Battlemage,2560,2740,192,19000,650,249,0.78,1,arch_eff Battlemage=0.78; specs from morele
 geforce-rtx-2060-6gb,GeForce RTX 2060,6,Turing,1920,1680,192,14000,500,225,1,1,specs from morele listing 600528536; arch_eff Turing=1.0; 2 offers across 1 store(s)
@@ -28,6 +29,7 @@ radeon-rx-6700-xt-12gb,Radeon RX 6700 XT,12,RDNA2,2560,2615,192,16000,650,260,1.
 radeon-rx-6800-xt-16gb,Radeon RX 6800 XT,16,RDNA2,4608,2250,256,16000,650,340,1.15,1,specs from morele listing 5949866; arch_eff RDNA2=1.15; 2 offers across 1 store(s)
 radeon-rx-7600-8gb,Radeon RX 7600,8,RDNA3,2048,2755,128,18000,550,282,1.3,1,arch_eff RDNA3=1.3; specs from morele
 radeon-rx-7800-xt-16gb,Radeon RX 7800 XT,16,RDNA3,3840,2430,256,19500,750,274,1.3,1,specs from morele listing 14102760; arch_eff RDNA3=1.3; 1 offers across 1 store(s)
+radeon-rx-9060-8gb,Radeon RX 9060,8,RDNA4,1792,3040,128,20000,550,200,1.45,1,specs from morele listing 600735106; arch_eff RDNA4=1.45; 1 offers across 1 store(s)
 radeon-rx-9060-xt-16gb,Radeon RX 9060 XT,16,RDNA4,2048,3320,128,20000,450,320,1.45,1,specs from morele sitemap detail page; arch_eff RDNA4=1.45
 radeon-rx-9060-xt-8gb,Radeon RX 9060 XT,8,RDNA4,2048,3130,128,20000,450,200,1.45,1,specs from morele sitemap detail page; arch_eff RDNA4=1.45
 radeon-rx-9070-16gb,Radeon RX 9070,16,RDNA4,3584,2520,256,20000,700,290,1.45,1,arch_eff RDNA4=1.45; specs from morele
