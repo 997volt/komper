@@ -49,6 +49,11 @@ wynik = 100 × proxy / max(proxy)</code></pre>
   <li>Karta bez pełnej specyfikacji nie jest rankowana, zamiast być rankowana inaczej.</li>
   <li>Karta bez ceny nie jest rankowana.</li>
   <li>Karta z jedną ofertą nie jest rankowana — jedna cena to nie cena rynkowa.</li>
+  <li><strong>Karty starsze niż {{ min_arch_year }} nie są rankowane</strong>
+      (próg: RTX 30 / RX 6000 i nowsze). Karta z 2018 roku potrafi wygrać na
+      punktach za złotówkę, a mimo to być złym zakupem: brak aktualnej generacji
+      skalowania, niejasna gwarancja, brak głębokości stanów magazynowych.
+      Mają własne strony, ale nie konkurują o miejsca.</li>
   <li><strong>Karty poniżej {{ min_vram }} GB nie są rankowane.</strong> Mają własne
       strony, ale nie konkurują o miejsca. Powód: punktacja nie zawiera składnika
       pojemności pamięci, więc karta z 4 GB wygrywałaby na punktach za złotówkę,

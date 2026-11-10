@@ -31,6 +31,14 @@ MIN_OFFERS = 2
 # Below this, a card cannot hold a modern 1080p texture set, so a high
 # points-per-zloty score is arithmetically true and practically useless.
 MIN_VRAM_GB = 8
+# "RTX 30 / RX 6000 and newer". A 2018 card can win on points per zloty and still
+# be a bad buy: no current upscaler generation, unclear warranty, no stock depth.
+ARCH_YEAR = {
+    "Blackwell": 2025, "Ada": 2022, "Ampere": 2020, "Turing": 2018,
+    "RDNA4": 2025, "RDNA3": 2022, "RDNA2": 2020, "RDNA1": 2019,
+    "Battlemage": 2024, "Alchemist": 2022,
+}
+MIN_ARCH_YEAR = 2020
 
 # Documented in /metodologia/. The proxy is not a measurement and says so.
 COMPUTE_EXP = 0.5
@@ -181,8 +189,13 @@ def main() -> int:
             continue
         chip["value"] = round(perf / stat["p_buy"] * 1000, 1)
         # a page for every chip with a price, but only some are ranked
+        year = ARCH_YEAR.get(chip.get("arch") or "")
         if (chip["vram_gb"] or 0) < MIN_VRAM_GB:
             chip["excluded_reason"] = f"mniej niż {MIN_VRAM_GB} GB pamięci"
+        elif year is not None and year < MIN_ARCH_YEAR:
+            chip["excluded_reason"] = (
+                f"architektura {chip['arch']} z {year}, starsza niż próg {MIN_ARCH_YEAR}"
+            )
         elif stat["offers"] < MIN_OFFERS:
             chip["excluded_reason"] = "tylko jedna oferta w sklepach"
         else:
@@ -213,6 +226,10 @@ def main() -> int:
         chip_label(c) for c in page_chips
         if c["excluded_reason"] and c["excluded_reason"].startswith("mniej niż")
     ]
+    old_gen = [
+        chip_label(c) for c in page_chips
+        if c["excluded_reason"] and c["excluded_reason"].startswith("architektura")
+    ]
 
     if DIST.exists():
         shutil.rmtree(DIST)
@@ -239,6 +256,8 @@ def main() -> int:
         "incomplete": incomplete,
         "single": single,
         "low_vram": low_vram,
+        "old_gen": old_gen,
+        "min_arch_year": MIN_ARCH_YEAR,
         "min_vram": MIN_VRAM_GB,
         "site": SITE,
         "stale": stale,

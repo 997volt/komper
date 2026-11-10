@@ -89,6 +89,12 @@
   tekstury w 1080p: {{ low_vram|join(", ") }}.
 </p>
 {% endif %}
+{% if old_gen %}
+<p class="muted">
+  Nie rozważamy — architektura starsza niż {{ min_arch_year }} (RTX 30 / RX 6000
+  i nowsze): {{ old_gen|join(", ") }}.
+</p>
+{% endif %}
 {% if single %}
 <p class="muted">
   Nie rankowane — tylko jedna oferta w sklepie, więc cena nie jest rynkowa:
