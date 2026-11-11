@@ -1,6 +1,6 @@
 key,chip,vram_gb,arch,shaders,boost_mhz,bus_bits,mem_mhz,psu_w,length_mm,arch_eff,perf_adj,note
 arc-a310-4gb,Arc A310,4,Alchemist,768,,96,15500,350,145,1,1,specs from morele listing 14483430; arch_eff Alchemist=1.0; 1 offers across 1 store(s)
-arc-a380-6gb,Arc A380,6,Alchemist,1024,,96,15500,450,153,1,1,specs from morele listing 13118012; arch_eff Alchemist=1.0; 2 offers across 1 store(s)
+arc-a380-6gb,Arc A380,6,Alchemist,1024,2250,96,15500,500,190,1,1,specs from morele listing 11807768; arch_eff Alchemist=1.0; 2 offers across 1 store(s)
 arc-a770-16gb,Arc A770,16,Alchemist,4096,2300,256,17500,650,281,1,1,specs from morele listing 13273511; arch_eff Alchemist=1.0; 1 offers across 1 store(s)
 arc-b570-10gb,Arc B570,10,Battlemage,2304,2600,160,19000,600,249,0.78,1,arch_eff Battlemage=0.78; specs from morele
 arc-b580-12gb,Arc B580,12,Battlemage,2560,2740,192,19000,650,249,0.78,1,arch_eff Battlemage=0.78; specs from morele
@@ -14,6 +14,7 @@ geforce-rtx-3070-8gb,GeForce RTX 3070,8,Ampere,5888,1725,256,14000,650,270,1,1,s
 geforce-rtx-3070-ti-8gb,GeForce RTX 3070 Ti,8,Ampere,6144,1770,384,19000,750,304,1,1,specs from morele listing 5948149; arch_eff Ampere=1.0; 2 offers across 1 store(s)
 geforce-rtx-3080-10gb,GeForce RTX 3080,10,Ampere,8704,1770,320,19000,700,330,1,1,specs from morele listing 12899442; arch_eff Ampere=1.0; 1 offers across 1 store(s)
 geforce-rtx-3080-ti-12gb,GeForce RTX 3080 Ti,12,Ampere,10240,1785,384,19000,750,300,1,1,specs from morele listing 600525052; arch_eff Ampere=1.0; 1 offers across 1 store(s)
+geforce-rtx-4070-12gb,GeForce RTX 4070,12,Ada,5888,2550,192,21000,750,269,1,1,specs from morele listing 600531415; arch_eff Ada=1.0; 1 offers across 1 store(s)
 geforce-rtx-4080-16gb,GeForce RTX 4080,16,Ada,9728,2625,256,22400,750,348,1,1,specs from morele listing 600525271; arch_eff Ada=1.0; 1 offers across 1 store(s)
 geforce-rtx-5050-8gb,GeForce RTX 5050,8,Blackwell,2560,2617,128,14000,550,197,1,1,specs from morele listing 15418243; 2 offers across 2 store(s)
 geforce-rtx-5060-8gb,GeForce RTX 5060,8,Blackwell,3840,2527,128,28000,550,197,1,1,specs from morele listing 15233914; 14 offers across 2 store(s)
