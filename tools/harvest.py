@@ -26,6 +26,7 @@ import csv
 import gzip
 import json
 import re
+import statistics
 import sys
 import time
 import urllib.parse
@@ -292,7 +293,10 @@ def append_history(data_dir: Path, listings: list[dict], scraped_at: str) -> tup
     path = data_dir / "history" / f"{month}.jsonl"
     path.parent.mkdir(exist_ok=True)
 
-    agg: dict[tuple[str, str, int], tuple[float, int]] = {}
+    # min answers "what do I pay now"; median answers "is this chip cheaper than
+    # usual". The minimum is one listing and jumps when that listing vanishes, so
+    # a deal signal built on it alone measures listing turnover.
+    agg: dict[tuple[str, str, int], list[float]] = {}
     seen: set[str] = set()
     for rec in listings:
         if rec.get("is_outlet") or rec.get("in_stock") is False:
@@ -304,15 +308,16 @@ def append_history(data_dir: Path, listings: list[dict], scraped_at: str) -> tup
             continue
         seen.add(url)
         key = (rec["store"], rec["chip"], int(rec["vram_gb"]))
-        low, count = agg.get(key, (rec["price_pln"], 0))
-        agg[key] = (min(low, rec["price_pln"]), count + 1)
+        agg.setdefault(key, []).append(rec["price_pln"])
 
     with path.open("a") as fh:
-        for (store, chip, vram), (low, count) in sorted(agg.items()):
+        for (store, chip, vram), prices in sorted(agg.items()):
             fh.write(
                 json.dumps(
                     {"t": scraped_at, "s": store, "c": chip, "v": vram,
-                     "p": round(low, 2), "n": count},
+                     "p": round(min(prices), 2),
+                     "m": round(statistics.median(prices), 2),
+                     "n": len(prices)},
                     ensure_ascii=False,
                 )
                 + "\n"
