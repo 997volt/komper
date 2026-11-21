@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-11-20T16:03:34+00:00",
+  "scraped_at": "2026-11-21T11:11:40+00:00",
   "records": [
     {
       "store": "morele",
@@ -34,7 +34,7 @@
       "name": "Karta graficzna Gigabyte GeForce RTX 5070 Windforce OC SFF 12GB GDDR7 DLSS4 (GV-N5070WF3OC-12GD)",
       "chip": "GeForce RTX 5070",
       "vram_gb": 12,
-      "price_pln": 5046.82,
+      "price_pln": 5102.99,
       "currency": "PLN"
     },
     {
@@ -70,7 +70,7 @@
       "name": "Karta graficzna Gigabyte Radeon RX 9070 XT Gaming OC 16GB GDDR6 (GV-R9070XTGAMING OC-16GD)",
       "chip": "Radeon RX 9070 XT",
       "vram_gb": 16,
-      "price_pln": 5155.51,
+      "price_pln": 4920.02,
       "currency": "PLN"
     },
     {
@@ -79,7 +79,7 @@
       "name": "Karta graficzna MSI GeForce RTX 5070 Gaming Trio OC 12GB GDDR7 DLSS4",
       "chip": "GeForce RTX 5070",
       "vram_gb": 12,
-      "price_pln": 4663.9,
+      "price_pln": 4499.99,
       "currency": "PLN"
     },
     {
@@ -111,15 +111,6 @@
     },
     {
       "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-msi-geforce-rtx-5070-ventus-2x-oc-12gb-gddr7-dlss4-14734500/",
-      "name": "Karta graficzna MSI GeForce RTX 5070 Ventus 2X OC 12GB GDDR7 DLSS4",
-      "chip": "GeForce RTX 5070",
-      "vram_gb": 12,
-      "price_pln": 4342.83,
-      "currency": "PLN"
-    },
-    {
-      "store": "morele",
       "url": "https://www.morele.net/karta-graficzna-asus-prime-radeon-rx-9070-xt-oc-16gb-gddr6-prime-rx9070xt-o16g-14731754/",
       "name": "Karta graficzna Asus Prime Radeon RX 9070 XT OC 16GB GDDR6 (PRIME-RX9070XT-O16G)",
       "chip": "Radeon RX 9070 XT",
@@ -129,11 +120,11 @@
     },
     {
       "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-asrock-arc-b570-challenger-oc-10gb-gddr6-b570-cl-10go-14453145/",
-      "name": "Karta graficzna ASRock Arc B570 Challenger OC 10GB GDDR6 (B570 CL 10GO)",
-      "chip": "Arc B570",
-      "vram_gb": 10,
-      "price_pln": 1399.0,
+      "url": "https://www.morele.net/karta-graficzna-msi-geforce-rtx-5070-ventus-2x-oc-12gb-gddr7-dlss4-14734500/",
+      "name": "Karta graficzna MSI GeForce RTX 5070 Ventus 2X OC 12GB GDDR7 DLSS4",
+      "chip": "GeForce RTX 5070",
+      "vram_gb": 12,
+      "price_pln": 4342.83,
       "currency": "PLN"
     },
     {
@@ -142,16 +133,16 @@
       "name": "Karta graficzna ASRock Arc B580 Challenger OC 12GB GDDR6 (B580 CL 12GO)",
       "chip": "Arc B580",
       "vram_gb": 12,
-      "price_pln": 2139.99,
+      "price_pln": 2080.01,
       "currency": "PLN"
     },
     {
       "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-msi-geforce-rtx-5080-gaming-trio-oc-16gb-gddr7-dlss4-14458150/",
-      "name": "Karta graficzna MSI GeForce RTX 5080 Gaming Trio OC 16GB GDDR7 DLSS4",
-      "chip": "GeForce RTX 5080",
-      "vram_gb": 16,
-      "price_pln": 11012.73,
+      "url": "https://www.morele.net/karta-graficzna-asrock-arc-b570-challenger-oc-10gb-gddr6-b570-cl-10go-14453145/",
+      "name": "Karta graficzna ASRock Arc B570 Challenger OC 10GB GDDR6 (B570 CL 10GO)",
+      "chip": "Arc B570",
+      "vram_gb": 10,
+      "price_pln": 1399.0,
       "currency": "PLN"
     },
     {
@@ -174,6 +165,24 @@
     },
     {
       "store": "morele",
+      "url": "https://www.morele.net/karta-graficzna-msi-geforce-rtx-5080-gaming-trio-oc-16gb-gddr7-dlss4-14458150/",
+      "name": "Karta graficzna MSI GeForce RTX 5080 Gaming Trio OC 16GB GDDR7 DLSS4",
+      "chip": "GeForce RTX 5080",
+      "vram_gb": 16,
+      "price_pln": 11012.73,
+      "currency": "PLN"
+    },
+    {
+      "store": "morele",
+      "url": "https://www.morele.net/karta-graficzna-gigabyte-geforce-rtx-5080-gaming-oc-16gb-gddr7-dlss4-gv-n5080gaming-oc-16gd-14485974/",
+      "name": "Karta graficzna Gigabyte GeForce RTX 5080 Gaming OC 16GB GDDR7 DLSS4 (GV-N5080GAMING OC-16GD)",
+      "chip": "GeForce RTX 5080",
+      "vram_gb": 16,
+      "price_pln": 10016.57,
+      "currency": "PLN"
+    },
+    {
+      "store": "morele",
       "url": "https://www.morele.net/karta-graficzna-msi-geforce-rtx-5060-ventus-2x-oc-v1-8gb-gddr7-dlss4-600477058/",
       "name": "Karta graficzna MSI GeForce RTX 5060 Ventus 2X OC V1 8GB GDDR7 DLSS4",
       "chip": "GeForce RTX 5060",
@@ -192,11 +201,11 @@
     },
     {
       "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-gigabyte-geforce-rtx-5080-gaming-oc-16gb-gddr7-dlss4-gv-n5080gaming-oc-16gd-14485974/",
-      "name": "Karta graficzna Gigabyte GeForce RTX 5080 Gaming OC 16GB GDDR7 DLSS4 (GV-N5080GAMING OC-16GD)",
-      "chip": "GeForce RTX 5080",
+      "url": "https://www.morele.net/karta-graficzna-sapphire-pulse-radeon-rx-9070-xt-16gb-gddr6-11348-03-20g-14732579/",
+      "name": "Karta graficzna Sapphire Pulse Radeon RX 9070 XT 16GB GDDR6 (11348-03-20G)",
+      "chip": "Radeon RX 9070 XT",
       "vram_gb": 16,
-      "price_pln": 10016.57,
+      "price_pln": 4707.91,
       "currency": "PLN"
     },
     {
@@ -210,20 +219,11 @@
     },
     {
       "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-pny-geforce-rtx-5070-ti-triple-fan-overclocked-16gb-gddr7-dlss4-vcg5070t16tfxpb1-o-14481848/",
-      "name": "Karta graficzna PNY GeForce RTX 5070 Ti Triple Fan Overclocked 16GB GDDR7 DLSS4 (VCG5070T16TFXPB1-O)",
-      "chip": "GeForce RTX 5070 Ti",
-      "vram_gb": 16,
-      "price_pln": 6444.41,
-      "currency": "PLN"
-    },
-    {
-      "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-msi-geforce-rtx-5060-ventus-2x-oc-8gb-gddr7-dlss4-15233914/",
-      "name": "Karta graficzna MSI GeForce RTX 5060 Ventus 2X OC 8GB GDDR7 DLSS4",
-      "chip": "GeForce RTX 5060",
+      "url": "https://www.morele.net/karta-graficzna-msi-geforce-rtx-5060-ti-ventus-2x-oc-plus-8gb-gddr7-dlss4-14848098/",
+      "name": "Karta graficzna MSI GeForce RTX 5060 Ti Ventus 2X OC Plus 8GB GDDR7 DLSS4",
+      "chip": "GeForce RTX 5060 Ti",
       "vram_gb": 8,
-      "price_pln": 2550.0,
+      "price_pln": 2499.56,
       "currency": "PLN"
     },
     {
@@ -237,6 +237,15 @@
     },
     {
       "store": "morele",
+      "url": "https://www.morele.net/karta-graficzna-pny-geforce-rtx-5070-ti-triple-fan-overclocked-16gb-gddr7-dlss4-vcg5070t16tfxpb1-o-14481848/",
+      "name": "Karta graficzna PNY GeForce RTX 5070 Ti Triple Fan Overclocked 16GB GDDR7 DLSS4 (VCG5070T16TFXPB1-O)",
+      "chip": "GeForce RTX 5070 Ti",
+      "vram_gb": 16,
+      "price_pln": 6444.41,
+      "currency": "PLN"
+    },
+    {
+      "store": "morele",
       "url": "https://www.morele.net/karta-graficzna-gigabyte-geforce-rtx-5070-gaming-oc-12gb-gddr7-dlss4-gv-n5070gaming-oc-12gd-14485482/",
       "name": "Karta graficzna Gigabyte GeForce RTX 5070 Gaming OC 12GB GDDR7 DLSS4 (GV-N5070GAMING OC-12GD)",
       "chip": "GeForce RTX 5070",
@@ -246,29 +255,11 @@
     },
     {
       "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-sapphire-pulse-radeon-rx-9070-gre-12gb-gddr6-11354-01-20g-600124126/",
-      "name": "Karta graficzna Sapphire Pulse Radeon RX 9070 GRE 12GB GDDR6 (11354-01-20G)",
-      "chip": "Radeon RX 9070 GRE",
-      "vram_gb": 12,
-      "price_pln": 3186.45,
-      "currency": "PLN"
-    },
-    {
-      "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-msi-geforce-rtx-5060-ti-ventus-2x-oc-plus-8gb-gddr7-dlss4-14848098/",
-      "name": "Karta graficzna MSI GeForce RTX 5060 Ti Ventus 2X OC Plus 8GB GDDR7 DLSS4",
-      "chip": "GeForce RTX 5060 Ti",
+      "url": "https://www.morele.net/karta-graficzna-msi-geforce-rtx-5060-ventus-2x-oc-8gb-gddr7-dlss4-15233914/",
+      "name": "Karta graficzna MSI GeForce RTX 5060 Ventus 2X OC 8GB GDDR7 DLSS4",
+      "chip": "GeForce RTX 5060",
       "vram_gb": 8,
-      "price_pln": 2499.0,
-      "currency": "PLN"
-    },
-    {
-      "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-sapphire-pulse-radeon-rx-9070-xt-16gb-gddr6-11348-03-20g-14732579/",
-      "name": "Karta graficzna Sapphire Pulse Radeon RX 9070 XT 16GB GDDR6 (11348-03-20G)",
-      "chip": "Radeon RX 9070 XT",
-      "vram_gb": 16,
-      "price_pln": 4707.91,
+      "price_pln": 2550.0,
       "currency": "PLN"
     },
     {
@@ -282,11 +273,11 @@
     },
     {
       "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-asus-rog-astral-geforce-rtx-5090-oc-32gb-gddr7-rog-astral-rtx5090-o32g-gaming-14486829/",
-      "name": "Karta graficzna Asus ROG Astral GeForce RTX 5090 OC 32GB GDDR7 (ROG-ASTRAL-RTX5090-O32G-GAMING)",
-      "chip": "GeForce RTX 5090",
-      "vram_gb": 32,
-      "price_pln": 42157.99,
+      "url": "https://www.morele.net/karta-graficzna-sapphire-nitro-radeon-rx-9070-xt-16gb-gddr6-11348-01-20g-14732572/",
+      "name": "Karta graficzna Sapphire Nitro+ Radeon RX 9070 XT 16GB GDDR6 (11348-01-20G)",
+      "chip": "Radeon RX 9070 XT",
+      "vram_gb": 16,
+      "price_pln": 4988.06,
       "currency": "PLN"
     },
     {
@@ -309,29 +300,38 @@
     },
     {
       "store": "morele",
+      "url": "https://www.morele.net/karta-graficzna-sapphire-pulse-radeon-rx-9070-gre-12gb-gddr6-11354-01-20g-600124126/",
+      "name": "Karta graficzna Sapphire Pulse Radeon RX 9070 GRE 12GB GDDR6 (11354-01-20G)",
+      "chip": "Radeon RX 9070 GRE",
+      "vram_gb": 12,
+      "price_pln": 3186.45,
+      "currency": "PLN"
+    },
+    {
+      "store": "morele",
+      "url": "https://www.morele.net/karta-graficzna-asus-rog-astral-geforce-rtx-5090-oc-32gb-gddr7-rog-astral-rtx5090-o32g-gaming-14486829/",
+      "name": "Karta graficzna Asus ROG Astral GeForce RTX 5090 OC 32GB GDDR7 (ROG-ASTRAL-RTX5090-O32G-GAMING)",
+      "chip": "GeForce RTX 5090",
+      "vram_gb": 32,
+      "price_pln": 42157.99,
+      "currency": "PLN"
+    },
+    {
+      "store": "morele",
       "url": "https://www.morele.net/karta-graficzna-gigabyte-geforce-rtx-5070-ti-gaming-oc-16gb-gddr7-dlss4-gv-n507tgaming-oc-16gd-14485809/",
       "name": "Karta graficzna Gigabyte GeForce RTX 5070 Ti Gaming OC 16GB GDDR7 DLSS4 (GV-N507TGAMING OC-16GD)",
       "chip": "GeForce RTX 5070 Ti",
       "vram_gb": 16,
-      "price_pln": 8376.25,
+      "price_pln": 6499.0,
       "currency": "PLN"
     },
     {
       "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-sapphire-nitro-radeon-rx-9070-xt-16gb-gddr6-11348-01-20g-14732572/",
-      "name": "Karta graficzna Sapphire Nitro+ Radeon RX 9070 XT 16GB GDDR6 (11348-01-20G)",
-      "chip": "Radeon RX 9070 XT",
-      "vram_gb": 16,
-      "price_pln": 5229.0,
-      "currency": "PLN"
-    },
-    {
-      "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-xfx-swift-radeon-rx-9060-xt-oc-triple-fan-gaming-16gb-gddr6-rx-96ts316b7-15250945/",
-      "name": "Karta graficzna XFX Swift Radeon RX 9060 XT OC Triple Fan Gaming 16GB GDDR6 (RX-96TS316B7)",
-      "chip": "Radeon RX 9060 XT",
-      "vram_gb": 16,
-      "price_pln": 3528.18,
+      "url": "https://www.morele.net/karta-graficzna-asus-dual-geforce-rtx-3060-gaming-oc-12gb-gddr6-dual-rtx3060-o12g-v2-5948085/",
+      "name": "Karta graficzna Asus Dual GeForce RTX 3060 Gaming OC 12GB GDDR6 (DUAL-RTX3060-O12G-V2)",
+      "chip": "GeForce RTX 3060",
+      "vram_gb": 12,
+      "price_pln": 1850.0,
       "currency": "PLN"
     },
     {
@@ -349,16 +349,16 @@
       "name": "Karta graficzna ASRock Radeon RX 9060 XT Challenger OC 16GB GDDR6 (RX9060XT CL 16GO)",
       "chip": "Radeon RX 9060 XT",
       "vram_gb": 16,
-      "price_pln": 3425.0,
+      "price_pln": 3387.97,
       "currency": "PLN"
     },
     {
       "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-asus-dual-geforce-rtx-3060-gaming-oc-12gb-gddr6-dual-rtx3060-o12g-v2-5948085/",
-      "name": "Karta graficzna Asus Dual GeForce RTX 3060 Gaming OC 12GB GDDR6 (DUAL-RTX3060-O12G-V2)",
-      "chip": "GeForce RTX 3060",
-      "vram_gb": 12,
-      "price_pln": 1850.0,
+      "url": "https://www.morele.net/karta-graficzna-xfx-swift-radeon-rx-9060-xt-oc-triple-fan-gaming-16gb-gddr6-rx-96ts316b7-15250945/",
+      "name": "Karta graficzna XFX Swift Radeon RX 9060 XT OC Triple Fan Gaming 16GB GDDR6 (RX-96TS316B7)",
+      "chip": "Radeon RX 9060 XT",
+      "vram_gb": 16,
+      "price_pln": 3528.18,
       "currency": "PLN"
     },
     {
@@ -368,15 +368,6 @@
       "chip": "GeForce RTX 5060 Ti",
       "vram_gb": 16,
       "price_pln": 3799.0,
-      "currency": "PLN"
-    },
-    {
-      "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-msi-geforce-rtx-5060-ventus-2x-oc-white-8gb-gddr7-dlss4-15251514/",
-      "name": "Karta graficzna MSI GeForce RTX 5060 Ventus 2X OC White 8GB GDDR7 DLSS4",
-      "chip": "GeForce RTX 5060",
-      "vram_gb": 8,
-      "price_pln": 2399.0,
       "currency": "PLN"
     },
     {
@@ -399,6 +390,15 @@
     },
     {
       "store": "morele",
+      "url": "https://www.morele.net/karta-graficzna-asus-prime-radeon-rx-9070-gre-oc-12gb-gddr6-prime-rx9070gre-o12g-600118436/",
+      "name": "Karta graficzna Asus Prime Radeon RX 9070 GRE OC 12GB GDDR6 (PRIME-RX9070GRE-O12G)",
+      "chip": "Radeon RX 9070 GRE",
+      "vram_gb": 12,
+      "price_pln": 3399.0,
+      "currency": "PLN"
+    },
+    {
+      "store": "morele",
       "url": "https://www.morele.net/karta-graficzna-msi-geforce-rtx-5060-ti-ventus-2x-oc-plus-16gb-gddr7-dlss4-14848093/",
       "name": "Karta graficzna MSI GeForce RTX 5060 Ti Ventus 2X OC Plus 16GB GDDR7 DLSS4",
       "chip": "GeForce RTX 5060 Ti",
@@ -412,97 +412,7 @@
       "name": "Karta graficzna Gigabyte GeForce RTX 5070 Ti Windforce OC SFF 16GB GDDR7 DLSS4 (GV-N507TWF3OC-16GD)",
       "chip": "GeForce RTX 5070 Ti",
       "vram_gb": 16,
-      "price_pln": 7557.94,
-      "currency": "PLN"
-    },
-    {
-      "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-gigabyte-radeon-rx-9060-xt-gaming-oc-16gb-gddr6-gv-r9060xtgaming-oc-16gd-15250895/",
-      "name": "Karta graficzna Gigabyte Radeon RX 9060 XT Gaming OC 16GB GDDR6 (GV-R9060XTGAMING OC-16GD)",
-      "chip": "Radeon RX 9060 XT",
-      "vram_gb": 16,
-      "price_pln": 3855.49,
-      "currency": "PLN"
-    },
-    {
-      "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-gigabyte-radeon-rx-9070-gaming-oc-16gb-gddr6-gv-r9070gaming-oc-16gd-14731782/",
-      "name": "Karta graficzna Gigabyte Radeon RX 9070 Gaming OC 16GB GDDR6 (GV-R9070GAMING OC-16GD)",
-      "chip": "Radeon RX 9070",
-      "vram_gb": 16,
-      "price_pln": 4956.58,
-      "currency": "PLN"
-    },
-    {
-      "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-sapphire-pulse-radeon-rx-9060-xt-16gb-gddr6-11350-03-20g-15250944/",
-      "name": "Karta graficzna Sapphire Pulse Radeon RX 9060 XT 16GB GDDR6 (11350-03-20G)",
-      "chip": "Radeon RX 9060 XT",
-      "vram_gb": 16,
-      "price_pln": 3517.99,
-      "currency": "PLN"
-    },
-    {
-      "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-asrock-radeon-rx-9070-xt-steel-legend-dark-16gb-gddr6-rx9070xt-sld-16g-14860316/",
-      "name": "Karta graficzna ASRock Radeon RX 9070 XT Steel Legend Dark 16GB GDDR6 (RX9070XT SLD 16G)",
-      "chip": "Radeon RX 9070 XT",
-      "vram_gb": 16,
-      "price_pln": 4599.0,
-      "currency": "PLN"
-    },
-    {
-      "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-gigabyte-geforce-rtx-5070-eagle-oc-sff-12gb-gddr7-dlss4-gv-n5070eagle-oc-12gd-14485376/",
-      "name": "Karta graficzna Gigabyte GeForce RTX 5070 Eagle OC SFF 12GB GDDR7 DLSS4 (GV-N5070EAGLE OC-12GD)",
-      "chip": "GeForce RTX 5070",
-      "vram_gb": 12,
-      "price_pln": 4961.35,
-      "currency": "PLN"
-    },
-    {
-      "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-gigabyte-aorus-geforce-rtx-5080-master-16gb-gddr7-dlss4-gv-n5080aorus-m-16gd-14485972/",
-      "name": "Karta graficzna Gigabyte AORUS GeForce RTX 5080 Master 16GB GDDR7 DLSS4 (GV-N5080AORUS M-16GD)",
-      "chip": "GeForce RTX 5080",
-      "vram_gb": 16,
-      "price_pln": 10867.4,
-      "currency": "PLN"
-    },
-    {
-      "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-asrock-radeon-rx-9070-xt-steel-legend-16gb-gddr6-rx9070xt-sl-16g-14732565/",
-      "name": "Karta graficzna ASRock Radeon RX 9070 XT Steel Legend 16GB GDDR6 (RX9070XT SL 16G)",
-      "chip": "Radeon RX 9070 XT",
-      "vram_gb": 16,
-      "price_pln": 4917.67,
-      "currency": "PLN"
-    },
-    {
-      "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-msi-geforce-rtx-5080-ventus-3x-oc-black-16gb-gddr7-dlss4-600361240/",
-      "name": "Karta graficzna MSI GeForce RTX 5080 Ventus 3X OC Black 16GB GDDR7 DLSS4",
-      "chip": "GeForce RTX 5080",
-      "vram_gb": 16,
-      "price_pln": 10373.96,
-      "currency": "PLN"
-    },
-    {
-      "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-pny-geforce-rtx-5060-ti-overclocked-dual-8gb-gddr7-dlss4-vcg5060t8dfxpb1-o-14982395/",
-      "name": "Karta graficzna PNY GeForce RTX 5060 Ti Overclocked Dual 8GB GDDR7 DLSS4 (VCG5060T8DFXPB1-O)",
-      "chip": "GeForce RTX 5060 Ti",
-      "vram_gb": 8,
-      "price_pln": 2717.24,
-      "currency": "PLN"
-    },
-    {
-      "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-asus-prime-radeon-rx-9070-gre-oc-12gb-gddr6-prime-rx9070gre-o12g-600118436/",
-      "name": "Karta graficzna Asus Prime Radeon RX 9070 GRE OC 12GB GDDR6 (PRIME-RX9070GRE-O12G)",
-      "chip": "Radeon RX 9070 GRE",
-      "vram_gb": 12,
-      "price_pln": 3399.0,
+      "price_pln": 7614.8,
       "currency": "PLN"
     },
     {
@@ -516,11 +426,83 @@
     },
     {
       "store": "morele",
+      "url": "https://www.morele.net/karta-graficzna-asrock-radeon-rx-9070-xt-steel-legend-dark-16gb-gddr6-rx9070xt-sld-16g-14860316/",
+      "name": "Karta graficzna ASRock Radeon RX 9070 XT Steel Legend Dark 16GB GDDR6 (RX9070XT SLD 16G)",
+      "chip": "Radeon RX 9070 XT",
+      "vram_gb": 16,
+      "price_pln": 4599.0,
+      "currency": "PLN"
+    },
+    {
+      "store": "morele",
+      "url": "https://www.morele.net/karta-graficzna-gigabyte-radeon-rx-9060-xt-gaming-oc-16gb-gddr6-gv-r9060xtgaming-oc-16gd-15250895/",
+      "name": "Karta graficzna Gigabyte Radeon RX 9060 XT Gaming OC 16GB GDDR6 (GV-R9060XTGAMING OC-16GD)",
+      "chip": "Radeon RX 9060 XT",
+      "vram_gb": 16,
+      "price_pln": 3838.69,
+      "currency": "PLN"
+    },
+    {
+      "store": "morele",
+      "url": "https://www.morele.net/karta-graficzna-asrock-radeon-rx-9070-xt-steel-legend-16gb-gddr6-rx9070xt-sl-16g-14732565/",
+      "name": "Karta graficzna ASRock Radeon RX 9070 XT Steel Legend 16GB GDDR6 (RX9070XT SL 16G)",
+      "chip": "Radeon RX 9070 XT",
+      "vram_gb": 16,
+      "price_pln": 4917.67,
+      "currency": "PLN"
+    },
+    {
+      "store": "morele",
+      "url": "https://www.morele.net/karta-graficzna-sapphire-pulse-radeon-rx-9060-xt-16gb-gddr6-11350-03-20g-15250944/",
+      "name": "Karta graficzna Sapphire Pulse Radeon RX 9060 XT 16GB GDDR6 (11350-03-20G)",
+      "chip": "Radeon RX 9060 XT",
+      "vram_gb": 16,
+      "price_pln": 3517.99,
+      "currency": "PLN"
+    },
+    {
+      "store": "morele",
       "url": "https://www.morele.net/karta-graficzna-msi-geforce-rtx-3050-ventus-2x-e-oc-6gb-gddr6-14214021/",
       "name": "Karta graficzna MSI GeForce RTX 3050 Ventus 2X E OC 6GB GDDR6",
       "chip": "GeForce RTX 3050",
       "vram_gb": 6,
       "price_pln": 1347.9,
+      "currency": "PLN"
+    },
+    {
+      "store": "morele",
+      "url": "https://www.morele.net/karta-graficzna-gigabyte-geforce-rtx-5070-eagle-oc-sff-12gb-gddr7-dlss4-gv-n5070eagle-oc-12gd-14485376/",
+      "name": "Karta graficzna Gigabyte GeForce RTX 5070 Eagle OC SFF 12GB GDDR7 DLSS4 (GV-N5070EAGLE OC-12GD)",
+      "chip": "GeForce RTX 5070",
+      "vram_gb": 12,
+      "price_pln": 5501.29,
+      "currency": "PLN"
+    },
+    {
+      "store": "morele",
+      "url": "https://www.morele.net/karta-graficzna-pny-geforce-rtx-5060-ti-overclocked-dual-8gb-gddr7-dlss4-vcg5060t8dfxpb1-o-14982395/",
+      "name": "Karta graficzna PNY GeForce RTX 5060 Ti Overclocked Dual 8GB GDDR7 DLSS4 (VCG5060T8DFXPB1-O)",
+      "chip": "GeForce RTX 5060 Ti",
+      "vram_gb": 8,
+      "price_pln": 2717.24,
+      "currency": "PLN"
+    },
+    {
+      "store": "morele",
+      "url": "https://www.morele.net/karta-graficzna-gigabyte-radeon-rx-9070-gaming-oc-16gb-gddr6-gv-r9070gaming-oc-16gd-14731782/",
+      "name": "Karta graficzna Gigabyte Radeon RX 9070 Gaming OC 16GB GDDR6 (GV-R9070GAMING OC-16GD)",
+      "chip": "Radeon RX 9070",
+      "vram_gb": 16,
+      "price_pln": 4991.62,
+      "currency": "PLN"
+    },
+    {
+      "store": "morele",
+      "url": "https://www.morele.net/karta-graficzna-msi-geforce-rtx-5080-ventus-3x-oc-black-16gb-gddr7-dlss4-600361240/",
+      "name": "Karta graficzna MSI GeForce RTX 5080 Ventus 3X OC Black 16GB GDDR7 DLSS4",
+      "chip": "GeForce RTX 5080",
+      "vram_gb": 16,
+      "price_pln": 10373.96,
       "currency": "PLN"
     },
     {
@@ -534,38 +516,11 @@
     },
     {
       "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-gigabyte-aorus-geforce-rtx-5090-master-32gb-gddr7-dlss4-gv-n5090aorus-m-32gd-14485559/",
-      "name": "Karta graficzna Gigabyte AORUS GeForce RTX 5090 Master 32GB GDDR7 DLSS4 (GV-N5090AORUS M-32GD)",
-      "chip": "GeForce RTX 5090",
-      "vram_gb": 32,
-      "price_pln": 39782.3,
-      "currency": "PLN"
-    },
-    {
-      "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-xfx-mercury-radeon-rx-9070-xt-oc-white-gaming-rgb-16gb-gddr6-rx-97trgbbw9-14771902/",
-      "name": "Karta graficzna XFX Mercury Radeon RX 9070 XT OC White Gaming RGB 16GB GDDR6 (RX-97TRGBBW9)",
-      "chip": "Radeon RX 9070 XT",
-      "vram_gb": 16,
-      "price_pln": 4748.42,
-      "currency": "PLN"
-    },
-    {
-      "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-asus-dual-geforce-rtx-5060-ti-oc-8gb-gddr7-dlss4-dual-rtx5060ti-o8g-14853313/",
-      "name": "Karta graficzna Asus Dual GeForce RTX 5060 Ti OC 8GB GDDR7 DLSS4 (DUAL-RTX5060TI-O8G)",
-      "chip": "GeForce RTX 5060 Ti",
+      "url": "https://www.morele.net/karta-graficzna-xfx-speedster-swft-210-radeon-rx-7600-8gb-gddr6-rx-76pswftfy-12967121/",
+      "name": "Karta graficzna XFX Speedster SWFT 210 Radeon RX 7600 8GB GDDR6 (RX-76PSWFTFY)",
+      "chip": "Radeon RX 7600",
       "vram_gb": 8,
-      "price_pln": 2679.81,
-      "currency": "PLN"
-    },
-    {
-      "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-msi-geforce-rtx-5090-ventus-3x-oc-32gb-gddr7-14471822/",
-      "name": "Karta graficzna MSI GeForce RTX 5090 Ventus 3X OC 32GB GDDR7",
-      "chip": "GeForce RTX 5090",
-      "vram_gb": 32,
-      "price_pln": 39830.99,
+      "price_pln": 1799.0,
       "currency": "PLN"
     },
     {
@@ -579,11 +534,56 @@
     },
     {
       "store": "morele",
+      "url": "https://www.morele.net/karta-graficzna-gigabyte-aorus-geforce-rtx-5080-master-16gb-gddr7-dlss4-gv-n5080aorus-m-16gd-14485972/",
+      "name": "Karta graficzna Gigabyte AORUS GeForce RTX 5080 Master 16GB GDDR7 DLSS4 (GV-N5080AORUS M-16GD)",
+      "chip": "GeForce RTX 5080",
+      "vram_gb": 16,
+      "price_pln": 10999.0,
+      "currency": "PLN"
+    },
+    {
+      "store": "morele",
+      "url": "https://www.morele.net/karta-graficzna-gigabyte-aorus-geforce-rtx-5090-master-32gb-gddr7-dlss4-gv-n5090aorus-m-32gd-14485559/",
+      "name": "Karta graficzna Gigabyte AORUS GeForce RTX 5090 Master 32GB GDDR7 DLSS4 (GV-N5090AORUS M-32GD)",
+      "chip": "GeForce RTX 5090",
+      "vram_gb": 32,
+      "price_pln": 41962.4,
+      "currency": "PLN"
+    },
+    {
+      "store": "morele",
+      "url": "https://www.morele.net/karta-graficzna-msi-geforce-rtx-5090-ventus-3x-oc-32gb-gddr7-14471822/",
+      "name": "Karta graficzna MSI GeForce RTX 5090 Ventus 3X OC 32GB GDDR7",
+      "chip": "GeForce RTX 5090",
+      "vram_gb": 32,
+      "price_pln": 39830.99,
+      "currency": "PLN"
+    },
+    {
+      "store": "morele",
+      "url": "https://www.morele.net/karta-graficzna-xfx-mercury-radeon-rx-9070-xt-oc-white-gaming-rgb-16gb-gddr6-rx-97trgbbw9-14771902/",
+      "name": "Karta graficzna XFX Mercury Radeon RX 9070 XT OC White Gaming RGB 16GB GDDR6 (RX-97TRGBBW9)",
+      "chip": "Radeon RX 9070 XT",
+      "vram_gb": 16,
+      "price_pln": 4766.0,
+      "currency": "PLN"
+    },
+    {
+      "store": "morele",
       "url": "https://www.morele.net/karta-graficzna-asus-dual-radeon-rx-7600-evo-oc-8gb-gddr6-dual-rx7600-o8g-evo-14405446/",
       "name": "Karta graficzna Asus Dual Radeon RX 7600 EVO OC 8GB GDDR6 (DUAL-RX7600-O8G-EVO)",
       "chip": "Radeon RX 7600",
       "vram_gb": 8,
-      "price_pln": 1999.0,
+      "price_pln": 1836.53,
+      "currency": "PLN"
+    },
+    {
+      "store": "morele",
+      "url": "https://www.morele.net/karta-graficzna-asus-dual-geforce-rtx-5060-ti-oc-8gb-gddr7-dlss4-dual-rtx5060ti-o8g-14853313/",
+      "name": "Karta graficzna Asus Dual GeForce RTX 5060 Ti OC 8GB GDDR7 DLSS4 (DUAL-RTX5060TI-O8G)",
+      "chip": "GeForce RTX 5060 Ti",
+      "vram_gb": 8,
+      "price_pln": 2523.85,
       "currency": "PLN"
     },
     {
@@ -597,29 +597,11 @@
     },
     {
       "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-asus-tuf-gaming-geforce-rtx-5080-oc-16gb-gddr7-dlss4-tuf-rtx5080-o16g-gaming-14485133/",
-      "name": "Karta graficzna Asus TUF Gaming GeForce RTX 5080 OC 16GB GDDR7 DLSS4 (TUF-RTX5080-O16G-GAMING)",
-      "chip": "GeForce RTX 5080",
-      "vram_gb": 16,
-      "price_pln": 9650.64,
-      "currency": "PLN"
-    },
-    {
-      "store": "morele",
       "url": "https://www.morele.net/karta-graficzna-gigabyte-geforce-rtx-5070-ti-aero-oc-16gb-gddr7-dlss4-gv-n507taero-oc-16gd-14485810/",
       "name": "Karta graficzna Gigabyte GeForce RTX 5070 Ti Aero OC 16GB GDDR7 DLSS4 (GV-N507TAERO OC-16GD)",
       "chip": "GeForce RTX 5070 Ti",
       "vram_gb": 16,
-      "price_pln": 8467.32,
-      "currency": "PLN"
-    },
-    {
-      "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-powercolor-hellhound-radeon-rx-9070-xt-16gb-gddr6-rx9070xt-16g-l-oc-14749710/",
-      "name": "Karta graficzna PowerColor Hellhound Radeon RX 9070 XT 16GB GDDR6 (RX9070XT 16G-L/OC)",
-      "chip": "Radeon RX 9070 XT",
-      "vram_gb": 16,
-      "price_pln": 5199.0,
+      "price_pln": 8559.42,
       "currency": "PLN"
     },
     {
@@ -628,43 +610,43 @@
       "name": "Karta graficzna Sapphire Nitro+ Radeon RX 9060 XT 16GB GDDR6 (11350-01-20G)",
       "chip": "Radeon RX 9060 XT",
       "vram_gb": 16,
-      "price_pln": 3589.14,
+      "price_pln": 3272.09,
       "currency": "PLN"
     },
     {
       "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-xfx-speedster-swft-210-radeon-rx-7600-8gb-gddr6-rx-76pswftfy-12967121/",
-      "name": "Karta graficzna XFX Speedster SWFT 210 Radeon RX 7600 8GB GDDR6 (RX-76PSWFTFY)",
-      "chip": "Radeon RX 7600",
-      "vram_gb": 8,
-      "price_pln": 1799.0,
-      "currency": "PLN"
-    },
-    {
-      "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-powercolor-reaper-radeon-rx-9070-xt-16gb-gddr6-rx9070xt-16g-a-14732570/",
-      "name": "Karta graficzna PowerColor Reaper Radeon RX 9070 XT 16GB GDDR6 (RX9070XT 16G-A)",
+      "url": "https://www.morele.net/karta-graficzna-powercolor-hellhound-radeon-rx-9070-xt-16gb-gddr6-rx9070xt-16g-l-oc-14749710/",
+      "name": "Karta graficzna PowerColor Hellhound Radeon RX 9070 XT 16GB GDDR6 (RX9070XT 16G-L/OC)",
       "chip": "Radeon RX 9070 XT",
       "vram_gb": 16,
-      "price_pln": 4783.41,
+      "price_pln": 5099.0,
       "currency": "PLN"
     },
     {
       "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-gigabyte-geforce-rtx-5070-ti-eagle-oc-ice-sff-16gb-gddr7-dlss4-gv-n507teagleoc-ice-16gd-14485562/",
-      "name": "Karta graficzna Gigabyte GeForce RTX 5070 Ti Eagle OC ICE SFF 16GB GDDR7 DLSS4 (GV-N507TEAGLEOC ICE-16GD)",
-      "chip": "GeForce RTX 5070 Ti",
+      "url": "https://www.morele.net/karta-graficzna-sapphire-pure-radeon-rx-9070-xt-16gb-gddr6-11348-02-20g-14732576/",
+      "name": "Karta graficzna Sapphire Pure Radeon RX 9070 XT 16GB GDDR6 (11348-02-20G)",
+      "chip": "Radeon RX 9070 XT",
       "vram_gb": 16,
-      "price_pln": 6819.89,
+      "price_pln": 4804.27,
       "currency": "PLN"
     },
     {
       "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-gigabyte-aorus-geforce-rtx-5080-infinity-16gb-gddr7-dlss4-gv-n5080aorus-if-16gd-600326204/",
-      "name": "Karta graficzna Gigabyte AORUS GeForce RTX 5080 Infinity 16GB GDDR7 DLSS4 (GV-N5080AORUS IF-16GD)",
+      "url": "https://www.morele.net/karta-graficzna-asus-tuf-gaming-geforce-rtx-5080-oc-16gb-gddr7-dlss4-tuf-rtx5080-o16g-gaming-14485133/",
+      "name": "Karta graficzna Asus TUF Gaming GeForce RTX 5080 OC 16GB GDDR7 DLSS4 (TUF-RTX5080-O16G-GAMING)",
       "chip": "GeForce RTX 5080",
       "vram_gb": 16,
-      "price_pln": 12578.29,
+      "price_pln": 10999.0,
+      "currency": "PLN"
+    },
+    {
+      "store": "morele",
+      "url": "https://www.morele.net/karta-graficzna-gigabyte-geforce-rtx-3060-gaming-oc-12g-gv-n3060gaming-oc-12gd-2-0-5948081/",
+      "name": "Karta graficzna Gigabyte GeForce RTX 3060 Gaming OC 12G (GV-N3060GAMING OC-12GD 2.0)",
+      "chip": "GeForce RTX 3060",
+      "vram_gb": null,
+      "price_pln": 2419.99,
       "currency": "PLN"
     },
     {
@@ -687,15 +669,6 @@
     },
     {
       "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-sapphire-pure-radeon-rx-9070-xt-16gb-gddr6-11348-02-20g-14732576/",
-      "name": "Karta graficzna Sapphire Pure Radeon RX 9070 XT 16GB GDDR6 (11348-02-20G)",
-      "chip": "Radeon RX 9070 XT",
-      "vram_gb": 16,
-      "price_pln": 4804.27,
-      "currency": "PLN"
-    },
-    {
-      "store": "morele",
       "url": "https://www.morele.net/karta-graficzna-palit-geforce-rtx-5060-dual-8gb-gddr7-dlss4-ne75060019p1-gb2063d-15068906/",
       "name": "Karta graficzna Palit GeForce RTX 5060 Dual 8GB GDDR7 DLSS4 (NE75060019P1-GB2063D)",
       "chip": "GeForce RTX 5060",
@@ -705,29 +678,29 @@
     },
     {
       "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-gigabyte-radeon-rx-9060-xt-gaming-oc-ice-16gb-gddr6-gv-r906xgamingocice-16gd-15615196/",
-      "name": "Karta graficzna Gigabyte Radeon RX 9060 XT Gaming OC ICE 16GB GDDR6 (GV-R906XGAMINGOCICE-16GD)",
-      "chip": "Radeon RX 9060 XT",
+      "url": "https://www.morele.net/karta-graficzna-gigabyte-geforce-rtx-5070-ti-eagle-oc-ice-sff-16gb-gddr7-dlss4-gv-n507teagleoc-ice-16gd-14485562/",
+      "name": "Karta graficzna Gigabyte GeForce RTX 5070 Ti Eagle OC ICE SFF 16GB GDDR7 DLSS4 (GV-N507TEAGLEOC ICE-16GD)",
+      "chip": "GeForce RTX 5070 Ti",
       "vram_gb": 16,
-      "price_pln": 4152.99,
+      "price_pln": 7344.57,
       "currency": "PLN"
     },
     {
       "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-gigabyte-geforce-rtx-3060-gaming-oc-12g-gv-n3060gaming-oc-12gd-2-0-5948081/",
-      "name": "Karta graficzna Gigabyte GeForce RTX 3060 Gaming OC 12G (GV-N3060GAMING OC-12GD 2.0)",
-      "chip": "GeForce RTX 3060",
-      "vram_gb": null,
-      "price_pln": 2415.78,
-      "currency": "PLN"
-    },
-    {
-      "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-gigabyte-geforce-rtx-5080-aero-oc-sff-16gb-gddr7-dlss4-gv-n5080aero-oc-16gd-14485975/",
-      "name": "Karta graficzna Gigabyte GeForce RTX 5080 Aero OC SFF 16GB GDDR7 DLSS4 (GV-N5080AERO OC-16GD)",
+      "url": "https://www.morele.net/karta-graficzna-gigabyte-aorus-geforce-rtx-5080-infinity-16gb-gddr7-dlss4-gv-n5080aorus-if-16gd-600326204/",
+      "name": "Karta graficzna Gigabyte AORUS GeForce RTX 5080 Infinity 16GB GDDR7 DLSS4 (GV-N5080AORUS IF-16GD)",
       "chip": "GeForce RTX 5080",
       "vram_gb": 16,
-      "price_pln": 10124.17,
+      "price_pln": 12578.29,
+      "currency": "PLN"
+    },
+    {
+      "store": "morele",
+      "url": "https://www.morele.net/karta-graficzna-powercolor-reaper-radeon-rx-9070-xt-16gb-gddr6-rx9070xt-16g-a-14732570/",
+      "name": "Karta graficzna PowerColor Reaper Radeon RX 9070 XT 16GB GDDR6 (RX9070XT 16G-A)",
+      "chip": "Radeon RX 9070 XT",
+      "vram_gb": 16,
+      "price_pln": 4783.41,
       "currency": "PLN"
     },
     {
@@ -750,11 +723,11 @@
     },
     {
       "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-gigabyte-aorus-geforce-rtx-5070-ti-master-16gb-gddr7-dlss4-gv-n507taorus-m-16gd-14485973/",
-      "name": "Karta graficzna Gigabyte AORUS GeForce RTX 5070 Ti Master 16GB GDDR7 DLSS4 (GV-N507TAORUS M-16GD)",
-      "chip": "GeForce RTX 5070 Ti",
-      "vram_gb": 16,
-      "price_pln": 8687.65,
+      "url": "https://www.morele.net/karta-graficzna-asus-dual-geforce-rtx-5060-oc-advanced-8gb-gddr7-dlss4-dual-rtx5060-o8g-a-600163028/",
+      "name": "Karta graficzna Asus Dual GeForce RTX 5060 OC Advanced 8GB GDDR7 DLSS4 (DUAL-RTX5060-O8G-A)",
+      "chip": "GeForce RTX 5060",
+      "vram_gb": 8,
+      "price_pln": 2499.0,
       "currency": "PLN"
     },
     {
@@ -772,16 +745,7 @@
       "name": "Karta graficzna Gigabyte Radeon RX 9070 XT Gaming OC ICE 16GB GDDR6 (GV-R907XGAMINGOCICE-16GD)",
       "chip": "Radeon RX 9070 XT",
       "vram_gb": 16,
-      "price_pln": 5520.4,
-      "currency": "PLN"
-    },
-    {
-      "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-gigabyte-geforce-rtx-5080-windforce-oc-sff-16gb-gddr7-dlss4-gv-n5080wf3oc-16gd-14485977/",
-      "name": "Karta graficzna Gigabyte GeForce RTX 5080 Windforce OC SFF 16GB GDDR7 DLSS4 (GV-N5080WF3OC-16GD)",
-      "chip": "GeForce RTX 5080",
-      "vram_gb": 16,
-      "price_pln": 10405.83,
+      "price_pln": 5558.63,
       "currency": "PLN"
     },
     {
@@ -795,11 +759,20 @@
     },
     {
       "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-gigabyte-geforce-rtx-5060-ti-eagle-max-oc-8gb-gddr7-dlss4-gv-n506teaglemax-oc-8gd-15461604/",
-      "name": "Karta graficzna Gigabyte GeForce RTX 5060 Ti Eagle MAX OC 8GB GDDR7 DLSS4 (GV-N506TEAGLEMAX OC-8GD)",
-      "chip": "GeForce RTX 5060 Ti",
-      "vram_gb": 8,
-      "price_pln": 2559.0,
+      "url": "https://www.morele.net/karta-graficzna-gigabyte-geforce-rtx-5080-aero-oc-sff-16gb-gddr7-dlss4-gv-n5080aero-oc-16gd-14485975/",
+      "name": "Karta graficzna Gigabyte GeForce RTX 5080 Aero OC SFF 16GB GDDR7 DLSS4 (GV-N5080AERO OC-16GD)",
+      "chip": "GeForce RTX 5080",
+      "vram_gb": 16,
+      "price_pln": 10124.17,
+      "currency": "PLN"
+    },
+    {
+      "store": "morele",
+      "url": "https://www.morele.net/karta-graficzna-gigabyte-radeon-rx-9060-xt-gaming-oc-ice-16gb-gddr6-gv-r906xgamingocice-16gd-15615196/",
+      "name": "Karta graficzna Gigabyte Radeon RX 9060 XT Gaming OC ICE 16GB GDDR6 (GV-R906XGAMINGOCICE-16GD)",
+      "chip": "Radeon RX 9060 XT",
+      "vram_gb": 16,
+      "price_pln": 4190.99,
       "currency": "PLN"
     },
     {
@@ -808,7 +781,7 @@
       "name": "Karta graficzna Asus Prime GeForce RTX 5070 OC 12GB GDDR7 DLSS4 (PRIME-RTX5070-O12G)",
       "chip": "GeForce RTX 5070",
       "vram_gb": 12,
-      "price_pln": 4638.81,
+      "price_pln": 5913.9,
       "currency": "PLN"
     },
     {
@@ -822,38 +795,20 @@
     },
     {
       "store": "morele",
+      "url": "https://www.morele.net/karta-graficzna-gigabyte-aorus-geforce-rtx-5070-ti-master-16gb-gddr7-dlss4-gv-n507taorus-m-16gd-14485973/",
+      "name": "Karta graficzna Gigabyte AORUS GeForce RTX 5070 Ti Master 16GB GDDR7 DLSS4 (GV-N507TAORUS M-16GD)",
+      "chip": "GeForce RTX 5070 Ti",
+      "vram_gb": 16,
+      "price_pln": 8782.15,
+      "currency": "PLN"
+    },
+    {
+      "store": "morele",
       "url": "https://www.morele.net/karta-graficzna-palit-geforce-rtx-5070-ti-gamingpro-s-oc-16gb-gddr7-dlss4-ne7507ts19t2-gb2031u-15447618/",
       "name": "Karta graficzna Palit GeForce RTX 5070 Ti GamingPro-S OC 16GB GDDR7 DLSS4 (NE7507TS19T2-GB2031U)",
       "chip": "GeForce RTX 5070 Ti",
       "vram_gb": 16,
-      "price_pln": 7290.47,
-      "currency": "PLN"
-    },
-    {
-      "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-gigabyte-geforce-rtx-5060-ti-gaming-oc-8gb-gddr7-dlss4-gv-n506tgaming-oc-8gd-14848073/",
-      "name": "Karta graficzna Gigabyte GeForce RTX 5060 Ti Gaming OC 8GB GDDR7 DLSS4 (GV-N506TGAMING OC-8GD)",
-      "chip": "GeForce RTX 5060 Ti",
-      "vram_gb": 8,
-      "price_pln": 2779.0,
-      "currency": "PLN"
-    },
-    {
-      "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-powercolor-red-devil-radeon-rx-9070-xt-16gb-gddr6-rx9070xt-16g-e-oc-14747905/",
-      "name": "Karta graficzna PowerColor Red Devil Radeon RX 9070 XT 16GB GDDR6 (RX9070XT 16G-E/OC)",
-      "chip": "Radeon RX 9070 XT",
-      "vram_gb": 16,
-      "price_pln": 5509.81,
-      "currency": "PLN"
-    },
-    {
-      "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-gigabyte-aorus-geforce-rtx-5080-master-ice-16gb-gddr7-dlss4-gv-n5080aorusm-ice-16gd-14485971/",
-      "name": "Karta graficzna Gigabyte AORUS GeForce RTX 5080 Master ICE 16GB GDDR7 DLSS4 (GV-N5080AORUSM ICE-16GD)",
-      "chip": "GeForce RTX 5080",
-      "vram_gb": 16,
-      "price_pln": 9864.8,
+      "price_pln": 6949.44,
       "currency": "PLN"
     },
     {
@@ -867,56 +822,20 @@
     },
     {
       "store": "morele",
+      "url": "https://www.morele.net/karta-graficzna-powercolor-red-devil-radeon-rx-9070-xt-16gb-gddr6-rx9070xt-16g-e-oc-14747905/",
+      "name": "Karta graficzna PowerColor Red Devil Radeon RX 9070 XT 16GB GDDR6 (RX9070XT 16G-E/OC)",
+      "chip": "Radeon RX 9070 XT",
+      "vram_gb": 16,
+      "price_pln": 5408.3,
+      "currency": "PLN"
+    },
+    {
+      "store": "morele",
       "url": "https://www.morele.net/karta-graficzna-xfx-swift-radeon-rx-9070-gre-triple-fan-gaming-12gb-gddr6-rx-97gre29b7-600118442/",
       "name": "Karta graficzna XFX Swift Radeon RX 9070 GRE Triple Fan Gaming 12GB GDDR6 (RX-97GRE29B7)",
       "chip": "Radeon RX 9070 GRE",
       "vram_gb": 12,
       "price_pln": 3099.0,
-      "currency": "PLN"
-    },
-    {
-      "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-asus-dual-geforce-rtx-5060-oc-advanced-8gb-gddr7-dlss4-dual-rtx5060-o8g-a-600163028/",
-      "name": "Karta graficzna Asus Dual GeForce RTX 5060 OC Advanced 8GB GDDR7 DLSS4 (DUAL-RTX5060-O8G-A)",
-      "chip": "GeForce RTX 5060",
-      "vram_gb": 8,
-      "price_pln": 2499.0,
-      "currency": "PLN"
-    },
-    {
-      "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-gigabyte-geforce-rtx-5070-aero-oc-12gb-gddr7-dlss4-gv-n5070aero-oc-12gd-14485484/",
-      "name": "Karta graficzna Gigabyte GeForce RTX 5070 Aero OC 12GB GDDR7 DLSS4 (GV-N5070AERO OC-12GD)",
-      "chip": "GeForce RTX 5070",
-      "vram_gb": 12,
-      "price_pln": 4819.28,
-      "currency": "PLN"
-    },
-    {
-      "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-afox-geforce-rtx-2060-super-8gb-gddr6-af2060s-8192d6h4-v2-13133257/",
-      "name": "Karta graficzna AFOX GeForce RTX 2060 Super 8GB GDDR6 (AF2060S-8192D6H4-V2)",
-      "chip": "GeForce RTX 2060 SUPER",
-      "vram_gb": 8,
-      "price_pln": 1431.99,
-      "currency": "PLN"
-    },
-    {
-      "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-asus-prime-geforce-rtx-5080-oc-16gb-gddr7-dlss4-prime-rtx5080-o16g-14485259/",
-      "name": "Karta graficzna Asus Prime GeForce RTX 5080 OC 16GB GDDR7 DLSS4 (PRIME-RTX5080-O16G)",
-      "chip": "GeForce RTX 5080",
-      "vram_gb": 16,
-      "price_pln": 11742.54,
-      "currency": "PLN"
-    },
-    {
-      "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-gigabyte-aorus-radeon-rx-9070-xt-elite-16gb-gddr6-gv-r9070xtaorus-e-16gd-14731776/",
-      "name": "Karta graficzna Gigabyte AORUS Radeon RX 9070 XT Elite 16GB GDDR6 (GV-R9070XTAORUS E-16GD)",
-      "chip": "Radeon RX 9070 XT",
-      "vram_gb": 16,
-      "price_pln": 5117.63,
       "currency": "PLN"
     },
     {
@@ -930,11 +849,101 @@
     },
     {
       "store": "morele",
+      "url": "https://www.morele.net/karta-graficzna-gigabyte-geforce-rtx-5060-ti-gaming-oc-8gb-gddr7-dlss4-gv-n506tgaming-oc-8gd-14848073/",
+      "name": "Karta graficzna Gigabyte GeForce RTX 5060 Ti Gaming OC 8GB GDDR7 DLSS4 (GV-N506TGAMING OC-8GD)",
+      "chip": "GeForce RTX 5060 Ti",
+      "vram_gb": 8,
+      "price_pln": 2779.0,
+      "currency": "PLN"
+    },
+    {
+      "store": "morele",
       "url": "https://www.morele.net/karta-graficzna-sapphire-pulse-radeon-rx-7600-gaming-oc-8gb-gddr6-11324-01-20g-12899797/",
       "name": "Karta graficzna Sapphire Pulse Radeon RX 7600 Gaming OC 8GB GDDR6 (11324-01-20G)",
       "chip": "Radeon RX 7600",
       "vram_gb": 8,
-      "price_pln": 1950.92,
+      "price_pln": 1972.14,
+      "currency": "PLN"
+    },
+    {
+      "store": "morele",
+      "url": "https://www.morele.net/karta-graficzna-gigabyte-geforce-rtx-5050-d6-8gb-gddr6-dlss4-gv-n5050d6-8gd-15565355/",
+      "name": "Karta graficzna Gigabyte GeForce RTX 5050 D6 8GB GDDR6 DLSS4 (GV-N5050D6-8GD)",
+      "chip": "GeForce RTX 5050",
+      "vram_gb": 8,
+      "price_pln": 2179.0,
+      "currency": "PLN"
+    },
+    {
+      "store": "morele",
+      "url": "https://www.morele.net/karta-graficzna-gigabyte-geforce-rtx-5070-aero-oc-12gb-gddr7-dlss4-gv-n5070aero-oc-12gd-14485484/",
+      "name": "Karta graficzna Gigabyte GeForce RTX 5070 Aero OC 12GB GDDR7 DLSS4 (GV-N5070AERO OC-12GD)",
+      "chip": "GeForce RTX 5070",
+      "vram_gb": 12,
+      "price_pln": 4819.28,
+      "currency": "PLN"
+    },
+    {
+      "store": "morele",
+      "url": "https://www.morele.net/karta-graficzna-gigabyte-geforce-rtx-5060-ti-eagle-max-oc-8gb-gddr7-dlss4-gv-n506teaglemax-oc-8gd-15461604/",
+      "name": "Karta graficzna Gigabyte GeForce RTX 5060 Ti Eagle MAX OC 8GB GDDR7 DLSS4 (GV-N506TEAGLEMAX OC-8GD)",
+      "chip": "GeForce RTX 5060 Ti",
+      "vram_gb": 8,
+      "price_pln": 2523.13,
+      "currency": "PLN"
+    },
+    {
+      "store": "morele",
+      "url": "https://www.morele.net/karta-graficzna-tul-fighter-v2-radeon-rx-7600-8gb-gddr6-rx-7600-8g-f-v2-15545497/",
+      "name": "Karta graficzna TUL Fighter V2 Radeon RX 7600 8GB GDDR6 (RX 7600 8G-F/V2)",
+      "chip": "Radeon RX 7600",
+      "vram_gb": 8,
+      "price_pln": 1761.9,
+      "currency": "PLN"
+    },
+    {
+      "store": "morele",
+      "url": "https://www.morele.net/karta-graficzna-gigabyte-geforce-rtx-5080-windforce-oc-sff-16gb-gddr7-dlss4-gv-n5080wf3oc-16gd-14485977/",
+      "name": "Karta graficzna Gigabyte GeForce RTX 5080 Windforce OC SFF 16GB GDDR7 DLSS4 (GV-N5080WF3OC-16GD)",
+      "chip": "GeForce RTX 5080",
+      "vram_gb": 16,
+      "price_pln": 10405.83,
+      "currency": "PLN"
+    },
+    {
+      "store": "morele",
+      "url": "https://www.morele.net/karta-graficzna-gigabyte-aorus-geforce-rtx-5080-master-ice-16gb-gddr7-dlss4-gv-n5080aorusm-ice-16gd-14485971/",
+      "name": "Karta graficzna Gigabyte AORUS GeForce RTX 5080 Master ICE 16GB GDDR7 DLSS4 (GV-N5080AORUSM ICE-16GD)",
+      "chip": "GeForce RTX 5080",
+      "vram_gb": 16,
+      "price_pln": 11149.0,
+      "currency": "PLN"
+    },
+    {
+      "store": "morele",
+      "url": "https://www.morele.net/karta-graficzna-afox-geforce-rtx-2060-super-8gb-gddr6-af2060s-8192d6h4-v2-13133257/",
+      "name": "Karta graficzna AFOX GeForce RTX 2060 Super 8GB GDDR6 (AF2060S-8192D6H4-V2)",
+      "chip": "GeForce RTX 2060 SUPER",
+      "vram_gb": 8,
+      "price_pln": 1400.99,
+      "currency": "PLN"
+    },
+    {
+      "store": "morele",
+      "url": "https://www.morele.net/karta-graficzna-asus-prime-geforce-rtx-5080-oc-16gb-gddr7-dlss4-prime-rtx5080-o16g-14485259/",
+      "name": "Karta graficzna Asus Prime GeForce RTX 5080 OC 16GB GDDR7 DLSS4 (PRIME-RTX5080-O16G)",
+      "chip": "GeForce RTX 5080",
+      "vram_gb": 16,
+      "price_pln": 10940.21,
+      "currency": "PLN"
+    },
+    {
+      "store": "morele",
+      "url": "https://www.morele.net/karta-graficzna-gigabyte-aorus-radeon-rx-9070-xt-elite-16gb-gddr6-gv-r9070xtaorus-e-16gd-14731776/",
+      "name": "Karta graficzna Gigabyte AORUS Radeon RX 9070 XT Elite 16GB GDDR6 (GV-R9070XTAORUS E-16GD)",
+      "chip": "Radeon RX 9070 XT",
+      "vram_gb": 16,
+      "price_pln": 5117.63,
       "currency": "PLN"
     },
     {
@@ -961,25 +970,16 @@
       "name": "Karta graficzna Gigabyte GeForce RTX 5060 Ti Gaming OC 16GB GDDR7 DLSS4 (GV-N506TGAMING OC-16GD)",
       "chip": "GeForce RTX 5060 Ti",
       "vram_gb": 16,
-      "price_pln": 4486.99,
+      "price_pln": 4499.0,
       "currency": "PLN"
     },
     {
       "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-pny-geforce-rtx-5070-argb-epic-x-rgb-overclocked-vcg507012tfxxpb1-o-14481849/",
-      "name": "Karta graficzna PNY GeForce RTX 5070 ARGB EPIC-X RGB Overclocked (VCG507012TFXXPB1-O)",
+      "url": "https://www.morele.net/karta-graficzna-palit-geforce-rtx-5070-infinity-3-12gb-gddr7-dlss4-ne75070019k9-gb2050s-14770639/",
+      "name": "Karta graficzna Palit GeForce RTX 5070 Infinity 3 12GB GDDR7 DLSS4 (NE75070019K9-GB2050S)",
       "chip": "GeForce RTX 5070",
-      "vram_gb": null,
-      "price_pln": 4999.0,
-      "currency": "PLN"
-    },
-    {
-      "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-powercolor-reaper-radeon-rx-9060-xt-16gb-gddr6-rx9060xt-16g-a-15250932/",
-      "name": "Karta graficzna PowerColor Reaper Radeon RX 9060 XT 16GB GDDR6 (RX9060XT 16G-A)",
-      "chip": "Radeon RX 9060 XT",
-      "vram_gb": 16,
-      "price_pln": 3499.0,
+      "vram_gb": 12,
+      "price_pln": 4499.0,
       "currency": "PLN"
     },
     {
@@ -1002,20 +1002,20 @@
     },
     {
       "store": "morele",
+      "url": "https://www.morele.net/karta-graficzna-powercolor-reaper-radeon-rx-9060-xt-16gb-gddr6-rx9060xt-16g-a-15250932/",
+      "name": "Karta graficzna PowerColor Reaper Radeon RX 9060 XT 16GB GDDR6 (RX9060XT 16G-A)",
+      "chip": "Radeon RX 9060 XT",
+      "vram_gb": 16,
+      "price_pln": 3499.0,
+      "currency": "PLN"
+    },
+    {
+      "store": "morele",
       "url": "https://www.morele.net/karta-graficzna-gigabyte-geforce-rtx-5060-windforce-max-oc-v2-8gb-gddr7-gv-n5060wf2max-ocv2-8gd-600229553/",
       "name": "Karta graficzna Gigabyte GeForce RTX 5060 Windforce MAX OC V2 8GB GDDR7 (GV-N5060WF2MAX OCV2-8GD)",
       "chip": "GeForce RTX 5060",
       "vram_gb": 8,
       "price_pln": 2349.43,
-      "currency": "PLN"
-    },
-    {
-      "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-xfx-quicksilver-radeon-rx-9070-xt-gaming-16gb-gddr6-rx-97tqickb9-14739187/",
-      "name": "Karta graficzna XFX Quicksilver Radeon RX 9070 XT Gaming 16GB GDDR6 (RX-97TQICKB9)",
-      "chip": "Radeon RX 9070 XT",
-      "vram_gb": 16,
-      "price_pln": 5343.94,
       "currency": "PLN"
     },
     {
@@ -1033,7 +1033,16 @@
       "name": "Karta graficzna PowerColor Reaper Radeon RX 9070 16GB GDDR6 (RX9070 16G-A)",
       "chip": "Radeon RX 9070",
       "vram_gb": 16,
-      "price_pln": 4329.1,
+      "price_pln": 4306.26,
+      "currency": "PLN"
+    },
+    {
+      "store": "morele",
+      "url": "https://www.morele.net/karta-graficzna-xfx-mercury-radeon-rx-9060-xt-oc-gaming-white-16gb-gddr6-rx-96tmercw9-15394213/",
+      "name": "Karta graficzna XFX Mercury Radeon RX 9060 XT OC Gaming White 16GB GDDR6 (RX-96TMERCW9)",
+      "chip": "Radeon RX 9060 XT",
+      "vram_gb": 16,
+      "price_pln": 3618.66,
       "currency": "PLN"
     },
     {
@@ -1042,34 +1051,25 @@
       "name": "Karta graficzna Gigabyte GeForce RTX 5080 Windforce OC V2 SFF 16GB GDDR7 DLSS4 (GV-N5080WF3OCV2-16GD)",
       "chip": "GeForce RTX 5080",
       "vram_gb": 16,
-      "price_pln": 10999.0,
+      "price_pln": 10599.0,
       "currency": "PLN"
     },
     {
       "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-palit-geforce-rtx-5060-ti-white-oc-8gb-gddr7-dlss4-ne7506tu19p1-gb2062m-15480330/",
-      "name": "Karta graficzna Palit GeForce RTX 5060 Ti White OC 8GB GDDR7 DLSS4 (NE7506TU19P1-GB2062M)",
-      "chip": "GeForce RTX 5060 Ti",
-      "vram_gb": 8,
-      "price_pln": 3209.99,
+      "url": "https://www.morele.net/karta-graficzna-xfx-quicksilver-radeon-rx-9070-xt-gaming-16gb-gddr6-rx-97tqickb9-14739187/",
+      "name": "Karta graficzna XFX Quicksilver Radeon RX 9070 XT Gaming 16GB GDDR6 (RX-97TQICKB9)",
+      "chip": "Radeon RX 9070 XT",
+      "vram_gb": 16,
+      "price_pln": 5343.94,
       "currency": "PLN"
     },
     {
       "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-gigabyte-geforce-rtx-5050-d6-8gb-gddr6-dlss4-gv-n5050d6-8gd-15565355/",
-      "name": "Karta graficzna Gigabyte GeForce RTX 5050 D6 8GB GDDR6 DLSS4 (GV-N5050D6-8GD)",
-      "chip": "GeForce RTX 5050",
-      "vram_gb": 8,
-      "price_pln": 2179.0,
-      "currency": "PLN"
-    },
-    {
-      "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-tul-fighter-v2-radeon-rx-7600-8gb-gddr6-rx-7600-8g-f-v2-15545497/",
-      "name": "Karta graficzna TUL Fighter V2 Radeon RX 7600 8GB GDDR6 (RX 7600 8G-F/V2)",
-      "chip": "Radeon RX 7600",
-      "vram_gb": 8,
-      "price_pln": 1761.9,
+      "url": "https://www.morele.net/karta-graficzna-pny-geforce-rtx-5070-argb-epic-x-rgb-overclocked-vcg507012tfxxpb1-o-14481849/",
+      "name": "Karta graficzna PNY GeForce RTX 5070 ARGB EPIC-X RGB Overclocked (VCG507012TFXXPB1-O)",
+      "chip": "GeForce RTX 5070",
+      "vram_gb": null,
+      "price_pln": 4999.0,
       "currency": "PLN"
     },
     {
@@ -1083,11 +1083,11 @@
     },
     {
       "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-inno3d-geforce-rtx-5080-x3-16gb-gddr7-dlss4-n50803-16d7-176068n-14483821/",
-      "name": "Karta graficzna Inno3D GeForce RTX 5080 X3 16GB GDDR7 DLSS4 (N50803-16D7-176068N)",
-      "chip": "GeForce RTX 5080",
-      "vram_gb": 16,
-      "price_pln": 9637.9,
+      "url": "https://www.morele.net/karta-graficzna-palit-geforce-rtx-3050-stormx-6gb-gddr6-ne63050018je-1072f-15598166/",
+      "name": "Karta graficzna Palit GeForce RTX 3050 StormX 6GB GDDR6 (NE63050018JE-1072F)",
+      "chip": "GeForce RTX 3050",
+      "vram_gb": 6,
+      "price_pln": 1325.9,
       "currency": "PLN"
     },
     {
@@ -1096,25 +1096,7 @@
       "name": "Karta graficzna Sapphire Pure Radeon RX 9060 XT 16GB GDDR6 (11350-02-20G)",
       "chip": "Radeon RX 9060 XT",
       "vram_gb": 16,
-      "price_pln": 3237.81,
-      "currency": "PLN"
-    },
-    {
-      "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-palit-geforce-rtx-3050-stormx-6gb-gddr6-ne63050018je-1072f-15598166/",
-      "name": "Karta graficzna Palit GeForce RTX 3050 StormX 6GB GDDR6 (NE63050018JE-1072F)",
-      "chip": "GeForce RTX 3050",
-      "vram_gb": 6,
-      "price_pln": 1271.97,
-      "currency": "PLN"
-    },
-    {
-      "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-xfx-mercury-radeon-rx-9060-xt-oc-gaming-white-16gb-gddr6-rx-96tmercw9-15394213/",
-      "name": "Karta graficzna XFX Mercury Radeon RX 9060 XT OC Gaming White 16GB GDDR6 (RX-96TMERCW9)",
-      "chip": "Radeon RX 9060 XT",
-      "vram_gb": 16,
-      "price_pln": 3618.66,
+      "price_pln": 3431.26,
       "currency": "PLN"
     },
     {
@@ -1137,15 +1119,6 @@
     },
     {
       "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-inno3d-geforce-rtx-5070-twin-x2-oc-12gb-gddr7-dlss4-n50702-12d7x-195064n-14763395/",
-      "name": "Karta graficzna Inno3D GeForce RTX 5070 Twin X2 OC 12GB GDDR7 DLSS4 (N50702-12D7X-195064N)",
-      "chip": "GeForce RTX 5070",
-      "vram_gb": 12,
-      "price_pln": 5151.99,
-      "currency": "PLN"
-    },
-    {
-      "store": "morele",
       "url": "https://www.morele.net/karta-graficzna-zotac-gaming-geforce-rtx-5080-solid-oc-white-16gb-gddr7-dlss4-zt-b50800q-10p-14982543/",
       "name": "Karta graficzna Zotac Gaming GeForce RTX 5080 SOLID OC White 16GB GDDR7 DLSS4 (ZT-B50800Q-10P)",
       "chip": "GeForce RTX 5080",
@@ -1155,38 +1128,47 @@
     },
     {
       "store": "morele",
+      "url": "https://www.morele.net/karta-graficzna-gigabyte-aorus-geforce-rtx-5060-ari-8gb-gddr7-dlss4-gv-n5060aorus-ari-8gd-600517789/",
+      "name": "Karta graficzna Gigabyte AORUS GeForce RTX 5060 ARI 8GB GDDR7 DLSS4 (GV-N5060AORUS ARI-8GD)",
+      "chip": "GeForce RTX 5060",
+      "vram_gb": 8,
+      "price_pln": 2899.0,
+      "currency": "PLN"
+    },
+    {
+      "store": "morele",
+      "url": "https://www.morele.net/karta-graficzna-inno3d-geforce-rtx-5070-twin-x2-oc-12gb-gddr7-dlss4-n50702-12d7x-195064n-14763395/",
+      "name": "Karta graficzna Inno3D GeForce RTX 5070 Twin X2 OC 12GB GDDR7 DLSS4 (N50702-12D7X-195064N)",
+      "chip": "GeForce RTX 5070",
+      "vram_gb": 12,
+      "price_pln": 5161.99,
+      "currency": "PLN"
+    },
+    {
+      "store": "morele",
+      "url": "https://www.morele.net/karta-graficzna-pny-geforce-rtx-5070-ti-argb-epic-x-rgb-overclocked-16gb-gddr7-dlss4-vcg5070t16tfxxpb1-o-14481847/",
+      "name": "Karta graficzna PNY GeForce RTX 5070 Ti ARGB EPIC-X RGB Overclocked 16GB GDDR7 DLSS4 (VCG5070T16TFXXPB1-O)",
+      "chip": "GeForce RTX 5070 Ti",
+      "vram_gb": 16,
+      "price_pln": 7114.18,
+      "currency": "PLN"
+    },
+    {
+      "store": "morele",
+      "url": "https://www.morele.net/karta-graficzna-palit-geforce-rtx-5060-ti-white-oc-8gb-gddr7-dlss4-ne7506tu19p1-gb2062m-15480330/",
+      "name": "Karta graficzna Palit GeForce RTX 5060 Ti White OC 8GB GDDR7 DLSS4 (NE7506TU19P1-GB2062M)",
+      "chip": "GeForce RTX 5060 Ti",
+      "vram_gb": 8,
+      "price_pln": 3215.99,
+      "currency": "PLN"
+    },
+    {
+      "store": "morele",
       "url": "https://www.morele.net/karta-graficzna-gigabyte-geforce-rtx-5060-ti-windforce-max-oc-8gb-gddr7-dlss4-gv-n506twf2max-oc-8gd-15482412/",
       "name": "Karta graficzna Gigabyte GeForce RTX 5060 Ti Windforce MAX OC 8GB GDDR7 DLSS4 (GV-N506TWF2MAX OC-8GD)",
       "chip": "GeForce RTX 5060 Ti",
       "vram_gb": 8,
       "price_pln": 2622.24,
-      "currency": "PLN"
-    },
-    {
-      "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-xfx-mercury-radeon-rx-9060-xt-oc-gaming-16gb-gddr6-rx-96tmercb9-15394212/",
-      "name": "Karta graficzna XFX Mercury Radeon RX 9060 XT OC Gaming 16GB GDDR6 (RX-96TMERCB9)",
-      "chip": "Radeon RX 9060 XT",
-      "vram_gb": 16,
-      "price_pln": 3673.99,
-      "currency": "PLN"
-    },
-    {
-      "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-gigabyte-aorus-geforce-rtx-5060-ari-8gb-gddr7-dlss4-gv-n5060aorus-ari-8gd-600517789/",
-      "name": "Karta graficzna Gigabyte AORUS GeForce RTX 5060 ARI 8GB GDDR7 DLSS4 (GV-N5060AORUS ARI-8GD)",
-      "chip": "GeForce RTX 5060",
-      "vram_gb": 8,
-      "price_pln": 2746.49,
-      "currency": "PLN"
-    },
-    {
-      "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-palit-geforce-rtx-5070-infinity-3-12gb-gddr7-dlss4-ne75070019k9-gb2050s-14770639/",
-      "name": "Karta graficzna Palit GeForce RTX 5070 Infinity 3 12GB GDDR7 DLSS4 (NE75070019K9-GB2050S)",
-      "chip": "GeForce RTX 5070",
-      "vram_gb": 12,
-      "price_pln": 4499.0,
       "currency": "PLN"
     },
     {
@@ -1204,7 +1186,7 @@
       "name": "Karta graficzna Asus ProArt GeForce RTX 5090 OC 32GB GDDR7 DLSS4 (PROART-RTX5090-O32G)",
       "chip": "GeForce RTX 5090",
       "vram_gb": 32,
-      "price_pln": 40351.99,
+      "price_pln": 40426.99,
       "currency": "PLN"
     },
     {
@@ -1254,6 +1236,15 @@
     },
     {
       "store": "morele",
+      "url": "https://www.morele.net/karta-graficzna-palit-geforce-rtx-5080-gamingpro-16gb-gddr7-dlss4-ne75080019t2-gb2031a-14486093/",
+      "name": "Karta graficzna Palit GeForce RTX 5080 GamingPro 16GB GDDR7 DLSS4 (NE75080019T2-GB2031A)",
+      "chip": "GeForce RTX 5080",
+      "vram_gb": 16,
+      "price_pln": 9632.99,
+      "currency": "PLN"
+    },
+    {
+      "store": "morele",
       "url": "https://www.morele.net/karta-graficzna-asrock-intel-arc-a380-challenger-itx-oc-6gb-gddr6-90-ga3kzz-00uanf-11807768/",
       "name": "Karta graficzna ASRock Intel Arc A380 Challenger ITX OC 6GB GDDR6 (90-GA3KZZ-00UANF)",
       "chip": "Arc A380",
@@ -1267,7 +1258,16 @@
       "name": "Karta graficzna Gigabyte GeForce RTX 5060 Ti Aero OC 16GB GDDR7 DLSS4 (GV-N506TAERO OC-16GD)",
       "chip": "GeForce RTX 5060 Ti",
       "vram_gb": 16,
-      "price_pln": 4393.81,
+      "price_pln": 4424.6,
+      "currency": "PLN"
+    },
+    {
+      "store": "morele",
+      "url": "https://www.morele.net/karta-graficzna-xfx-mercury-radeon-rx-9060-xt-oc-gaming-16gb-gddr6-rx-96tmercb9-15394212/",
+      "name": "Karta graficzna XFX Mercury Radeon RX 9060 XT OC Gaming 16GB GDDR6 (RX-96TMERCB9)",
+      "chip": "Radeon RX 9060 XT",
+      "vram_gb": 16,
+      "price_pln": 3673.99,
       "currency": "PLN"
     },
     {
@@ -1299,20 +1299,38 @@
     },
     {
       "store": "morele",
+      "url": "https://www.morele.net/karta-graficzna-xfx-swift-radeon-rx-9060-xt-oc-gaming-16gb-gddr6-rx-96tsw16bq-15250941/",
+      "name": "Karta graficzna XFX Swift Radeon RX 9060 XT OC Gaming 16GB GDDR6 (RX-96TSW16BQ)",
+      "chip": "Radeon RX 9060 XT",
+      "vram_gb": 16,
+      "price_pln": 3249.0,
+      "currency": "PLN"
+    },
+    {
+      "store": "morele",
+      "url": "https://www.morele.net/karta-graficzna-xfx-quicksilver-radeon-rx-9070-xt-white-gaming-16gb-gddr6-rx-97tqickw9-14882949/",
+      "name": "Karta graficzna XFX Quicksilver Radeon RX 9070 XT White Gaming 16GB GDDR6 (RX-97TQICKW9)",
+      "chip": "Radeon RX 9070 XT",
+      "vram_gb": 16,
+      "price_pln": 5202.99,
+      "currency": "PLN"
+    },
+    {
+      "store": "morele",
+      "url": "https://www.morele.net/karta-graficzna-xfx-radeon-rx-6400-speedster-swft105-4gb-gddr6-rx-64xl4sfg2-11643883/",
+      "name": "Karta graficzna XFX Radeon RX 6400 Speedster SWFT105 4GB GDDR6 (RX-64XL4SFG2)",
+      "chip": "Radeon RX 6400",
+      "vram_gb": 4,
+      "price_pln": 1215.18,
+      "currency": "PLN"
+    },
+    {
+      "store": "morele",
       "url": "https://www.morele.net/karta-graficzna-xfx-mercury-radeon-rx-9070-xt-oc-white-magnetic-air-rgb-16gb-gddr6-rx-97tmargw9-14739189/",
       "name": "Karta graficzna XFX Mercury Radeon RX 9070 XT OC White Magnetic Air RGB 16GB GDDR6 (RX-97TMARGW9)",
       "chip": "Radeon RX 9070 XT",
       "vram_gb": 16,
       "price_pln": 4829.42,
-      "currency": "PLN"
-    },
-    {
-      "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-pny-geforce-rtx-5070-ti-argb-epic-x-rgb-overclocked-16gb-gddr7-dlss4-vcg5070t16tfxxpb1-o-14481847/",
-      "name": "Karta graficzna PNY GeForce RTX 5070 Ti ARGB EPIC-X RGB Overclocked 16GB GDDR7 DLSS4 (VCG5070T16TFXXPB1-O)",
-      "chip": "GeForce RTX 5070 Ti",
-      "vram_gb": 16,
-      "price_pln": 7114.18,
       "currency": "PLN"
     },
     {
@@ -1335,20 +1353,11 @@
     },
     {
       "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-xfx-mercury-radeon-rx-9070-xt-oc-magnetic-air-rgb-16gb-gddr6-rx-97tmargb9-15042368/",
-      "name": "Karta graficzna XFX Mercury Radeon RX 9070 XT OC Magnetic Air RGB 16GB GDDR6 (RX-97TMARGB9)",
-      "chip": "Radeon RX 9070 XT",
-      "vram_gb": 16,
-      "price_pln": 5663.99,
-      "currency": "PLN"
-    },
-    {
-      "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-zotac-gaming-geforce-rtx-5080-amp-extreme-infinity-16gb-gddr7-dlss4-zt-b50800b-10p-14486095/",
-      "name": "Karta graficzna Zotac Gaming GeForce RTX 5080 AMP Extreme INFINITY 16GB GDDR7 DLSS4 (ZT-B50800B-10P)",
-      "chip": "GeForce RTX 5080",
-      "vram_gb": 16,
-      "price_pln": 9918.03,
+      "url": "https://www.morele.net/karta-graficzna-gigabyte-geforce-rtx-3060-windforce-oc-lhr-12gb-gddr6-gv-n3060wf2oc-12gd-2-0-12819699/",
+      "name": "Karta graficzna Gigabyte GeForce RTX 3060 Windforce OC LHR 12GB GDDR6 (GV-N3060WF2OC-12GD 2.0)",
+      "chip": "GeForce RTX 3060",
+      "vram_gb": 12,
+      "price_pln": 2299.99,
       "currency": "PLN"
     },
     {
@@ -1362,11 +1371,20 @@
     },
     {
       "store": "morele",
+      "url": "https://www.morele.net/karta-graficzna-zotac-gaming-geforce-rtx-5080-amp-extreme-infinity-16gb-gddr7-dlss4-zt-b50800b-10p-14486095/",
+      "name": "Karta graficzna Zotac Gaming GeForce RTX 5080 AMP Extreme INFINITY 16GB GDDR7 DLSS4 (ZT-B50800B-10P)",
+      "chip": "GeForce RTX 5080",
+      "vram_gb": 16,
+      "price_pln": 9918.03,
+      "currency": "PLN"
+    },
+    {
+      "store": "morele",
       "url": "https://www.morele.net/karta-graficzna-asus-tuf-geforce-rtx-5070-ti-oc-16gb-gddr7-dlss4-tuf-rtx5070ti-o16g-gaming-14486744/",
       "name": "Karta graficzna Asus TUF GeForce RTX 5070 Ti OC 16GB GDDR7 DLSS4 (TUF-RTX5070TI-O16G-GAMING)",
       "chip": "GeForce RTX 5070 Ti",
       "vram_gb": 16,
-      "price_pln": 6840.99,
+      "price_pln": 7055.99,
       "currency": "PLN"
     },
     {
@@ -1375,7 +1393,16 @@
       "name": "Karta graficzna Sapphire Nitro+ Radeon RX 9070 XT OC Crimson Desert 16GB GDDR6 (11348-10-20G)",
       "chip": "Radeon RX 9070 XT",
       "vram_gb": 16,
-      "price_pln": 5210.08,
+      "price_pln": 5225.61,
+      "currency": "PLN"
+    },
+    {
+      "store": "morele",
+      "url": "https://www.morele.net/karta-graficzna-xfx-mercury-radeon-rx-9070-xt-oc-magnetic-air-rgb-16gb-gddr6-rx-97tmargb9-15042368/",
+      "name": "Karta graficzna XFX Mercury Radeon RX 9070 XT OC Magnetic Air RGB 16GB GDDR6 (RX-97TMARGB9)",
+      "chip": "Radeon RX 9070 XT",
+      "vram_gb": 16,
+      "price_pln": 5674.99,
       "currency": "PLN"
     },
     {
@@ -1384,7 +1411,7 @@
       "name": "Karta graficzna TUL Radeon RX 7800 XT 16GB GDDR6 (RX7800XT 16G-P)",
       "chip": "Radeon RX 7800 XT",
       "vram_gb": 16,
-      "price_pln": 7006.99,
+      "price_pln": 6880.91,
       "currency": "PLN"
     },
     {
@@ -1398,15 +1425,6 @@
     },
     {
       "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-asus-prime-geforce-rtx-5070-oc-white-12gb-gddr7-dlss4-prime-rtx5070-o12g-white-15065227/",
-      "name": "Karta graficzna Asus Prime GeForce RTX 5070 OC White 12GB GDDR7 DLSS4 (PRIME-RTX5070-O12G-WHITE)",
-      "chip": "GeForce RTX 5070",
-      "vram_gb": 12,
-      "price_pln": 4442.32,
-      "currency": "PLN"
-    },
-    {
-      "store": "morele",
       "url": "https://www.morele.net/karta-graficzna-asus-dual-geforce-rtx-3060-v2-oc-12gb-gddr6-dual-rtx3060-o12g-v2-600383668/",
       "name": "Karta graficzna Asus Dual GeForce RTX 3060 V2 OC 12GB GDDR6 (DUAL-RTX3060-O12G-V2)",
       "chip": "GeForce RTX 3060",
@@ -1416,11 +1434,20 @@
     },
     {
       "store": "morele",
+      "url": "https://www.morele.net/karta-graficzna-asus-prime-geforce-rtx-5070-oc-white-12gb-gddr7-dlss4-prime-rtx5070-o12g-white-15065227/",
+      "name": "Karta graficzna Asus Prime GeForce RTX 5070 OC White 12GB GDDR7 DLSS4 (PRIME-RTX5070-O12G-WHITE)",
+      "chip": "GeForce RTX 5070",
+      "vram_gb": 12,
+      "price_pln": 4442.32,
+      "currency": "PLN"
+    },
+    {
+      "store": "morele",
       "url": "https://www.morele.net/karta-graficzna-powercolor-hellhound-reva-radeon-rx-9070-xt-16gb-gddr6-rx9070xt-16g-l-oc-reva-15607557/",
       "name": "Karta graficzna PowerColor Hellhound Reva Radeon RX 9070 XT 16GB GDDR6 (RX9070XT 16G-L/OC/REVA)",
       "chip": "Radeon RX 9070 XT",
       "vram_gb": 16,
-      "price_pln": 5199.0,
+      "price_pln": 5099.0,
       "currency": "PLN"
     },
     {
@@ -1429,7 +1456,7 @@
       "name": "Karta graficzna MSI GeForce RTX 3050 LP E OC 6GB GDDR6",
       "chip": "GeForce RTX 3050",
       "vram_gb": 6,
-      "price_pln": 1399.0,
+      "price_pln": 1318.72,
       "currency": "PLN"
     },
     {
@@ -1438,7 +1465,7 @@
       "name": "Karta graficzna MSI GeForce RTX 5060 Ti Gaming Trio OC White 16GB GDDR7 DLSS4",
       "chip": "GeForce RTX 5060 Ti",
       "vram_gb": 16,
-      "price_pln": 4208.69,
+      "price_pln": 4322.99,
       "currency": "PLN"
     },
     {
@@ -1456,34 +1483,7 @@
       "name": "Karta graficzna Biostar GeForce RTX 3070 8GB GDDR6 (VN3706RM82)",
       "chip": "GeForce RTX 3070",
       "vram_gb": 8,
-      "price_pln": 2591.28,
-      "currency": "PLN"
-    },
-    {
-      "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-xfx-swift-radeon-rx-9060-xt-oc-gaming-16gb-gddr6-rx-96tsw16bq-15250941/",
-      "name": "Karta graficzna XFX Swift Radeon RX 9060 XT OC Gaming 16GB GDDR6 (RX-96TSW16BQ)",
-      "chip": "Radeon RX 9060 XT",
-      "vram_gb": 16,
-      "price_pln": 3249.0,
-      "currency": "PLN"
-    },
-    {
-      "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-xfx-quicksilver-radeon-rx-9070-xt-white-gaming-16gb-gddr6-rx-97tqickw9-14882949/",
-      "name": "Karta graficzna XFX Quicksilver Radeon RX 9070 XT White Gaming 16GB GDDR6 (RX-97TQICKW9)",
-      "chip": "Radeon RX 9070 XT",
-      "vram_gb": 16,
-      "price_pln": 5172.99,
-      "currency": "PLN"
-    },
-    {
-      "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-xfx-radeon-rx-6400-speedster-swft105-4gb-gddr6-rx-64xl4sfg2-11643883/",
-      "name": "Karta graficzna XFX Radeon RX 6400 Speedster SWFT105 4GB GDDR6 (RX-64XL4SFG2)",
-      "chip": "Radeon RX 6400",
-      "vram_gb": 4,
-      "price_pln": 1202.61,
+      "price_pln": 2619.47,
       "currency": "PLN"
     },
     {
@@ -1492,16 +1492,7 @@
       "name": "Karta graficzna Gigabyte GeForce RTX 3050 OC Low Profile 6GB GDDR6 (GV-N3050OC-6GL)",
       "chip": "GeForce RTX 3050",
       "vram_gb": 6,
-      "price_pln": 1900.99,
-      "currency": "PLN"
-    },
-    {
-      "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-sapphire-nitro-radeon-rx-9070-16gb-gddr6-11349-01-20g-14732574/",
-      "name": "Karta graficzna Sapphire Nitro+ Radeon RX 9070 16GB GDDR6 (11349-01-20G)",
-      "chip": "Radeon RX 9070",
-      "vram_gb": 16,
-      "price_pln": 4616.73,
+      "price_pln": 1911.99,
       "currency": "PLN"
     },
     {
@@ -1515,6 +1506,24 @@
     },
     {
       "store": "morele",
+      "url": "https://www.morele.net/karta-graficzna-asrock-radeon-rx-9070-xt-taichi-oc-16gb-gddr6-rx9070xt-tc-16go-14732564/",
+      "name": "Karta graficzna ASRock Radeon RX 9070 XT Taichi OC 16GB GDDR6 (RX9070XT TC 16GO)",
+      "chip": "Radeon RX 9070 XT",
+      "vram_gb": 16,
+      "price_pln": 6473.36,
+      "currency": "PLN"
+    },
+    {
+      "store": "morele",
+      "url": "https://www.morele.net/karta-graficzna-sapphire-nitro-radeon-rx-9070-16gb-gddr6-11349-01-20g-14732574/",
+      "name": "Karta graficzna Sapphire Nitro+ Radeon RX 9070 16GB GDDR6 (11349-01-20G)",
+      "chip": "Radeon RX 9070",
+      "vram_gb": 16,
+      "price_pln": 4665.59,
+      "currency": "PLN"
+    },
+    {
+      "store": "morele",
       "url": "https://www.morele.net/karta-graficzna-powercolor-hellhound-radeon-rx-9070-xt-16gb-gddr6-rx9070xt-16g-l-oc-white-14825821/",
       "name": "Karta graficzna PowerColor Hellhound Radeon RX 9070 XT 16GB GDDR6 (RX9070XT 16G-L/OC/WHITE)",
       "chip": "Radeon RX 9070 XT",
@@ -1524,20 +1533,20 @@
     },
     {
       "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-xfx-swift-radeon-rx-9060-xt-oc-white-triple-fan-gaming-16gb-gddr6-rx-96ts316w7-15250943/",
-      "name": "Karta graficzna XFX Swift Radeon RX 9060 XT OC White Triple Fan Gaming 16GB GDDR6 (RX-96TS316W7)",
-      "chip": "Radeon RX 9060 XT",
+      "url": "https://www.morele.net/karta-graficzna-gigabyte-radeon-rx-9070-gaming-16gb-gddr6-gv-r9070gaming-16gd-15741167/",
+      "name": "Karta graficzna Gigabyte Radeon RX 9070 Gaming 16GB GDDR6 (GV-R9070GAMING-16GD)",
+      "chip": "Radeon RX 9070",
       "vram_gb": 16,
-      "price_pln": 3786.99,
+      "price_pln": 4847.62,
       "currency": "PLN"
     },
     {
       "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-asrock-radeon-rx-9070-xt-taichi-oc-16gb-gddr6-rx9070xt-tc-16go-14732564/",
-      "name": "Karta graficzna ASRock Radeon RX 9070 XT Taichi OC 16GB GDDR6 (RX9070XT TC 16GO)",
-      "chip": "Radeon RX 9070 XT",
+      "url": "https://www.morele.net/karta-graficzna-xfx-swift-radeon-rx-9060-xt-oc-white-triple-fan-gaming-16gb-gddr6-rx-96ts316w7-15250943/",
+      "name": "Karta graficzna XFX Swift Radeon RX 9060 XT OC White Triple Fan Gaming 16GB GDDR6 (RX-96TS316W7)",
+      "chip": "Radeon RX 9060 XT",
       "vram_gb": 16,
-      "price_pln": 6473.48,
+      "price_pln": 3784.99,
       "currency": "PLN"
     },
     {
@@ -1546,7 +1555,7 @@
       "name": "Karta graficzna Gigabyte GeForce RTX 5070 Ti Windforce OC V2 16GB GDDR7 DLSS4 (GV-N507TWF3OCV2-16GD)",
       "chip": "GeForce RTX 5070 Ti",
       "vram_gb": 16,
-      "price_pln": 8946.99,
+      "price_pln": 8994.99,
       "currency": "PLN"
     },
     {
@@ -1555,7 +1564,7 @@
       "name": "Karta graficzna Biostar GeForce RTX 3060 Ti 8GB GDDR6X (N3606TM82)",
       "chip": "GeForce RTX 3060 Ti",
       "vram_gb": 8,
-      "price_pln": 2284.99,
+      "price_pln": 2293.99,
       "currency": "PLN"
     },
     {
@@ -1578,11 +1587,11 @@
     },
     {
       "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-gigabyte-geforce-rtx-5090-windforce-oc-32gb-gddr7-gv-n5090wf3oc-32gd-14485746/",
-      "name": "Karta graficzna Gigabyte GeForce RTX 5090 Windforce OC 32GB GDDR7 (GV-N5090WF3OC-32GD)",
-      "chip": "GeForce RTX 5090",
-      "vram_gb": 32,
-      "price_pln": 41163.95,
+      "url": "https://www.morele.net/karta-graficzna-asus-prime-radeon-rx-9070-oc-16gb-gddr6-prime-rx9070-o16g-14731767/",
+      "name": "Karta graficzna Asus Prime Radeon RX 9070 OC 16GB GDDR6 (PRIME-RX9070-O16G)",
+      "chip": "Radeon RX 9070",
+      "vram_gb": 16,
+      "price_pln": 5157.07,
       "currency": "PLN"
     },
     {
@@ -1596,20 +1605,11 @@
     },
     {
       "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-asus-prime-radeon-rx-9070-oc-16gb-gddr6-prime-rx9070-o16g-14731767/",
-      "name": "Karta graficzna Asus Prime Radeon RX 9070 OC 16GB GDDR6 (PRIME-RX9070-O16G)",
-      "chip": "Radeon RX 9070",
-      "vram_gb": 16,
-      "price_pln": 5157.07,
-      "currency": "PLN"
-    },
-    {
-      "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-asus-tuf-geforce-rtx-5070-oc-12gb-gddr7-dlss4-tuf-rtx5070-o12g-gaming-14735375/",
-      "name": "Karta graficzna Asus TUF GeForce RTX 5070 OC 12GB GDDR7 DLSS4 (TUF-RTX5070-O12G-GAMING)",
-      "chip": "GeForce RTX 5070",
-      "vram_gb": 12,
-      "price_pln": 5713.47,
+      "url": "https://www.morele.net/karta-graficzna-gigabyte-geforce-rtx-5090-windforce-oc-32gb-gddr7-gv-n5090wf3oc-32gd-14485746/",
+      "name": "Karta graficzna Gigabyte GeForce RTX 5090 Windforce OC 32GB GDDR7 (GV-N5090WF3OC-32GD)",
+      "chip": "GeForce RTX 5090",
+      "vram_gb": 32,
+      "price_pln": 41163.95,
       "currency": "PLN"
     },
     {
@@ -1618,7 +1618,52 @@
       "name": "Karta graficzna Sapphire Pure Radeon RX 9070 16GB GDDR6 (11349-02-20G)",
       "chip": "Radeon RX 9070",
       "vram_gb": 16,
-      "price_pln": 4473.22,
+      "price_pln": 4504.82,
+      "currency": "PLN"
+    },
+    {
+      "store": "morele",
+      "url": "https://www.morele.net/karta-graficzna-asus-tuf-geforce-rtx-5070-oc-12gb-gddr7-dlss4-tuf-rtx5070-o12g-gaming-14735375/",
+      "name": "Karta graficzna Asus TUF GeForce RTX 5070 OC 12GB GDDR7 DLSS4 (TUF-RTX5070-O12G-GAMING)",
+      "chip": "GeForce RTX 5070",
+      "vram_gb": 12,
+      "price_pln": 4971.66,
+      "currency": "PLN"
+    },
+    {
+      "store": "morele",
+      "url": "https://www.morele.net/karta-graficzna-sparkle-arc-a380-elf-6gb-gddr6-sa380e-6g-13118012/",
+      "name": "Karta graficzna Sparkle Arc A380 Elf 6GB GDDR6 (SA380E-6G)",
+      "chip": "Arc A380",
+      "vram_gb": 6,
+      "price_pln": 1062.36,
+      "currency": "PLN"
+    },
+    {
+      "store": "morele",
+      "url": "https://www.morele.net/karta-graficzna-zotac-geforce-rtx-5060-ti-twin-edge-oc-8gb-gddr7-dlss4-zt-b50610h-10m-14863853/",
+      "name": "Karta graficzna Zotac GeForce RTX 5060 Ti Twin Edge OC 8GB GDDR7 DLSS4 (ZT-B50610H-10M)",
+      "chip": "GeForce RTX 5060 Ti",
+      "vram_gb": 8,
+      "price_pln": 2707.47,
+      "currency": "PLN"
+    },
+    {
+      "store": "morele",
+      "url": "https://www.morele.net/karta-graficzna-asus-dual-geforce-rtx-5060-ti-white-oc-16gb-gddr7-dlss4-dual-rtx5060ti-o16g-white-15440689/",
+      "name": "Karta graficzna Asus Dual GeForce RTX 5060 Ti White OC 16GB GDDR7 DLSS4 (DUAL-RTX5060TI-O16G-WHITE)",
+      "chip": "GeForce RTX 5060 Ti",
+      "vram_gb": 16,
+      "price_pln": 4716.9,
+      "currency": "PLN"
+    },
+    {
+      "store": "morele",
+      "url": "https://www.morele.net/karta-graficzna-pny-geforce-rtx-5080-triple-fan-16gb-gddr7-dlss4-vcg508016tfxpb1-15447616/",
+      "name": "Karta graficzna PNY GeForce RTX 5080 Triple Fan 16GB GDDR7 DLSS4 (VCG508016TFXPB1)",
+      "chip": "GeForce RTX 5080",
+      "vram_gb": 16,
+      "price_pln": 10470.99,
       "currency": "PLN"
     },
     {
@@ -1627,16 +1672,7 @@
       "name": "Karta graficzna Zotac Gaming GeForce RTX 5060 Twin Edge OC White 8GB GDDR7 DLSS4 (ZT-B50600Q-10M)",
       "chip": "GeForce RTX 5060",
       "vram_gb": 8,
-      "price_pln": 2712.99,
-      "currency": "PLN"
-    },
-    {
-      "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-pny-geforce-rtx-5070-ti-argb-epic-x-rgb-16gb-gddr7-dlss4-vcg5070t16tfxxpb1-600229210/",
-      "name": "Karta graficzna PNY GeForce RTX 5070 Ti ARGB EPIC-X RGB 16GB GDDR7 DLSS4 (VCG5070T16TFXXPB1)",
-      "chip": "GeForce RTX 5070 Ti",
-      "vram_gb": 16,
-      "price_pln": 7476.99,
+      "price_pln": 2717.99,
       "currency": "PLN"
     },
     {
@@ -1645,7 +1681,7 @@
       "name": "Karta graficzna Gainward GeForce RTX 3060 Python II OC 12GB GDDR6 (NE63060U19K9-PG190V)",
       "chip": "GeForce RTX 3060",
       "vram_gb": 12,
-      "price_pln": 2271.8,
+      "price_pln": 2200.85,
       "currency": "PLN"
     },
     {
@@ -1659,29 +1695,11 @@
     },
     {
       "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-asus-dual-geforce-rtx-5060-ti-white-oc-16gb-gddr7-dlss4-dual-rtx5060ti-o16g-white-15440689/",
-      "name": "Karta graficzna Asus Dual GeForce RTX 5060 Ti White OC 16GB GDDR7 DLSS4 (DUAL-RTX5060TI-O16G-WHITE)",
-      "chip": "GeForce RTX 5060 Ti",
-      "vram_gb": 16,
-      "price_pln": 4693.38,
-      "currency": "PLN"
-    },
-    {
-      "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-pny-geforce-rtx-5080-triple-fan-16gb-gddr7-dlss4-vcg508016tfxpb1-15447616/",
-      "name": "Karta graficzna PNY GeForce RTX 5080 Triple Fan 16GB GDDR7 DLSS4 (VCG508016TFXPB1)",
-      "chip": "GeForce RTX 5080",
-      "vram_gb": 16,
-      "price_pln": 10450.99,
-      "currency": "PLN"
-    },
-    {
-      "store": "morele",
       "url": "https://www.morele.net/karta-graficzna-gigabyte-geforce-rtx-5090-gaming-oc-32gb-gddr7-gv-n5090gaming-oc-32gd-14485560/",
       "name": "Karta graficzna Gigabyte GeForce RTX 5090 Gaming OC 32GB GDDR7 (GV-N5090GAMING OC-32GD)",
       "chip": "GeForce RTX 5090",
       "vram_gb": 32,
-      "price_pln": 40351.99,
+      "price_pln": 40426.99,
       "currency": "PLN"
     },
     {
@@ -1695,24 +1713,6 @@
     },
     {
       "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-powercolor-hellhound-radeon-rx-9070-gre-12gb-gddr6-rx9070gre-12g-l-oc-600118440/",
-      "name": "Karta graficzna PowerColor Hellhound Radeon RX 9070 GRE 12GB GDDR6 (RX9070GRE 12G-L/OC)",
-      "chip": "Radeon RX 9070 GRE",
-      "vram_gb": 12,
-      "price_pln": 3480.0,
-      "currency": "PLN"
-    },
-    {
-      "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-inno3d-geforce-rtx-5090-ichill-frostbite-32gb-gddr7-dlss4-c50903-32d7x-1759fb-14520191/",
-      "name": "Karta graficzna Inno3D GeForce RTX 5090 iCHILL Frostbite 32GB GDDR7 DLSS4 (C50903-32D7X-1759FB)",
-      "chip": "GeForce RTX 5090",
-      "vram_gb": 32,
-      "price_pln": 39753.07,
-      "currency": "PLN"
-    },
-    {
-      "store": "morele",
       "url": "https://www.morele.net/karta-graficzna-palit-geforce-rtx-3060-infinity-2-oc-12gb-gddr6-ne63060u19k9-pg190l-600229186/",
       "name": "Karta graficzna Palit GeForce RTX 3060 Infinity 2 OC 12GB GDDR6 (NE63060U19K9-PG190L)",
       "chip": "GeForce RTX 3060",
@@ -1722,11 +1722,11 @@
     },
     {
       "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-palit-geforce-rtx-5060-infinity-2-oc-v1-8gb-gddr7-dlss4-ne75060v19p1-gb2051l-600565076/",
-      "name": "Karta graficzna Palit GeForce RTX 5060 Infinity 2 OC V1 8GB GDDR7 DLSS4 (NE75060V19P1-GB2051L)",
-      "chip": "GeForce RTX 5060",
-      "vram_gb": 8,
-      "price_pln": 2431.8,
+      "url": "https://www.morele.net/karta-graficzna-inno3d-geforce-rtx-5090-ichill-frostbite-32gb-gddr7-dlss4-c50903-32d7x-1759fb-14520191/",
+      "name": "Karta graficzna Inno3D GeForce RTX 5090 iCHILL Frostbite 32GB GDDR7 DLSS4 (C50903-32D7X-1759FB)",
+      "chip": "GeForce RTX 5090",
+      "vram_gb": 32,
+      "price_pln": 39850.1,
       "currency": "PLN"
     },
     {
@@ -1740,29 +1740,38 @@
     },
     {
       "store": "morele",
+      "url": "https://www.morele.net/karta-graficzna-pny-geforce-rtx-5070-triple-fan-overclocked-12gb-gddr7-dlss4-vcg507012tfxpb1-o-14481850/",
+      "name": "Karta graficzna PNY GeForce RTX 5070 Triple Fan Overclocked 12GB GDDR7 DLSS4 (VCG507012TFXPB1-O)",
+      "chip": "GeForce RTX 5070",
+      "vram_gb": 12,
+      "price_pln": 5273.07,
+      "currency": "PLN"
+    },
+    {
+      "store": "morele",
+      "url": "https://www.morele.net/karta-graficzna-powercolor-hellhound-radeon-rx-9070-gre-12gb-gddr6-rx9070gre-12g-l-oc-600118440/",
+      "name": "Karta graficzna PowerColor Hellhound Radeon RX 9070 GRE 12GB GDDR6 (RX9070GRE 12G-L/OC)",
+      "chip": "Radeon RX 9070 GRE",
+      "vram_gb": 12,
+      "price_pln": 3391.79,
+      "currency": "PLN"
+    },
+    {
+      "store": "morele",
+      "url": "https://www.morele.net/karta-graficzna-palit-geforce-rtx-5060-infinity-2-oc-v1-8gb-gddr7-dlss4-ne75060v19p1-gb2051l-600565076/",
+      "name": "Karta graficzna Palit GeForce RTX 5060 Infinity 2 OC V1 8GB GDDR7 DLSS4 (NE75060V19P1-GB2051L)",
+      "chip": "GeForce RTX 5060",
+      "vram_gb": 8,
+      "price_pln": 2445.23,
+      "currency": "PLN"
+    },
+    {
+      "store": "morele",
       "url": "https://www.morele.net/karta-graficzna-asus-dual-geforce-rtx-3050-oc-6gb-gddr6-dual-rtx3050-o6g-13177948/",
       "name": "Karta graficzna Asus Dual GeForce RTX 3050 OC 6GB GDDR6 (DUAL-RTX3050-O6G)",
       "chip": "GeForce RTX 3050",
       "vram_gb": 6,
       "price_pln": 1399.0,
-      "currency": "PLN"
-    },
-    {
-      "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-pny-geforce-rtx-5070-triple-fan-overclocked-12gb-gddr7-dlss4-vcg507012tfxpb1-o-14481850/",
-      "name": "Karta graficzna PNY GeForce RTX 5070 Triple Fan Overclocked 12GB GDDR7 DLSS4 (VCG507012TFXPB1-O)",
-      "chip": "GeForce RTX 5070",
-      "vram_gb": 12,
-      "price_pln": 5037.99,
-      "currency": "PLN"
-    },
-    {
-      "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-sapphire-pulse-radeon-rx-9070-16gb-gddr6-11349-03-20g-14732578/",
-      "name": "Karta graficzna Sapphire Pulse Radeon RX 9070 16GB GDDR6 (11349-03-20G)",
-      "chip": "Radeon RX 9070",
-      "vram_gb": 16,
-      "price_pln": 4277.08,
       "currency": "PLN"
     },
     {
@@ -1776,24 +1785,6 @@
     },
     {
       "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-asus-prime-geforce-rtx-5060-oc-8gb-gddr7-dlss4-prime-rtx5060-o8g-15106720/",
-      "name": "Karta graficzna Asus Prime GeForce RTX 5060 OC 8GB GDDR7 DLSS4 (PRIME-RTX5060-O8G)",
-      "chip": "GeForce RTX 5060",
-      "vram_gb": 8,
-      "price_pln": 2480.5,
-      "currency": "PLN"
-    },
-    {
-      "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-gigabyte-aorus-geforce-rtx-5090-master-ice-32gb-gddr7-dlss4-gv-n5090aorusm-ice-32gd-14485557/",
-      "name": "Karta graficzna Gigabyte AORUS GeForce RTX 5090 Master ICE 32GB GDDR7 DLSS4 (GV-N5090AORUSM ICE-32GD)",
-      "chip": "GeForce RTX 5090",
-      "vram_gb": 32,
-      "price_pln": 40870.39,
-      "currency": "PLN"
-    },
-    {
-      "store": "morele",
       "url": "https://www.morele.net/karta-graficzna-msi-geforce-rtx-5050-gaming-oc-8gb-gddr6-dlss4-15447359/",
       "name": "Karta graficzna MSI GeForce RTX 5050 Gaming OC 8GB GDDR6 DLSS4",
       "chip": "GeForce RTX 5050",
@@ -1803,11 +1794,38 @@
     },
     {
       "store": "morele",
+      "url": "https://www.morele.net/karta-graficzna-asus-prime-geforce-rtx-5060-oc-8gb-gddr7-dlss4-prime-rtx5060-o8g-15106720/",
+      "name": "Karta graficzna Asus Prime GeForce RTX 5060 OC 8GB GDDR7 DLSS4 (PRIME-RTX5060-O8G)",
+      "chip": "GeForce RTX 5060",
+      "vram_gb": 8,
+      "price_pln": 2480.5,
+      "currency": "PLN"
+    },
+    {
+      "store": "morele",
+      "url": "https://www.morele.net/karta-graficzna-sapphire-pulse-radeon-rx-9070-16gb-gddr6-11349-03-20g-14732578/",
+      "name": "Karta graficzna Sapphire Pulse Radeon RX 9070 16GB GDDR6 (11349-03-20G)",
+      "chip": "Radeon RX 9070",
+      "vram_gb": 16,
+      "price_pln": 4277.08,
+      "currency": "PLN"
+    },
+    {
+      "store": "morele",
       "url": "https://www.morele.net/karta-graficzna-xfx-swift-radeon-rx-9070-oc-white-triple-fan-gaming-16gb-gddr6-rx-97swfb3w9-14739183/",
       "name": "Karta graficzna XFX Swift Radeon RX 9070 OC White Triple Fan Gaming 16GB GDDR6 (RX-97SWFB3W9)",
       "chip": "Radeon RX 9070",
       "vram_gb": 16,
-      "price_pln": 4715.99,
+      "price_pln": 4739.99,
+      "currency": "PLN"
+    },
+    {
+      "store": "morele",
+      "url": "https://www.morele.net/karta-graficzna-xfx-swift-radeon-rx-9070-oc-triple-fan-gaming-16gb-gddr6-rx-97swfb3b9-14739182/",
+      "name": "Karta graficzna XFX Swift Radeon RX 9070 OC Triple Fan Gaming 16GB GDDR6 (RX-97SWFB3B9)",
+      "chip": "Radeon RX 9070",
+      "vram_gb": 16,
+      "price_pln": 4624.99,
       "currency": "PLN"
     },
     {
@@ -1821,11 +1839,38 @@
     },
     {
       "store": "morele",
+      "url": "https://www.morele.net/karta-graficzna-sapphire-radeon-rx-6700-xt-pulse-gaming-oc-12gb-gddr6-11306-05-20g-9289654/",
+      "name": "Karta graficzna Sapphire Radeon RX 6700 XT Pulse Gaming OC 12GB GDDR6 (11306-05-20G)",
+      "chip": "Radeon RX 6700 XT",
+      "vram_gb": 12,
+      "price_pln": 3361.03,
+      "currency": "PLN"
+    },
+    {
+      "store": "morele",
+      "url": "https://www.morele.net/karta-graficzna-inno3d-geforce-rtx-5080-x3-16gb-gddr7-dlss4-n50803-16d7-176068n-14483821/",
+      "name": "Karta graficzna Inno3D GeForce RTX 5080 X3 16GB GDDR7 DLSS4 (N50803-16D7-176068N)",
+      "chip": "GeForce RTX 5080",
+      "vram_gb": 16,
+      "price_pln": 9637.9,
+      "currency": "PLN"
+    },
+    {
+      "store": "morele",
       "url": "https://www.morele.net/karta-graficzna-pny-geforce-rtx-5060-epic-x-rgb-overclocked-triple-fan-8gb-gddr7-dlss4-vcg50608tfxxpb1-o-15356485/",
       "name": "Karta graficzna PNY GeForce RTX 5060 Epic-X RGB Overclocked Triple Fan 8GB GDDR7 DLSS4 (VCG50608TFXXPB1-O)",
       "chip": "GeForce RTX 5060",
       "vram_gb": 8,
       "price_pln": 2442.18,
+      "currency": "PLN"
+    },
+    {
+      "store": "morele",
+      "url": "https://www.morele.net/karta-graficzna-gigabyte-aorus-geforce-rtx-5090-master-ice-32gb-gddr7-dlss4-gv-n5090aorusm-ice-32gd-14485557/",
+      "name": "Karta graficzna Gigabyte AORUS GeForce RTX 5090 Master ICE 32GB GDDR7 DLSS4 (GV-N5090AORUSM ICE-32GD)",
+      "chip": "GeForce RTX 5090",
+      "vram_gb": 32,
+      "price_pln": 40870.39,
       "currency": "PLN"
     },
     {
@@ -1839,47 +1884,11 @@
     },
     {
       "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-xfx-swift-radeon-rx-9070-oc-triple-fan-gaming-16gb-gddr6-rx-97swfb3b9-14739182/",
-      "name": "Karta graficzna XFX Swift Radeon RX 9070 OC Triple Fan Gaming 16GB GDDR6 (RX-97SWFB3B9)",
-      "chip": "Radeon RX 9070",
-      "vram_gb": 16,
-      "price_pln": 4600.99,
-      "currency": "PLN"
-    },
-    {
-      "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-sapphire-radeon-rx-6700-xt-pulse-gaming-oc-12gb-gddr6-11306-05-20g-9289654/",
-      "name": "Karta graficzna Sapphire Radeon RX 6700 XT Pulse Gaming OC 12GB GDDR6 (11306-05-20G)",
-      "chip": "Radeon RX 6700 XT",
-      "vram_gb": 12,
-      "price_pln": 3324.86,
-      "currency": "PLN"
-    },
-    {
-      "store": "morele",
       "url": "https://www.morele.net/karta-graficzna-palit-geforce-rtx-5080-gamingpro-oc-16gb-gddr7-dlss4-ne75080s19t2-gb2031a-14485132/",
       "name": "Karta graficzna Palit GeForce RTX 5080 GamingPro OC 16GB GDDR7 DLSS4 (NE75080S19T2-GB2031A)",
       "chip": "GeForce RTX 5080",
       "vram_gb": 16,
       "price_pln": 9674.1,
-      "currency": "PLN"
-    },
-    {
-      "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-zotac-gaming-geforce-rtx-5080-solid-core-oc-16gb-gddr7-dlss4-zt-b50800j2-10p-14791480/",
-      "name": "Karta graficzna Zotac Gaming GeForce RTX 5080 Solid CORE OC 16GB GDDR7 DLSS4 (ZT-B50800J2-10P)",
-      "chip": "GeForce RTX 5080",
-      "vram_gb": 16,
-      "price_pln": 9917.22,
-      "currency": "PLN"
-    },
-    {
-      "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-gigabyte-geforce-rtx-3060-windforce-oc-lhr-12gb-gddr6-gv-n3060wf2oc-12gd-2-0-12819699/",
-      "name": "Karta graficzna Gigabyte GeForce RTX 3060 Windforce OC LHR 12GB GDDR6 (GV-N3060WF2OC-12GD 2.0)",
-      "chip": "GeForce RTX 3060",
-      "vram_gb": 12,
-      "price_pln": 2299.99,
       "currency": "PLN"
     },
     {
@@ -1893,20 +1902,20 @@
     },
     {
       "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-asus-tuf-gaming-geforce-rtx-5090-oc-32gb-gddr7-dlss4-tuf-rtx5090-o32g-gaming-14730224/",
-      "name": "Karta graficzna Asus TUF Gaming GeForce RTX 5090 OC 32GB GDDR7 DLSS4 (TUF-RTX5090-O32G-GAMING)",
-      "chip": "GeForce RTX 5090",
-      "vram_gb": 32,
-      "price_pln": 43965.53,
+      "url": "https://www.morele.net/karta-graficzna-zotac-gaming-geforce-rtx-5080-solid-core-oc-16gb-gddr7-dlss4-zt-b50800j2-10p-14791480/",
+      "name": "Karta graficzna Zotac Gaming GeForce RTX 5080 Solid CORE OC 16GB GDDR7 DLSS4 (ZT-B50800J2-10P)",
+      "chip": "GeForce RTX 5080",
+      "vram_gb": 16,
+      "price_pln": 9917.22,
       "currency": "PLN"
     },
     {
       "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-gigabyte-geforce-rtx-5060-gaming-oc-8gb-gddr7-dlss4-gv-n5060gaming-oc-8gd-15246136/",
-      "name": "Karta graficzna Gigabyte GeForce RTX 5060 Gaming OC 8GB GDDR7 DLSS4 (GV-N5060GAMING OC-8GD)",
-      "chip": "GeForce RTX 5060",
-      "vram_gb": 8,
-      "price_pln": 3047.84,
+      "url": "https://www.morele.net/karta-graficzna-asus-tuf-gaming-geforce-rtx-5090-oc-32gb-gddr7-dlss4-tuf-rtx5090-o32g-gaming-14730224/",
+      "name": "Karta graficzna Asus TUF Gaming GeForce RTX 5090 OC 32GB GDDR7 DLSS4 (TUF-RTX5090-O32G-GAMING)",
+      "chip": "GeForce RTX 5090",
+      "vram_gb": 32,
+      "price_pln": 51683.39,
       "currency": "PLN"
     },
     {
@@ -1920,11 +1929,20 @@
     },
     {
       "store": "morele",
+      "url": "https://www.morele.net/karta-graficzna-gigabyte-geforce-rtx-5060-gaming-oc-8gb-gddr7-dlss4-gv-n5060gaming-oc-8gd-15246136/",
+      "name": "Karta graficzna Gigabyte GeForce RTX 5060 Gaming OC 8GB GDDR7 DLSS4 (GV-N5060GAMING OC-8GD)",
+      "chip": "GeForce RTX 5060",
+      "vram_gb": 8,
+      "price_pln": 3047.84,
+      "currency": "PLN"
+    },
+    {
+      "store": "morele",
       "url": "https://www.morele.net/karta-graficzna-biostar-geforce-rtx-3080-10gb-gddr6x-vn3806rmt3-12899442/",
       "name": "Karta graficzna Biostar GeForce RTX 3080 10GB GDDR6X (VN3806RMT3)",
       "chip": "GeForce RTX 3080",
       "vram_gb": 10,
-      "price_pln": 3312.97,
+      "price_pln": 3494.61,
       "currency": "PLN"
     },
     {
@@ -1934,15 +1952,6 @@
       "chip": "GeForce RTX 5060 Ti",
       "vram_gb": 16,
       "price_pln": 4259.54,
-      "currency": "PLN"
-    },
-    {
-      "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-sapphire-nitro-radeon-rx-9070-xt-phantomlink-16gb-gddr6-11348-08-20g-600011401/",
-      "name": "Karta graficzna Sapphire Nitro+ Radeon RX 9070 XT PhantomLink 16GB GDDR6 (11348-08-20G)",
-      "chip": "Radeon RX 9070 XT",
-      "vram_gb": 16,
-      "price_pln": 5503.99,
       "currency": "PLN"
     },
     {
@@ -1960,7 +1969,16 @@
       "name": "Karta graficzna Zotac Gaming GeForce RTX 5060 Twin Edge OC 8GB GDDR7 DLSS4 (ZT-B50600H-10M)",
       "chip": "GeForce RTX 5060",
       "vram_gb": 8,
-      "price_pln": 2579.98,
+      "price_pln": 2579.93,
+      "currency": "PLN"
+    },
+    {
+      "store": "morele",
+      "url": "https://www.morele.net/karta-graficzna-sapphire-nitro-radeon-rx-9070-xt-phantomlink-16gb-gddr6-11348-08-20g-600011401/",
+      "name": "Karta graficzna Sapphire Nitro+ Radeon RX 9070 XT PhantomLink 16GB GDDR6 (11348-08-20G)",
+      "chip": "Radeon RX 9070 XT",
+      "vram_gb": 16,
+      "price_pln": 5563.99,
       "currency": "PLN"
     },
     {
@@ -1978,7 +1996,7 @@
       "name": "Karta graficzna Palit GeForce RTX 5090 GameRock 32GB GDDR7 DLSS4 (NE75090019R5-GB2020G)",
       "chip": "GeForce RTX 5090",
       "vram_gb": 32,
-      "price_pln": 42218.99,
+      "price_pln": 42296.99,
       "currency": "PLN"
     },
     {
@@ -1987,16 +2005,7 @@
       "name": "Karta graficzna Inno3D GeForce RTX 5060 Ti Twin X2 OC 8GB GDDR7 DLSS4 (N506T2-08D7X-193075N)",
       "chip": "GeForce RTX 5060 Ti",
       "vram_gb": 8,
-      "price_pln": 3150.82,
-      "currency": "PLN"
-    },
-    {
-      "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-zotac-geforce-rtx-5060-ti-twin-edge-oc-8gb-gddr7-dlss4-zt-b50610h-10m-14863853/",
-      "name": "Karta graficzna Zotac GeForce RTX 5060 Ti Twin Edge OC 8GB GDDR7 DLSS4 (ZT-B50610H-10M)",
-      "chip": "GeForce RTX 5060 Ti",
-      "vram_gb": 8,
-      "price_pln": 2707.47,
+      "price_pln": 2804.57,
       "currency": "PLN"
     },
     {
@@ -2010,47 +2019,20 @@
     },
     {
       "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-asus-tuf-gaming-geforce-rtx-5060-oc-8gb-gddr7-dlss4-tuf-rtx5060-o8g-gaming-15234287/",
-      "name": "Karta graficzna Asus TUF Gaming GeForce RTX 5060 OC 8GB GDDR7 DLSS4 (TUF-RTX5060-O8G-GAMING)",
-      "chip": "GeForce RTX 5060",
-      "vram_gb": 8,
-      "price_pln": 3223.94,
-      "currency": "PLN"
-    },
-    {
-      "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-arktek-geforce-rtx-3060-hyperion-v4-12gb-akn3060d6s12gh1-600170393/",
-      "name": "Karta graficzna Arktek GeForce RTX 3060 Hyperion V4 12GB (AKN3060D6S12GH1)",
-      "chip": "GeForce RTX 3060",
-      "vram_gb": 12,
-      "price_pln": 2099.99,
-      "currency": "PLN"
-    },
-    {
-      "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-powercolor-radeon-rx-6800-xt-red-dragon-oc-16gb-gddr6-axrx-6800xt-16gbd6-3dhr-oc-5946212/",
-      "name": "Karta graficzna PowerColor Radeon RX 6800 XT Red Dragon OC 16GB GDDR6 (AXRX 6800XT 16GBD6-3DHR/OC)",
-      "chip": "Radeon RX 6800 XT",
-      "vram_gb": 16,
-      "price_pln": 3165.66,
-      "currency": "PLN"
-    },
-    {
-      "store": "morele",
       "url": "https://www.morele.net/karta-graficzna-sapphire-pulse-radeon-rx-9060-xt-8gb-gddr6-11350-05-20g-15568610/",
       "name": "Karta graficzna Sapphire Pulse Radeon RX 9060 XT 8GB GDDR6 (11350-05-20G)",
       "chip": "Radeon RX 9060 XT",
       "vram_gb": 8,
-      "price_pln": 2599.0,
+      "price_pln": 2499.0,
       "currency": "PLN"
     },
     {
       "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-palit-geforce-rtx-5060-ti-infinity-3-oc-16gb-gddr7-dlss4-ne7506ts19t1-gb2061s-14848078/",
-      "name": "Karta graficzna Palit GeForce RTX 5060 Ti Infinity 3 OC 16GB GDDR7 DLSS4 (NE7506TS19T1-GB2061S)",
-      "chip": "GeForce RTX 5060 Ti",
-      "vram_gb": 16,
-      "price_pln": 4080.11,
+      "url": "https://www.morele.net/karta-graficzna-asus-tuf-gaming-geforce-rtx-5060-oc-8gb-gddr7-dlss4-tuf-rtx5060-o8g-gaming-15234287/",
+      "name": "Karta graficzna Asus TUF Gaming GeForce RTX 5060 OC 8GB GDDR7 DLSS4 (TUF-RTX5060-O8G-GAMING)",
+      "chip": "GeForce RTX 5060",
+      "vram_gb": 8,
+      "price_pln": 3241.58,
       "currency": "PLN"
     },
     {
@@ -2064,11 +2046,29 @@
     },
     {
       "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-sparkle-arc-b570-guardian-oc-10gb-gddr6-sb570g-10goc-14492974/",
-      "name": "Karta graficzna Sparkle Arc B570 Guardian OC 10GB GDDR6 (SB570G-10GOC)",
-      "chip": "Arc B570",
-      "vram_gb": 10,
-      "price_pln": 1737.88,
+      "url": "https://www.morele.net/karta-graficzna-powercolor-radeon-rx-6800-xt-red-dragon-oc-16gb-gddr6-axrx-6800xt-16gbd6-3dhr-oc-5946212/",
+      "name": "Karta graficzna PowerColor Radeon RX 6800 XT Red Dragon OC 16GB GDDR6 (AXRX 6800XT 16GBD6-3DHR/OC)",
+      "chip": "Radeon RX 6800 XT",
+      "vram_gb": 16,
+      "price_pln": 3212.15,
+      "currency": "PLN"
+    },
+    {
+      "store": "morele",
+      "url": "https://www.morele.net/karta-graficzna-pny-geforce-rtx-5070-ti-argb-epic-x-rgb-16gb-gddr7-dlss4-vcg5070t16tfxxpb1-600229210/",
+      "name": "Karta graficzna PNY GeForce RTX 5070 Ti ARGB EPIC-X RGB 16GB GDDR7 DLSS4 (VCG5070T16TFXXPB1)",
+      "chip": "GeForce RTX 5070 Ti",
+      "vram_gb": 16,
+      "price_pln": 7490.99,
+      "currency": "PLN"
+    },
+    {
+      "store": "morele",
+      "url": "https://www.morele.net/karta-graficzna-palit-geforce-rtx-5060-ti-infinity-3-oc-16gb-gddr7-dlss4-ne7506ts19t1-gb2061s-14848078/",
+      "name": "Karta graficzna Palit GeForce RTX 5060 Ti Infinity 3 OC 16GB GDDR7 DLSS4 (NE7506TS19T1-GB2061S)",
+      "chip": "GeForce RTX 5060 Ti",
+      "vram_gb": 16,
+      "price_pln": 4080.11,
       "currency": "PLN"
     },
     {
@@ -2082,47 +2082,29 @@
     },
     {
       "store": "morele",
+      "url": "https://www.morele.net/karta-graficzna-sparkle-arc-b570-guardian-oc-10gb-gddr6-sb570g-10goc-14492974/",
+      "name": "Karta graficzna Sparkle Arc B570 Guardian OC 10GB GDDR6 (SB570G-10GOC)",
+      "chip": "Arc B570",
+      "vram_gb": 10,
+      "price_pln": 1839.99,
+      "currency": "PLN"
+    },
+    {
+      "store": "morele",
+      "url": "https://www.morele.net/karta-graficzna-arktek-geforce-rtx-3060-hyperion-v4-12gb-akn3060d6s12gh1-600170393/",
+      "name": "Karta graficzna Arktek GeForce RTX 3060 Hyperion V4 12GB (AKN3060D6S12GH1)",
+      "chip": "GeForce RTX 3060",
+      "vram_gb": 12,
+      "price_pln": 2099.99,
+      "currency": "PLN"
+    },
+    {
+      "store": "morele",
       "url": "https://www.morele.net/karta-graficzna-gainward-geforce-rtx-5070-ti-phoenix-s-16gb-gddr7-dlss4-ne7507t019t2-gb2031k-15413629/",
       "name": "Karta graficzna Gainward GeForce RTX 5070 Ti Phoenix-S 16GB GDDR7 DLSS4 (NE7507T019T2-GB2031K)",
       "chip": "GeForce RTX 5070 Ti",
       "vram_gb": 16,
       "price_pln": 7342.12,
-      "currency": "PLN"
-    },
-    {
-      "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-palit-geforce-rtx-5080-infinity-3-16gb-gddr7-dlss4-ne75080019t2-gb2035s-600169919/",
-      "name": "Karta graficzna Palit GeForce RTX 5080 Infinity 3 16GB GDDR7 DLSS4 (NE75080019T2-GB2035S)",
-      "chip": "GeForce RTX 5080",
-      "vram_gb": 16,
-      "price_pln": 9863.39,
-      "currency": "PLN"
-    },
-    {
-      "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-asus-dual-radeon-rx-9060-xt-white-16gb-gddr6-dual-rx9060xt-16g-white-15512768/",
-      "name": "Karta graficzna Asus Dual Radeon RX 9060 XT White 16GB GDDR6 (DUAL-RX9060XT-16G-WHITE)",
-      "chip": "Radeon RX 9060 XT",
-      "vram_gb": 16,
-      "price_pln": 3687.42,
-      "currency": "PLN"
-    },
-    {
-      "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-palit-geforce-rtx-5080-infinity-3-oc-16gb-gddr7-dlss4-ne75080u19t2-gb2035s-600410155/",
-      "name": "Karta graficzna Palit GeForce RTX 5080 Infinity 3 OC 16GB GDDR7 DLSS4 (NE75080U19T2-GB2035S)",
-      "chip": "GeForce RTX 5080",
-      "vram_gb": 16,
-      "price_pln": 10077.26,
-      "currency": "PLN"
-    },
-    {
-      "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-sapphire-nitro-radeon-rx-9070-xt-phantomlink-polar-edition-16gb-gddr6-11348-09-20g-600140453/",
-      "name": "Karta graficzna Sapphire Nitro+ Radeon RX 9070 XT PhantomLink Polar Edition 16GB GDDR6 (11348-09-20G)",
-      "chip": "Radeon RX 9070 XT",
-      "vram_gb": 16,
-      "price_pln": 6307.52,
       "currency": "PLN"
     },
     {
@@ -2136,38 +2118,47 @@
     },
     {
       "store": "morele",
+      "url": "https://www.morele.net/karta-graficzna-palit-geforce-rtx-5080-infinity-3-oc-16gb-gddr7-dlss4-ne75080u19t2-gb2035s-600410155/",
+      "name": "Karta graficzna Palit GeForce RTX 5080 Infinity 3 OC 16GB GDDR7 DLSS4 (NE75080U19T2-GB2035S)",
+      "chip": "GeForce RTX 5080",
+      "vram_gb": 16,
+      "price_pln": 10077.26,
+      "currency": "PLN"
+    },
+    {
+      "store": "morele",
+      "url": "https://www.morele.net/karta-graficzna-asus-dual-radeon-rx-9060-xt-white-16gb-gddr6-dual-rx9060xt-16g-white-15512768/",
+      "name": "Karta graficzna Asus Dual Radeon RX 9060 XT White 16GB GDDR6 (DUAL-RX9060XT-16G-WHITE)",
+      "chip": "Radeon RX 9060 XT",
+      "vram_gb": 16,
+      "price_pln": 3736.35,
+      "currency": "PLN"
+    },
+    {
+      "store": "morele",
+      "url": "https://www.morele.net/karta-graficzna-palit-geforce-rtx-5080-infinity-3-16gb-gddr7-dlss4-ne75080019t2-gb2035s-600169919/",
+      "name": "Karta graficzna Palit GeForce RTX 5080 Infinity 3 16GB GDDR7 DLSS4 (NE75080019T2-GB2035S)",
+      "chip": "GeForce RTX 5080",
+      "vram_gb": 16,
+      "price_pln": 10003.32,
+      "currency": "PLN"
+    },
+    {
+      "store": "morele",
+      "url": "https://www.morele.net/karta-graficzna-sapphire-nitro-radeon-rx-9070-xt-phantomlink-polar-edition-16gb-gddr6-11348-09-20g-600140453/",
+      "name": "Karta graficzna Sapphire Nitro+ Radeon RX 9070 XT PhantomLink Polar Edition 16GB GDDR6 (11348-09-20G)",
+      "chip": "Radeon RX 9070 XT",
+      "vram_gb": 16,
+      "price_pln": 6307.52,
+      "currency": "PLN"
+    },
+    {
+      "store": "morele",
       "url": "https://www.morele.net/karta-graficzna-gigabyte-aorus-geforce-rtx-5090-xtreme-waterforce-32gb-gddr7-gv-n5090aorusx-w-32gd-14485483/",
       "name": "Karta graficzna Gigabyte AORUS GeForce RTX 5090 Xtreme Waterforce 32GB GDDR7 (GV-N5090AORUSX W-32GD)",
       "chip": "GeForce RTX 5090",
       "vram_gb": 32,
       "price_pln": 40091.31,
-      "currency": "PLN"
-    },
-    {
-      "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-palit-geforce-rtx-5080-gamingpro-v1-16gb-gddr7-dlss4-ne75080019t2-gb2031y-14908141/",
-      "name": "Karta graficzna Palit GeForce RTX 5080 GamingPro V1 16GB GDDR7 DLSS4 (NE75080019T2-GB2031Y)",
-      "chip": "GeForce RTX 5080",
-      "vram_gb": 16,
-      "price_pln": 9918.99,
-      "currency": "PLN"
-    },
-    {
-      "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-gigabyte-aorus-geforce-rtx-5080-xtreme-waterforce-wb-16gb-gddr7-dlss4-gv-n5080aorusx-wb-16gd-14485970/",
-      "name": "Karta graficzna Gigabyte AORUS GeForce RTX 5080 Xtreme Waterforce WB 16GB GDDR7 DLSS4 (GV-N5080AORUSX WB-16GD)",
-      "chip": "GeForce RTX 5080",
-      "vram_gb": 16,
-      "price_pln": 11855.39,
-      "currency": "PLN"
-    },
-    {
-      "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-zotac-gaming-geforce-rtx-5090-solid-oc-32gb-gddr7-dlss4-zt-b50900j-10p-14486099/",
-      "name": "Karta graficzna Zotac Gaming GeForce RTX 5090 SOLID OC 32GB GDDR7 DLSS4 (ZT-B50900J-10P)",
-      "chip": "GeForce RTX 5090",
-      "vram_gb": 32,
-      "price_pln": 41448.65,
       "currency": "PLN"
     },
     {
@@ -2181,11 +2172,29 @@
     },
     {
       "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-palit-geforce-rtx-2060-super-dual-8gb-gddr6-ne6206s018p2-1160a-5939131/",
-      "name": "Karta graficzna Palit GeForce RTX 2060 SUPER Dual 8GB GDDR6 (NE6206S018P2-1160A)",
-      "chip": "GeForce RTX 2060 SUPER",
-      "vram_gb": 8,
-      "price_pln": 3719.0,
+      "url": "https://www.morele.net/karta-graficzna-palit-geforce-rtx-5080-gamingpro-v1-16gb-gddr7-dlss4-ne75080019t2-gb2031y-14908141/",
+      "name": "Karta graficzna Palit GeForce RTX 5080 GamingPro V1 16GB GDDR7 DLSS4 (NE75080019T2-GB2031Y)",
+      "chip": "GeForce RTX 5080",
+      "vram_gb": 16,
+      "price_pln": 9936.99,
+      "currency": "PLN"
+    },
+    {
+      "store": "morele",
+      "url": "https://www.morele.net/karta-graficzna-zotac-gaming-geforce-rtx-5090-solid-oc-32gb-gddr7-dlss4-zt-b50900j-10p-14486099/",
+      "name": "Karta graficzna Zotac Gaming GeForce RTX 5090 SOLID OC 32GB GDDR7 DLSS4 (ZT-B50900J-10P)",
+      "chip": "GeForce RTX 5090",
+      "vram_gb": 32,
+      "price_pln": 40845.02,
+      "currency": "PLN"
+    },
+    {
+      "store": "morele",
+      "url": "https://www.morele.net/karta-graficzna-gigabyte-aorus-geforce-rtx-5080-xtreme-waterforce-wb-16gb-gddr7-dlss4-gv-n5080aorusx-wb-16gd-14485970/",
+      "name": "Karta graficzna Gigabyte AORUS GeForce RTX 5080 Xtreme Waterforce WB 16GB GDDR7 DLSS4 (GV-N5080AORUSX WB-16GD)",
+      "chip": "GeForce RTX 5080",
+      "vram_gb": 16,
+      "price_pln": 11855.39,
       "currency": "PLN"
     },
     {
@@ -2203,16 +2212,34 @@
       "name": "Karta graficzna XFX Radeon RX 6800 XT SWFT 319 Core Gaming 16GB GDDR6 (RX-68XTAQFD9)",
       "chip": "Radeon RX 6800 XT",
       "vram_gb": 16,
-      "price_pln": 3372.41,
+      "price_pln": 3377.09,
       "currency": "PLN"
     },
     {
       "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-asus-rog-astral-lc-geforce-rtx-5090-oc-32gb-gddr7-dlss4-rog-astral-lc-rtx5090-o32g-gaming-14499245/",
-      "name": "Karta graficzna Asus ROG Astral LC GeForce RTX 5090 OC 32GB GDDR7 DLSS4 (ROG-ASTRAL-LC-RTX5090-O32G-GAMING)",
-      "chip": "GeForce RTX 5090",
-      "vram_gb": 32,
-      "price_pln": 42367.83,
+      "url": "https://www.morele.net/karta-graficzna-palit-geforce-rtx-2060-super-dual-8gb-gddr6-ne6206s018p2-1160a-5939131/",
+      "name": "Karta graficzna Palit GeForce RTX 2060 SUPER Dual 8GB GDDR6 (NE6206S018P2-1160A)",
+      "chip": "GeForce RTX 2060 SUPER",
+      "vram_gb": 8,
+      "price_pln": 3719.0,
+      "currency": "PLN"
+    },
+    {
+      "store": "morele",
+      "url": "https://www.morele.net/karta-graficzna-biostar-geforce-rtx-3060-12gb-gddr6-vn3606rml9-13130114/",
+      "name": "Karta graficzna Biostar GeForce RTX 3060 12GB GDDR6 (VN3606RML9)",
+      "chip": "GeForce RTX 3060",
+      "vram_gb": 12,
+      "price_pln": 2418.45,
+      "currency": "PLN"
+    },
+    {
+      "store": "morele",
+      "url": "https://www.morele.net/karta-graficzna-asus-dual-geforce-rtx-5050-oc-8gb-gddr6-dlss4-dual-rtx5050-o8g-15412094/",
+      "name": "Karta graficzna Asus Dual GeForce RTX 5050 OC 8GB GDDR6 DLSS4 (DUAL-RTX5050-O8G)",
+      "chip": "GeForce RTX 5050",
+      "vram_gb": 8,
+      "price_pln": 2017.45,
       "currency": "PLN"
     },
     {
@@ -2235,20 +2262,29 @@
     },
     {
       "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-biostar-geforce-rtx-3060-12gb-gddr6-vn3606rml9-13130114/",
-      "name": "Karta graficzna Biostar GeForce RTX 3060 12GB GDDR6 (VN3606RML9)",
-      "chip": "GeForce RTX 3060",
-      "vram_gb": 12,
-      "price_pln": 2418.45,
+      "url": "https://www.morele.net/karta-graficzna-gigabyte-geforce-rtx-5060-ti-windforce-8gb-gddr7-dlss4-gv-n506twf2-8gd-14848077/",
+      "name": "Karta graficzna Gigabyte GeForce RTX 5060 Ti Windforce 8GB GDDR7 DLSS4 (GV-N506TWF2-8GD)",
+      "chip": "GeForce RTX 5060 Ti",
+      "vram_gb": 8,
+      "price_pln": 3175.06,
       "currency": "PLN"
     },
     {
       "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-zotac-gaming-geforce-rtx-5060-ti-twin-edge-oc-white-16gb-gddr7-dlss4-zt-b50620q-10m-15479667/",
-      "name": "Karta graficzna Zotac Gaming GeForce RTX 5060 Ti Twin Edge OC White 16GB GDDR7 DLSS4 (ZT-B50620Q-10M)",
-      "chip": "GeForce RTX 5060 Ti",
+      "url": "https://www.morele.net/karta-graficzna-asus-rog-astral-lc-geforce-rtx-5090-oc-32gb-gddr7-dlss4-rog-astral-lc-rtx5090-o32g-gaming-14499245/",
+      "name": "Karta graficzna Asus ROG Astral LC GeForce RTX 5090 OC 32GB GDDR7 DLSS4 (ROG-ASTRAL-LC-RTX5090-O32G-GAMING)",
+      "chip": "GeForce RTX 5090",
+      "vram_gb": 32,
+      "price_pln": 42367.83,
+      "currency": "PLN"
+    },
+    {
+      "store": "morele",
+      "url": "https://www.morele.net/karta-graficzna-palit-geforce-rtx-5080-gamingpro-oc-v1-16gb-gddr7-dlss4-ne75080s19t2-gb2031y-600417544/",
+      "name": "Karta graficzna Palit GeForce RTX 5080 GamingPro OC V1 16GB GDDR7 DLSS4 (NE75080S19T2-GB2031Y)",
+      "chip": "GeForce RTX 5080",
       "vram_gb": 16,
-      "price_pln": 4319.54,
+      "price_pln": 10470.99,
       "currency": "PLN"
     },
     {
@@ -2262,29 +2298,20 @@
     },
     {
       "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-palit-geforce-rtx-5080-gamingpro-oc-v1-16gb-gddr7-dlss4-ne75080s19t2-gb2031y-600417544/",
-      "name": "Karta graficzna Palit GeForce RTX 5080 GamingPro OC V1 16GB GDDR7 DLSS4 (NE75080S19T2-GB2031Y)",
-      "chip": "GeForce RTX 5080",
-      "vram_gb": 16,
-      "price_pln": 10450.99,
-      "currency": "PLN"
-    },
-    {
-      "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-gigabyte-geforce-rtx-5060-ti-windforce-8gb-gddr7-dlss4-gv-n506twf2-8gd-14848077/",
-      "name": "Karta graficzna Gigabyte GeForce RTX 5060 Ti Windforce 8GB GDDR7 DLSS4 (GV-N506TWF2-8GD)",
+      "url": "https://www.morele.net/karta-graficzna-zotac-geforce-rtx-5060-ti-twin-edge-oc-white-8gb-gddr7-dlss4-zt-b50610q-10m-15848812/",
+      "name": "Karta graficzna Zotac GeForce RTX 5060 Ti Twin Edge OC White 8GB GDDR7 DLSS4 (ZT-B50610Q-10M)",
       "chip": "GeForce RTX 5060 Ti",
       "vram_gb": 8,
-      "price_pln": 3175.06,
+      "price_pln": 2731.92,
       "currency": "PLN"
     },
     {
       "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-asus-dual-geforce-rtx-5050-oc-8gb-gddr6-dlss4-dual-rtx5050-o8g-15412094/",
-      "name": "Karta graficzna Asus Dual GeForce RTX 5050 OC 8GB GDDR6 DLSS4 (DUAL-RTX5050-O8G)",
-      "chip": "GeForce RTX 5050",
-      "vram_gb": 8,
-      "price_pln": 2017.45,
+      "url": "https://www.morele.net/karta-graficzna-zotac-gaming-geforce-rtx-5060-ti-twin-edge-oc-white-16gb-gddr7-dlss4-zt-b50620q-10m-15479667/",
+      "name": "Karta graficzna Zotac Gaming GeForce RTX 5060 Ti Twin Edge OC White 16GB GDDR7 DLSS4 (ZT-B50620Q-10M)",
+      "chip": "GeForce RTX 5060 Ti",
+      "vram_gb": 16,
+      "price_pln": 4319.54,
       "currency": "PLN"
     },
     {
@@ -2307,29 +2334,11 @@
     },
     {
       "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-zotac-geforce-rtx-5060-ti-twin-edge-oc-white-8gb-gddr7-dlss4-zt-b50610q-10m-15848812/",
-      "name": "Karta graficzna Zotac GeForce RTX 5060 Ti Twin Edge OC White 8GB GDDR7 DLSS4 (ZT-B50610Q-10M)",
+      "url": "https://www.morele.net/karta-graficzna-pny-geforce-rtx-5060-ti-epic-x-rgb-overclocked-triple-fan-16gb-gddr7-dlss4-vcg5060t16tfxxpb1-o-15177216/",
+      "name": "Karta graficzna PNY GeForce RTX 5060 Ti Epic-X RGB Overclocked Triple Fan 16GB GDDR7 DLSS4 (VCG5060T16TFXXPB1-O)",
       "chip": "GeForce RTX 5060 Ti",
-      "vram_gb": 8,
-      "price_pln": 2731.92,
-      "currency": "PLN"
-    },
-    {
-      "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-zotac-gaming-geforce-rtx-5090-amp-extreme-infinity-32gb-gddr7-dlss4-zt-b50900b-10p-14486101/",
-      "name": "Karta graficzna Zotac Gaming GeForce RTX 5090 AMP Extreme INFINITY 32GB GDDR7 DLSS4 (ZT-B50900B-10P)",
-      "chip": "GeForce RTX 5090",
-      "vram_gb": 32,
-      "price_pln": 42700.99,
-      "currency": "PLN"
-    },
-    {
-      "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-asus-dual-geforce-rtx-3060-12gb-gddr6-dual-rtx3060-12g-v2-8653010/",
-      "name": "Karta graficzna Asus Dual GeForce RTX 3060 12GB GDDR6 (DUAL-RTX3060-12G-V2)",
-      "chip": "GeForce RTX 3060",
-      "vram_gb": 12,
-      "price_pln": 2060.99,
+      "vram_gb": 16,
+      "price_pln": 4252.66,
       "currency": "PLN"
     },
     {
@@ -2343,11 +2352,11 @@
     },
     {
       "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-asus-rog-astral-geforce-rtx-5090-32gb-gddr7-rog-astral-rtx5090-32g-gaming-14486830/",
-      "name": "Karta graficzna Asus ROG Astral GeForce RTX 5090 32GB GDDR7 (ROG-ASTRAL-RTX5090-32G-GAMING)",
+      "url": "https://www.morele.net/karta-graficzna-zotac-gaming-geforce-rtx-5090-amp-extreme-infinity-32gb-gddr7-dlss4-zt-b50900b-10p-14486101/",
+      "name": "Karta graficzna Zotac Gaming GeForce RTX 5090 AMP Extreme INFINITY 32GB GDDR7 DLSS4 (ZT-B50900B-10P)",
       "chip": "GeForce RTX 5090",
       "vram_gb": 32,
-      "price_pln": 40459.9,
+      "price_pln": 42779.99,
       "currency": "PLN"
     },
     {
@@ -2361,65 +2370,20 @@
     },
     {
       "store": "morele",
+      "url": "https://www.morele.net/karta-graficzna-asus-rog-astral-geforce-rtx-5090-32gb-gddr7-rog-astral-rtx5090-32g-gaming-14486830/",
+      "name": "Karta graficzna Asus ROG Astral GeForce RTX 5090 32GB GDDR7 (ROG-ASTRAL-RTX5090-32G-GAMING)",
+      "chip": "GeForce RTX 5090",
+      "vram_gb": 32,
+      "price_pln": 40459.9,
+      "currency": "PLN"
+    },
+    {
+      "store": "morele",
       "url": "https://www.morele.net/karta-graficzna-asus-prime-radeon-rx-9070-xt-white-oc-16gb-gddr6-prime-rx9070xt-o16g-white-15527083/",
       "name": "Karta graficzna Asus Prime Radeon RX 9070 XT White OC 16GB GDDR6 (PRIME-RX9070XT-O16G-WHITE)",
       "chip": "Radeon RX 9070 XT",
       "vram_gb": 16,
       "price_pln": 5051.04,
-      "currency": "PLN"
-    },
-    {
-      "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-asus-geforce-rtx-3050-oc-6gb-gddr6-rtx3050-o6g-lp-brk-13192155/",
-      "name": "Karta graficzna Asus GeForce RTX 3050 OC 6GB GDDR6 (RTX3050-O6G-LP-BRK)",
-      "chip": "GeForce RTX 3050",
-      "vram_gb": 6,
-      "price_pln": 1525.02,
-      "currency": "PLN"
-    },
-    {
-      "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-gigabyte-aorus-geforce-rtx-5090-stealth-ice-32gb-gddr7-dlss4-gv-n5090aorusst-ice-32gd-15389541/",
-      "name": "Karta graficzna Gigabyte AORUS GeForce RTX 5090 Stealth ICE 32GB GDDR7 DLSS4 (GV-N5090AORUSST ICE-32GD)",
-      "chip": "GeForce RTX 5090",
-      "vram_gb": 32,
-      "price_pln": 40448.09,
-      "currency": "PLN"
-    },
-    {
-      "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-inno3d-geforce-rtx-5080-x3-oc-white-16gb-gddr7-dlss4-n50803-16d7x-17605211-14483826/",
-      "name": "Karta graficzna Inno3D GeForce RTX 5080 X3 OC White 16GB GDDR7 DLSS4 (N50803-16D7X-17605211)",
-      "chip": "GeForce RTX 5080",
-      "vram_gb": 16,
-      "price_pln": 10100.98,
-      "currency": "PLN"
-    },
-    {
-      "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-lenovo-geforce-rtx-5080-16gb-gddr7-dlss4-4x61u02755-15649987/",
-      "name": "Karta graficzna Lenovo GeForce RTX 5080 16GB GDDR7 DLSS4 (4X61U02755)",
-      "chip": "GeForce RTX 5080",
-      "vram_gb": 16,
-      "price_pln": 12392.71,
-      "currency": "PLN"
-    },
-    {
-      "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-inno3d-geforce-rtx-5080-ichill-frostbite-16gb-gddr7-dlss4-c50803-16d7x-1760fb-14483820/",
-      "name": "Karta graficzna Inno3D GeForce RTX 5080 iCHILL Frostbite 16GB GDDR7 DLSS4 (C50803-16D7X-1760FB)",
-      "chip": "GeForce RTX 5080",
-      "vram_gb": 16,
-      "price_pln": 10766.99,
-      "currency": "PLN"
-    },
-    {
-      "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-gainward-geforce-rtx-5090-phantom-gs-32gb-gddr7-dlss4-ne75090s19r5-gb2020p-14878559/",
-      "name": "Karta graficzna Gainward GeForce RTX 5090 Phantom GS 32GB GDDR7 DLSS4 (NE75090S19R5-GB2020P)",
-      "chip": "GeForce RTX 5090",
-      "vram_gb": 32,
-      "price_pln": 38949.69,
       "currency": "PLN"
     },
     {
@@ -2433,11 +2397,38 @@
     },
     {
       "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-sparkle-arc-a310-eco-4gb-gddr6-sa310c-4g-13248526/",
-      "name": "Karta graficzna Sparkle Arc A310 ECO* 4GB GDDR6 (SA310C-4G)",
-      "chip": "Arc A310",
-      "vram_gb": 4,
-      "price_pln": 1088.99,
+      "url": "https://www.morele.net/karta-graficzna-inno3d-geforce-rtx-5080-x3-oc-white-16gb-gddr7-dlss4-n50803-16d7x-17605211-14483826/",
+      "name": "Karta graficzna Inno3D GeForce RTX 5080 X3 OC White 16GB GDDR7 DLSS4 (N50803-16D7X-17605211)",
+      "chip": "GeForce RTX 5080",
+      "vram_gb": 16,
+      "price_pln": 10100.98,
+      "currency": "PLN"
+    },
+    {
+      "store": "morele",
+      "url": "https://www.morele.net/karta-graficzna-inno3d-geforce-rtx-5080-ichill-frostbite-16gb-gddr7-dlss4-c50803-16d7x-1760fb-14483820/",
+      "name": "Karta graficzna Inno3D GeForce RTX 5080 iCHILL Frostbite 16GB GDDR7 DLSS4 (C50803-16D7X-1760FB)",
+      "chip": "GeForce RTX 5080",
+      "vram_gb": 16,
+      "price_pln": 10786.99,
+      "currency": "PLN"
+    },
+    {
+      "store": "morele",
+      "url": "https://www.morele.net/karta-graficzna-gainward-geforce-rtx-5090-phantom-gs-32gb-gddr7-dlss4-ne75090s19r5-gb2020p-14878559/",
+      "name": "Karta graficzna Gainward GeForce RTX 5090 Phantom GS 32GB GDDR7 DLSS4 (NE75090S19R5-GB2020P)",
+      "chip": "GeForce RTX 5090",
+      "vram_gb": 32,
+      "price_pln": 38949.69,
+      "currency": "PLN"
+    },
+    {
+      "store": "morele",
+      "url": "https://www.morele.net/karta-graficzna-zotac-gaming-geforce-rtx-5070-amp-white-12gb-gddr7-dlss4-zt-b50700fq-10p-14850698/",
+      "name": "Karta graficzna Zotac Gaming GeForce RTX 5070 AMP White 12GB GDDR7 DLSS4 (ZT-B50700FQ-10P)",
+      "chip": "GeForce RTX 5070",
+      "vram_gb": 12,
+      "price_pln": 4778.71,
       "currency": "PLN"
     },
     {
@@ -2451,20 +2442,29 @@
     },
     {
       "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-pny-geforce-rtx-5060-ti-epic-x-rgb-overclocked-triple-fan-16gb-gddr7-dlss4-vcg5060t16tfxxpb1-o-15177216/",
-      "name": "Karta graficzna PNY GeForce RTX 5060 Ti Epic-X RGB Overclocked Triple Fan 16GB GDDR7 DLSS4 (VCG5060T16TFXXPB1-O)",
-      "chip": "GeForce RTX 5060 Ti",
-      "vram_gb": 16,
-      "price_pln": 4252.66,
+      "url": "https://www.morele.net/karta-graficzna-gigabyte-aorus-geforce-rtx-5090-stealth-ice-32gb-gddr7-dlss4-gv-n5090aorusst-ice-32gd-15389541/",
+      "name": "Karta graficzna Gigabyte AORUS GeForce RTX 5090 Stealth ICE 32GB GDDR7 DLSS4 (GV-N5090AORUSST ICE-32GD)",
+      "chip": "GeForce RTX 5090",
+      "vram_gb": 32,
+      "price_pln": 40448.09,
       "currency": "PLN"
     },
     {
       "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-zotac-gaming-geforce-rtx-5070-amp-white-12gb-gddr7-dlss4-zt-b50700fq-10p-14850698/",
-      "name": "Karta graficzna Zotac Gaming GeForce RTX 5070 AMP White 12GB GDDR7 DLSS4 (ZT-B50700FQ-10P)",
-      "chip": "GeForce RTX 5070",
-      "vram_gb": 12,
-      "price_pln": 4778.71,
+      "url": "https://www.morele.net/karta-graficzna-lenovo-geforce-rtx-5080-16gb-gddr7-dlss4-4x61u02755-15649987/",
+      "name": "Karta graficzna Lenovo GeForce RTX 5080 16GB GDDR7 DLSS4 (4X61U02755)",
+      "chip": "GeForce RTX 5080",
+      "vram_gb": 16,
+      "price_pln": 12392.71,
+      "currency": "PLN"
+    },
+    {
+      "store": "morele",
+      "url": "https://www.morele.net/karta-graficzna-sparkle-arc-a310-eco-4gb-gddr6-sa310c-4g-13248526/",
+      "name": "Karta graficzna Sparkle Arc A310 ECO* 4GB GDDR6 (SA310C-4G)",
+      "chip": "Arc A310",
+      "vram_gb": 4,
+      "price_pln": 1090.99,
       "currency": "PLN"
     },
     {
@@ -2482,7 +2482,7 @@
       "name": "Karta graficzna Lenovo GeForce RTX 5060 8GB GDDR7 DLSS4 (4X61U02753)",
       "chip": "GeForce RTX 5060",
       "vram_gb": 8,
-      "price_pln": 4111.99,
+      "price_pln": 4118.99,
       "currency": "PLN"
     },
     {
@@ -2505,11 +2505,11 @@
     },
     {
       "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-pny-geforce-rtx-5070-slim-oc-12gb-gddr7-dlss4-vcg507012dfsxpb1-o-16223011/",
-      "name": "Karta graficzna PNY GeForce RTX 5070 Slim OC 12GB GDDR7 DLSS4 (VCG507012DFSXPB1-O)",
-      "chip": "GeForce RTX 5070",
-      "vram_gb": 12,
-      "price_pln": 4836.99,
+      "url": "https://www.morele.net/karta-graficzna-asus-geforce-rtx-3050-oc-6gb-gddr6-rtx3050-o6g-lp-brk-13192155/",
+      "name": "Karta graficzna Asus GeForce RTX 3050 OC 6GB GDDR6 (RTX3050-O6G-LP-BRK)",
+      "chip": "GeForce RTX 3050",
+      "vram_gb": 6,
+      "price_pln": 1525.02,
       "currency": "PLN"
     },
     {
@@ -2523,11 +2523,11 @@
     },
     {
       "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-inno3d-geforce-rtx-3050-twin-x2-v2-6gb-gddr6-n30502-06d6-1880va60-14631875/",
-      "name": "Karta graficzna Inno3D GeForce RTX 3050 Twin X2 V2 6GB GDDR6 (N30502-06D6-1880VA60)",
-      "chip": "GeForce RTX 3050",
-      "vram_gb": 6,
-      "price_pln": 1347.9,
+      "url": "https://www.morele.net/karta-graficzna-pny-geforce-rtx-5070-slim-oc-12gb-gddr7-dlss4-vcg507012dfsxpb1-o-16223011/",
+      "name": "Karta graficzna PNY GeForce RTX 5070 Slim OC 12GB GDDR7 DLSS4 (VCG507012DFSXPB1-O)",
+      "chip": "GeForce RTX 5070",
+      "vram_gb": 12,
+      "price_pln": 5059.62,
       "currency": "PLN"
     },
     {
@@ -2550,6 +2550,15 @@
     },
     {
       "store": "morele",
+      "url": "https://www.morele.net/karta-graficzna-inno3d-geforce-rtx-3050-twin-x2-v2-6gb-gddr6-n30502-06d6-1880va60-14631875/",
+      "name": "Karta graficzna Inno3D GeForce RTX 3050 Twin X2 V2 6GB GDDR6 (N30502-06D6-1880VA60)",
+      "chip": "GeForce RTX 3050",
+      "vram_gb": 6,
+      "price_pln": 1347.9,
+      "currency": "PLN"
+    },
+    {
+      "store": "morele",
       "url": "https://www.morele.net/karta-graficzna-gigabyte-geforce-rtx-5060-ti-eagle-oc-ice-16gb-gddr7-dlss4-gv-n506teagleoc-ice-16gd-14848068/",
       "name": "Karta graficzna Gigabyte GeForce RTX 5060 Ti Eagle OC ICE 16GB GDDR7 DLSS4 (GV-N506TEAGLEOC ICE-16GD)",
       "chip": "GeForce RTX 5060 Ti",
@@ -2559,20 +2568,20 @@
     },
     {
       "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-powercolor-hellhound-radeon-rx-9070-xt-16gb-gddr6-rx9070xt-16g-l-oc-res-600482894/",
-      "name": "Karta graficzna PowerColor Hellhound Radeon RX 9070 XT 16GB GDDR6 (RX9070XT 16G-L/OC/RES)",
-      "chip": "Radeon RX 9070 XT",
-      "vram_gb": 16,
-      "price_pln": 5006.42,
-      "currency": "PLN"
-    },
-    {
-      "store": "morele",
       "url": "https://www.morele.net/karta-graficzna-zotac-gaming-geforce-rtx-3050-twin-edge-oc-6gb-gddr6-zt-a30510h-10l-14632864/",
       "name": "Karta graficzna Zotac Gaming GeForce RTX 3050 Twin Edge OC 6GB GDDR6 (ZT-A30510H-10L)",
       "chip": "GeForce RTX 3050",
       "vram_gb": 6,
       "price_pln": 1330.23,
+      "currency": "PLN"
+    },
+    {
+      "store": "morele",
+      "url": "https://www.morele.net/karta-graficzna-powercolor-hellhound-radeon-rx-9070-xt-16gb-gddr6-rx9070xt-16g-l-oc-res-600482894/",
+      "name": "Karta graficzna PowerColor Hellhound Radeon RX 9070 XT 16GB GDDR6 (RX9070XT 16G-L/OC/RES)",
+      "chip": "Radeon RX 9070 XT",
+      "vram_gb": 16,
+      "price_pln": 5006.42,
       "currency": "PLN"
     },
     {
@@ -2595,20 +2604,20 @@
     },
     {
       "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-gainward-geforce-rtx-5080-phoenix-v1-16gb-gddr7-dlss4-ne75080019t2-gb2031c-15416453/",
-      "name": "Karta graficzna Gainward GeForce RTX 5080 Phoenix V1 16GB GDDR7 DLSS4 (NE75080019T2-GB2031C)",
-      "chip": "GeForce RTX 5080",
-      "vram_gb": 16,
-      "price_pln": 10450.99,
-      "currency": "PLN"
-    },
-    {
-      "store": "morele",
       "url": "https://www.morele.net/karta-graficzna-gigabyte-geforce-rtx-5060-eagle-oc-ice-8gb-gddr7-dlss4-gv-n5060eagleoc-ice-8gd-15234815/",
       "name": "Karta graficzna Gigabyte GeForce RTX 5060 Eagle OC ICE 8GB GDDR7 DLSS4 (GV-N5060EAGLEOC ICE-8GD)",
       "chip": "GeForce RTX 5060",
       "vram_gb": 8,
       "price_pln": 2722.75,
+      "currency": "PLN"
+    },
+    {
+      "store": "morele",
+      "url": "https://www.morele.net/karta-graficzna-inno3d-geforce-rtx-5080-ichill-x3-v2-16gb-gddr7-dlss4-c50803-16d7x-176069r-15623709/",
+      "name": "Karta graficzna Inno3D GeForce RTX 5080 iCHILL X3 V2 16GB GDDR7 DLSS4 (C50803-16D7X-176069R)",
+      "chip": "GeForce RTX 5080",
+      "vram_gb": 16,
+      "price_pln": 11371.73,
       "currency": "PLN"
     },
     {
@@ -2631,33 +2640,6 @@
     },
     {
       "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-zotac-gaming-geforce-rtx-5070-twin-edge-12gb-gddr7-dlss4-zt-b50700e-10p-14979507/",
-      "name": "Karta graficzna Zotac Gaming GeForce RTX 5070 Twin Edge 12GB GDDR7 DLSS4 (ZT-B50700E-10P)",
-      "chip": "GeForce RTX 5070",
-      "vram_gb": 12,
-      "price_pln": 4895.58,
-      "currency": "PLN"
-    },
-    {
-      "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-inno3d-geforce-rtx-5080-ichill-x3-v2-16gb-gddr7-dlss4-c50803-16d7x-176069r-15623709/",
-      "name": "Karta graficzna Inno3D GeForce RTX 5080 iCHILL X3 V2 16GB GDDR7 DLSS4 (C50803-16D7X-176069R)",
-      "chip": "GeForce RTX 5080",
-      "vram_gb": 16,
-      "price_pln": 11371.73,
-      "currency": "PLN"
-    },
-    {
-      "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-zotac-gaming-geforce-rtx-5090-solid-oc-white-32gb-gddr7-zt-b50900q-10p-14863863/",
-      "name": "Karta graficzna Zotac Gaming GeForce RTX 5090 SOLID OC White 32GB GDDR7 (ZT-B50900Q-10P)",
-      "chip": "GeForce RTX 5090",
-      "vram_gb": 32,
-      "price_pln": 40351.99,
-      "currency": "PLN"
-    },
-    {
-      "store": "morele",
       "url": "https://www.morele.net/karta-graficzna-gainward-geforce-rtx-5070-python-iii-oc-12gb-gddr7-dlss4-ne75070s19k9-gb2050t-15001024/",
       "name": "Karta graficzna Gainward GeForce RTX 5070 Python III OC 12GB GDDR7 DLSS4 (NE75070S19K9-GB2050T)",
       "chip": "GeForce RTX 5070",
@@ -2667,11 +2649,29 @@
     },
     {
       "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-asus-turbo-geforce-rtx-3070-v2-8gb-gddr6-turbo-rtx3070-8g-v2-13133273/",
-      "name": "Karta graficzna Asus Turbo GeForce RTX 3070 V2 8GB GDDR6 (TURBO-RTX3070-8G-V2)",
-      "chip": "GeForce RTX 3070",
-      "vram_gb": 8,
-      "price_pln": 4249.89,
+      "url": "https://www.morele.net/karta-graficzna-gainward-geforce-rtx-5080-phoenix-v1-16gb-gddr7-dlss4-ne75080019t2-gb2031c-15416453/",
+      "name": "Karta graficzna Gainward GeForce RTX 5080 Phoenix V1 16GB GDDR7 DLSS4 (NE75080019T2-GB2031C)",
+      "chip": "GeForce RTX 5080",
+      "vram_gb": 16,
+      "price_pln": 10470.99,
+      "currency": "PLN"
+    },
+    {
+      "store": "morele",
+      "url": "https://www.morele.net/karta-graficzna-zotac-gaming-geforce-rtx-5070-twin-edge-12gb-gddr7-dlss4-zt-b50700e-10p-14979507/",
+      "name": "Karta graficzna Zotac Gaming GeForce RTX 5070 Twin Edge 12GB GDDR7 DLSS4 (ZT-B50700E-10P)",
+      "chip": "GeForce RTX 5070",
+      "vram_gb": 12,
+      "price_pln": 4895.58,
+      "currency": "PLN"
+    },
+    {
+      "store": "morele",
+      "url": "https://www.morele.net/karta-graficzna-zotac-gaming-geforce-rtx-5090-solid-oc-white-32gb-gddr7-zt-b50900q-10p-14863863/",
+      "name": "Karta graficzna Zotac Gaming GeForce RTX 5090 SOLID OC White 32GB GDDR7 (ZT-B50900Q-10P)",
+      "chip": "GeForce RTX 5090",
+      "vram_gb": 32,
+      "price_pln": 41065.7,
       "currency": "PLN"
     },
     {
@@ -2685,11 +2685,11 @@
     },
     {
       "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-inno3d-geforce-rtx-5060-twin-x2-oc-white-8gb-gddr7-dlss4-n50602-08d7x-195070w-15484170/",
-      "name": "Karta graficzna Inno3D GeForce RTX 5060 Twin X2 OC White 8GB GDDR7 DLSS4 (N50602-08D7X-195070W)",
-      "chip": "GeForce RTX 5060",
-      "vram_gb": 8,
-      "price_pln": 3075.99,
+      "url": "https://www.morele.net/karta-graficzna-inno3d-geforce-rtx-5060-ti-x3-oc-16gb-gddr7-dlss4-n506t3-16d7x-191073l-14863862/",
+      "name": "Karta graficzna Inno3D GeForce RTX 5060 Ti X3 OC 16GB GDDR7 DLSS4 (N506T3-16D7X-191073L)",
+      "chip": "GeForce RTX 5060 Ti",
+      "vram_gb": 16,
+      "price_pln": 4285.14,
       "currency": "PLN"
     },
     {
@@ -2698,7 +2698,25 @@
       "name": "Karta graficzna Zotac Gaming GeForce RTX 5060 Ti Twin Edge OC 16GB GDDR7 DLSS4 (ZT-B50620H-10M)",
       "chip": "GeForce RTX 5060 Ti",
       "vram_gb": 16,
-      "price_pln": 4235.39,
+      "price_pln": 4238.16,
+      "currency": "PLN"
+    },
+    {
+      "store": "morele",
+      "url": "https://www.morele.net/karta-graficzna-inno3d-geforce-rtx-5060-twin-x2-oc-white-8gb-gddr7-dlss4-n50602-08d7x-195070w-15484170/",
+      "name": "Karta graficzna Inno3D GeForce RTX 5060 Twin X2 OC White 8GB GDDR7 DLSS4 (N50602-08D7X-195070W)",
+      "chip": "GeForce RTX 5060",
+      "vram_gb": 8,
+      "price_pln": 3081.99,
+      "currency": "PLN"
+    },
+    {
+      "store": "morele",
+      "url": "https://www.morele.net/karta-graficzna-asus-turbo-geforce-rtx-3070-v2-8gb-gddr6-turbo-rtx3070-8g-v2-13133273/",
+      "name": "Karta graficzna Asus Turbo GeForce RTX 3070 V2 8GB GDDR6 (TURBO-RTX3070-8G-V2)",
+      "chip": "GeForce RTX 3070",
+      "vram_gb": 8,
+      "price_pln": 4286.55,
       "currency": "PLN"
     },
     {
@@ -2712,20 +2730,20 @@
     },
     {
       "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-inno3d-geforce-rtx-5060-ti-x3-oc-16gb-gddr7-dlss4-n506t3-16d7x-191073l-14863862/",
-      "name": "Karta graficzna Inno3D GeForce RTX 5060 Ti X3 OC 16GB GDDR7 DLSS4 (N506T3-16D7X-191073L)",
-      "chip": "GeForce RTX 5060 Ti",
-      "vram_gb": 16,
-      "price_pln": 4285.14,
-      "currency": "PLN"
-    },
-    {
-      "store": "morele",
       "url": "https://www.morele.net/karta-graficzna-inno3d-geforce-rtx-5090-ichill-frostbite-pro-32gb-gddr7-dlss4-c50903-32d7x-1759fbp-15537338/",
       "name": "Karta graficzna Inno3D GeForce RTX 5090 iCHILL Frostbite Pro 32GB GDDR7 DLSS4 (C50903-32D7X-1759FBP)",
       "chip": "GeForce RTX 5090",
       "vram_gb": 32,
-      "price_pln": 44326.99,
+      "price_pln": 43985.99,
+      "currency": "PLN"
+    },
+    {
+      "store": "morele",
+      "url": "https://www.morele.net/karta-graficzna-pny-geforce-rtx-5060-ti-dual-fan-16gb-gddr7-dlss4-vcg5060t16dfxpb1-15397829/",
+      "name": "Karta graficzna PNY GeForce RTX 5060 Ti Dual Fan 16GB GDDR7 DLSS4 (VCG5060T16DFXPB1)",
+      "chip": "GeForce RTX 5060 Ti",
+      "vram_gb": 16,
+      "price_pln": 4323.73,
       "currency": "PLN"
     },
     {
@@ -2734,7 +2752,7 @@
       "name": "Karta graficzna Biostar Radeon RX 7600 8GB GDDR6 (VA76S6RM81)",
       "chip": "Radeon RX 7600",
       "vram_gb": 8,
-      "price_pln": 1977.9,
+      "price_pln": 1999.66,
       "currency": "PLN"
     },
     {
@@ -2753,15 +2771,6 @@
       "chip": "GeForce RTX 5060 Ti",
       "vram_gb": 8,
       "price_pln": 2795.93,
-      "currency": "PLN"
-    },
-    {
-      "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-pny-geforce-rtx-5060-ti-dual-fan-16gb-gddr7-dlss4-vcg5060t16dfxpb1-15397829/",
-      "name": "Karta graficzna PNY GeForce RTX 5060 Ti Dual Fan 16GB GDDR7 DLSS4 (VCG5060T16DFXPB1)",
-      "chip": "GeForce RTX 5060 Ti",
-      "vram_gb": 16,
-      "price_pln": 4405.99,
       "currency": "PLN"
     },
     {
@@ -2793,38 +2802,11 @@
     },
     {
       "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-inno3d-geforce-rtx-5060-ti-twin-x2-16gb-gddr7-dlss4-n506t2-16d7-191073n-14854444/",
-      "name": "Karta graficzna Inno3D GeForce RTX 5060 Ti Twin X2 16GB GDDR7 DLSS4 (N506T2-16D7-191073N)",
-      "chip": "GeForce RTX 5060 Ti",
-      "vram_gb": 16,
-      "price_pln": 4507.73,
-      "currency": "PLN"
-    },
-    {
-      "store": "morele",
       "url": "https://www.morele.net/karta-graficzna-sparkle-arc-a310-omni-view-4gb-gddr6-1a1-s00424000g-14483430/",
       "name": "Karta graficzna Sparkle Arc A310 OMNI View 4GB GDDR6 (1A1-S00424000G)",
       "chip": "Arc A310",
       "vram_gb": 4,
-      "price_pln": 1140.99,
-      "currency": "PLN"
-    },
-    {
-      "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-zotac-gaming-geforce-rtx-5070-twin-edge-oc-white-12gb-gddr7-dlss4-zt-b50700q-10p-15603704/",
-      "name": "Karta graficzna Zotac Gaming GeForce RTX 5070 Twin Edge OC White 12GB GDDR7 DLSS4 (ZT-B50700Q-10P)",
-      "chip": "GeForce RTX 5070",
-      "vram_gb": 12,
-      "price_pln": 4799.47,
-      "currency": "PLN"
-    },
-    {
-      "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-zotac-gaming-geforce-rtx-5060-amp-8gb-gddr7-dlss4-zt-b50600f-10m-15273051/",
-      "name": "Karta graficzna Zotac Gaming GeForce RTX 5060 AMP 8GB GDDR7 DLSS4 (ZT-B50600F-10M)",
-      "chip": "GeForce RTX 5060",
-      "vram_gb": 8,
-      "price_pln": 3124.28,
+      "price_pln": 1142.99,
       "currency": "PLN"
     },
     {
@@ -2838,11 +2820,38 @@
     },
     {
       "store": "morele",
+      "url": "https://www.morele.net/karta-graficzna-zotac-gaming-geforce-rtx-5060-amp-8gb-gddr7-dlss4-zt-b50600f-10m-15273051/",
+      "name": "Karta graficzna Zotac Gaming GeForce RTX 5060 AMP 8GB GDDR7 DLSS4 (ZT-B50600F-10M)",
+      "chip": "GeForce RTX 5060",
+      "vram_gb": 8,
+      "price_pln": 3124.28,
+      "currency": "PLN"
+    },
+    {
+      "store": "morele",
+      "url": "https://www.morele.net/karta-graficzna-inno3d-geforce-rtx-5060-ti-twin-x2-16gb-gddr7-dlss4-n506t2-16d7-191073n-14854444/",
+      "name": "Karta graficzna Inno3D GeForce RTX 5060 Ti Twin X2 16GB GDDR7 DLSS4 (N506T2-16D7-191073N)",
+      "chip": "GeForce RTX 5060 Ti",
+      "vram_gb": 16,
+      "price_pln": 4518.74,
+      "currency": "PLN"
+    },
+    {
+      "store": "morele",
       "url": "https://www.morele.net/karta-graficzna-inno3d-geforce-rtx-3060-twin-x2-12gb-gddr6-n30602-12d6-119032ah-9289659/",
       "name": "Karta graficzna Inno3D GeForce RTX 3060 Twin X2 12GB GDDR6 (N30602-12D6-119032AH)",
       "chip": "GeForce RTX 3060",
       "vram_gb": 12,
-      "price_pln": 2534.99,
+      "price_pln": 2313.91,
+      "currency": "PLN"
+    },
+    {
+      "store": "morele",
+      "url": "https://www.morele.net/karta-graficzna-zotac-gaming-geforce-rtx-5070-twin-edge-oc-white-12gb-gddr7-dlss4-zt-b50700q-10p-15603704/",
+      "name": "Karta graficzna Zotac Gaming GeForce RTX 5070 Twin Edge OC White 12GB GDDR7 DLSS4 (ZT-B50700Q-10P)",
+      "chip": "GeForce RTX 5070",
+      "vram_gb": 12,
+      "price_pln": 4799.47,
       "currency": "PLN"
     },
     {
@@ -2851,25 +2860,7 @@
       "name": "Karta graficzna Zotac GeForce RTX 5060 Ti Twin Edge 8GB GDDR7 DLSS4 (ZT-B50610E-10M)",
       "chip": "GeForce RTX 5060 Ti",
       "vram_gb": 8,
-      "price_pln": 3230.99,
-      "currency": "PLN"
-    },
-    {
-      "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-pny-geforce-rtx-5050-single-fan-8gb-gddr6-dlss4-vcg50508sfxpb1-15554375/",
-      "name": "Karta graficzna PNY GeForce RTX 5050 Single Fan 8GB GDDR6 DLSS4 (VCG50508SFXPB1)",
-      "chip": "GeForce RTX 5050",
-      "vram_gb": 8,
-      "price_pln": 1999.0,
-      "currency": "PLN"
-    },
-    {
-      "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-zotac-gaming-geforce-rtx-5070-twin-edge-oc-12gb-gddr7-dlss4-zt-b50700h-10p-14980128/",
-      "name": "Karta graficzna Zotac Gaming GeForce RTX 5070 Twin Edge OC 12GB GDDR7 DLSS4 (ZT-B50700H-10P)",
-      "chip": "GeForce RTX 5070",
-      "vram_gb": 12,
-      "price_pln": 4629.38,
+      "price_pln": 3210.32,
       "currency": "PLN"
     },
     {
@@ -2892,20 +2883,20 @@
     },
     {
       "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-lenovo-geforce-rtx-5070-12gb-gddr7-dlss4-4x61u02754-15648605/",
-      "name": "Karta graficzna Lenovo GeForce RTX 5070 12GB GDDR7 DLSS4 (4X61U02754)",
+      "url": "https://www.morele.net/karta-graficzna-zotac-gaming-geforce-rtx-5070-twin-edge-oc-12gb-gddr7-dlss4-zt-b50700h-10p-14980128/",
+      "name": "Karta graficzna Zotac Gaming GeForce RTX 5070 Twin Edge OC 12GB GDDR7 DLSS4 (ZT-B50700H-10P)",
       "chip": "GeForce RTX 5070",
       "vram_gb": 12,
-      "price_pln": 6726.99,
+      "price_pln": 4629.38,
       "currency": "PLN"
     },
     {
       "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-gainward-geforce-rtx-5090-overclocked-32gb-gddr7-dlss4-ne75090019r5-gb2020p-15065059/",
-      "name": "Karta graficzna Gainward GeForce RTX 5090 Overclocked 32GB GDDR7 DLSS4 (NE75090019R5-GB2020P)",
-      "chip": "GeForce RTX 5090",
-      "vram_gb": 32,
-      "price_pln": 40411.69,
+      "url": "https://www.morele.net/karta-graficzna-lenovo-geforce-rtx-5070-12gb-gddr7-dlss4-4x61u02754-15648605/",
+      "name": "Karta graficzna Lenovo GeForce RTX 5070 12GB GDDR7 DLSS4 (4X61U02754)",
+      "chip": "GeForce RTX 5070",
+      "vram_gb": 12,
+      "price_pln": 6084.61,
       "currency": "PLN"
     },
     {
@@ -2919,11 +2910,20 @@
     },
     {
       "store": "morele",
+      "url": "https://www.morele.net/karta-graficzna-gainward-geforce-rtx-5090-overclocked-32gb-gddr7-dlss4-ne75090019r5-gb2020p-15065059/",
+      "name": "Karta graficzna Gainward GeForce RTX 5090 Overclocked 32GB GDDR7 DLSS4 (NE75090019R5-GB2020P)",
+      "chip": "GeForce RTX 5090",
+      "vram_gb": 32,
+      "price_pln": 40411.69,
+      "currency": "PLN"
+    },
+    {
+      "store": "morele",
       "url": "https://www.morele.net/karta-graficzna-gainward-geforce-rtx-5060-ghost-oc-8gb-gddr7-dlss4-ne75060s19p1-gb2063b-15238619/",
       "name": "Karta graficzna Gainward GeForce RTX 5060 Ghost OC 8GB GDDR7 DLSS4 (NE75060S19P1-GB2063B)",
       "chip": "GeForce RTX 5060",
       "vram_gb": 8,
-      "price_pln": 2737.99,
+      "price_pln": 2742.99,
       "currency": "PLN"
     },
     {
@@ -2932,34 +2932,7 @@
       "name": "Karta graficzna Zotac Gaming GeForce RTX 5060 Ti AMP 16GB GDDR7 DLSS4 (ZT-B50620F-10M)",
       "chip": "GeForce RTX 5060 Ti",
       "vram_gb": 16,
-      "price_pln": 4956.76,
-      "currency": "PLN"
-    },
-    {
-      "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-inno3d-geforce-rtx-5070-x3-oc-12gb-gddr7-dlss4-n50703-12d7x-195064l-14850607/",
-      "name": "Karta graficzna Inno3D GeForce RTX 5070 X3 OC 12GB GDDR7 DLSS4 (N50703-12D7X-195064L)",
-      "chip": "GeForce RTX 5070",
-      "vram_gb": 12,
-      "price_pln": 5029.99,
-      "currency": "PLN"
-    },
-    {
-      "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-inno3d-geforce-rtx-5090-ichill-x3-32gb-gddr7-dlss4-c50903-32d7x-175967h-15361159/",
-      "name": "Karta graficzna Inno3D GeForce RTX 5090 iCHILL X3 32GB GDDR7 DLSS4 (C50903-32D7X-175967H)",
-      "chip": "GeForce RTX 5090",
-      "vram_gb": 32,
-      "price_pln": 43730.99,
-      "currency": "PLN"
-    },
-    {
-      "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-inno3d-geforce-rtx-5060-ti-twin-x2-oc-white-16gb-gddr7-dlss4-n506t2-16d7x-191073w-14863866/",
-      "name": "Karta graficzna Inno3D GeForce RTX 5060 Ti Twin X2 OC White 16GB GDDR7 DLSS4 (N506T2-16D7X-191073W)",
-      "chip": "GeForce RTX 5060 Ti",
-      "vram_gb": 16,
-      "price_pln": 5071.76,
+      "price_pln": 5086.99,
       "currency": "PLN"
     },
     {
@@ -2973,11 +2946,38 @@
     },
     {
       "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-inno3d-geforce-rtx-5060-twin-x2-v2-8gb-gddr7-dlss4-n50602-08d7-198072n-600731146/",
-      "name": "Karta graficzna Inno3D GeForce RTX 5060 Twin X2 V2 8GB GDDR7 DLSS4 (N50602-08D7-198072N)",
-      "chip": "GeForce RTX 5060",
-      "vram_gb": 8,
-      "price_pln": 2636.47,
+      "url": "https://www.morele.net/karta-graficzna-inno3d-geforce-rtx-5070-x3-oc-12gb-gddr7-dlss4-n50703-12d7x-195064l-14850607/",
+      "name": "Karta graficzna Inno3D GeForce RTX 5070 X3 OC 12GB GDDR7 DLSS4 (N50703-12D7X-195064L)",
+      "chip": "GeForce RTX 5070",
+      "vram_gb": 12,
+      "price_pln": 5038.99,
+      "currency": "PLN"
+    },
+    {
+      "store": "morele",
+      "url": "https://www.morele.net/karta-graficzna-inno3d-geforce-rtx-5090-ichill-x3-32gb-gddr7-dlss4-c50903-32d7x-175967h-15361159/",
+      "name": "Karta graficzna Inno3D GeForce RTX 5090 iCHILL X3 32GB GDDR7 DLSS4 (C50903-32D7X-175967H)",
+      "chip": "GeForce RTX 5090",
+      "vram_gb": 32,
+      "price_pln": 43810.99,
+      "currency": "PLN"
+    },
+    {
+      "store": "morele",
+      "url": "https://www.morele.net/karta-graficzna-inno3d-geforce-rtx-5060-ti-pro-16gb-gddr7-dlss4-vgain3nvd0158-600749331/",
+      "name": "Karta graficzna Inno3D GeForce RTX 5060 Ti PRO 16GB GDDR7 DLSS4 (VGAIN3NVD0158)",
+      "chip": "GeForce RTX 5060 Ti",
+      "vram_gb": 16,
+      "price_pln": 4659.08,
+      "currency": "PLN"
+    },
+    {
+      "store": "morele",
+      "url": "https://www.morele.net/karta-graficzna-palit-geforce-rtx-3050-stormx-6gb-gddr6-ne63050018je-1070f-13173059/",
+      "name": "Karta graficzna Palit GeForce RTX 3050 StormX 6GB GDDR6 (NE63050018JE-1070F)",
+      "chip": "GeForce RTX 3050",
+      "vram_gb": 6,
+      "price_pln": 1516.39,
       "currency": "PLN"
     },
     {
@@ -2995,7 +2995,25 @@
       "name": "Karta graficzna Inno3D GeForce RTX 5070 Twin X2 OC White 12GB GDDR7 DLSS4 (N50702-12D7X-195064W)",
       "chip": "GeForce RTX 5070",
       "vram_gb": 12,
-      "price_pln": 5067.99,
+      "price_pln": 5076.99,
+      "currency": "PLN"
+    },
+    {
+      "store": "morele",
+      "url": "https://www.morele.net/karta-graficzna-inno3d-geforce-rtx-5060-twin-x2-v2-8gb-gddr7-dlss4-n50602-08d7-198072n-600731146/",
+      "name": "Karta graficzna Inno3D GeForce RTX 5060 Twin X2 V2 8GB GDDR7 DLSS4 (N50602-08D7-198072N)",
+      "chip": "GeForce RTX 5060",
+      "vram_gb": 8,
+      "price_pln": 2634.97,
+      "currency": "PLN"
+    },
+    {
+      "store": "morele",
+      "url": "https://www.morele.net/karta-graficzna-inno3d-geforce-rtx-5060-ti-twin-x2-oc-white-16gb-gddr7-dlss4-n506t2-16d7x-191073w-14863866/",
+      "name": "Karta graficzna Inno3D GeForce RTX 5060 Ti Twin X2 OC White 16GB GDDR7 DLSS4 (N506T2-16D7X-191073W)",
+      "chip": "GeForce RTX 5060 Ti",
+      "vram_gb": 16,
+      "price_pln": 5071.76,
       "currency": "PLN"
     },
     {
@@ -3009,29 +3027,11 @@
     },
     {
       "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-asrock-radeon-rx-9070-xt-steel-legend-16gb-gddr6-rx9070xt-sl-16g-outlet-600526740/",
-      "name": "Karta graficzna ASRock Radeon RX 9070 XT Steel Legend 16GB GDDR6 (RX9070XT SL 16G) [outlet]",
-      "chip": "Radeon RX 9070 XT",
-      "vram_gb": 16,
-      "price_pln": 3799.0,
-      "currency": "PLN"
-    },
-    {
-      "store": "morele",
       "url": "https://www.morele.net/karta-graficzna-gigabyte-geforce-rtx-2060-6gb-gddr6-gv-n2060d6-6gd-2-0-outlet-600528536/",
       "name": "Karta graficzna Gigabyte GeForce RTX 2060 6GB GDDR6 (GV-N2060D6-6GD 2.0) [outlet]",
       "chip": "GeForce RTX 2060",
       "vram_gb": 6,
       "price_pln": 1499.0,
-      "currency": "PLN"
-    },
-    {
-      "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-zotac-geforce-rtx-5060-ti-twin-edge-oc-8gb-gddr7-dlss4-zt-b50610h-10m-outlet-600529939/",
-      "name": "Karta graficzna Zotac GeForce RTX 5060 Ti Twin Edge OC 8GB GDDR7 DLSS4 (ZT-B50610H-10M) [outlet]",
-      "chip": "GeForce RTX 5060 Ti",
-      "vram_gb": 8,
-      "price_pln": 2499.0,
       "currency": "PLN"
     },
     {
@@ -3063,15 +3063,6 @@
     },
     {
       "store": "morele",
-      "url": "https://www.morele.net/karta-graficzna-inno3d-geforce-rtx-5060-ti-pro-16gb-gddr7-dlss4-vgain3nvd0158-600749331/",
-      "name": "Karta graficzna Inno3D GeForce RTX 5060 Ti PRO 16GB GDDR7 DLSS4 (VGAIN3NVD0158)",
-      "chip": "GeForce RTX 5060 Ti",
-      "vram_gb": 16,
-      "price_pln": 4659.08,
-      "currency": "PLN"
-    },
-    {
-      "store": "morele",
       "url": "https://www.morele.net/karta-graficzna-asus-tuf-gaming-radeon-rx-9070-xt-oc-onimusha-way-of-the-sword-edition-16gb-gddr6-tuf-rx9070xt-o16g-onimusha-600755958/",
       "name": "Karta graficzna Asus TUF Gaming Radeon RX 9070 XT OC Onimusha Way of the Sword Edition 16GB GDDR6 (TUF-RX9070XT-O16G-ONIMUSHA)",
       "chip": "Radeon RX 9070 XT",
@@ -3085,7 +3076,7 @@
       "name": "Karta graficzna Sapphire Nitro+ Radeon RX 9070 XT OC Valor Mortis Edition 16GB GDDR6 (11348-12-20G)",
       "chip": "Radeon RX 9070 XT",
       "vram_gb": 16,
-      "price_pln": 6419.99,
+      "price_pln": 6416.99,
       "currency": "PLN"
     },
     {
@@ -3684,17 +3675,6 @@
     },
     {
       "store": "x-kom",
-      "url": "https://www.x-kom.pl/p/1356668-karta-graficzna-amd-asus-radeon-rx-9060-xt-dual-white-16gb-gddr6.html",
-      "name": "ASUS Radeon RX 9060 XT Dual White 16GB GDDR6",
-      "chip": "Radeon RX 9060 XT",
-      "vram_gb": 16,
-      "price_pln": 3799.0,
-      "currency": "PLN",
-      "in_stock": true,
-      "is_outlet": false
-    },
-    {
-      "store": "x-kom",
       "url": "https://www.x-kom.pl/p/1363739-karta-graficzna-nvidia-zotac-geforce-rtx-5060-ti-twin-edge-oc-white-16gb-gddr7-dlss5.html",
       "name": "Zotac GeForce RTX 5060 Ti Twin Edge OC White 16GB GDDR7 DLSS5",
       "chip": "GeForce RTX 5060 Ti",
@@ -3750,17 +3730,6 @@
     },
     {
       "store": "x-kom",
-      "url": "https://www.x-kom.pl/p/1309187-karta-graficzna-nvidia-gigabyte-geforce-rtx-5080-aorus-master-16gb-gddr7-dlss5.html",
-      "name": "Gigabyte GeForce RTX 5080 AORUS Master 16GB GDDR7 DLSS5",
-      "chip": "GeForce RTX 5080",
-      "vram_gb": 16,
-      "price_pln": 9499.0,
-      "currency": "PLN",
-      "in_stock": true,
-      "is_outlet": false
-    },
-    {
-      "store": "x-kom",
       "url": "https://www.x-kom.pl/p/1309188-karta-graficzna-nvidia-gigabyte-geforce-rtx-5080-gaming-oc-16gb-gddr7-dlss5.html",
       "name": "Gigabyte GeForce RTX 5080 Gaming OC 16GB GDDR7 DLSS5",
       "chip": "GeForce RTX 5080",
@@ -3783,28 +3752,6 @@
     },
     {
       "store": "x-kom",
-      "url": "https://www.x-kom.pl/p/1309804-karta-graficzna-nvidia-asus-geforce-rtx-5070-prime-oc-12gb-gddr7-dlss5.html",
-      "name": "ASUS GeForce RTX 5070 Prime OC 12GB GDDR7 DLSS5",
-      "chip": "GeForce RTX 5070",
-      "vram_gb": 12,
-      "price_pln": 4399.0,
-      "currency": "PLN",
-      "in_stock": true,
-      "is_outlet": false
-    },
-    {
-      "store": "x-kom",
-      "url": "https://www.x-kom.pl/p/1309821-karta-graficzna-nvidia-gigabyte-geforce-rtx-5070-eagle-oc-12gb-gddr7-dlss5.html",
-      "name": "Gigabyte GeForce RTX 5070 Eagle OC 12GB GDDR7 DLSS5",
-      "chip": "GeForce RTX 5070",
-      "vram_gb": 12,
-      "price_pln": 4299.0,
-      "currency": "PLN",
-      "in_stock": true,
-      "is_outlet": false
-    },
-    {
-      "store": "x-kom",
       "url": "https://www.x-kom.pl/p/1318510-karta-graficzna-nvidia-msi-geforce-rtx-5070-ventus-2x-oc-12gb-gddr7-dlss5.html",
       "name": "MSI GeForce RTX 5070 Ventus 2X OC 12GB GDDR7 DLSS5",
       "chip": "GeForce RTX 5070",
@@ -3821,6 +3768,17 @@
       "chip": "GeForce RTX 5070",
       "vram_gb": 12,
       "price_pln": 4399.0,
+      "currency": "PLN",
+      "in_stock": true,
+      "is_outlet": false
+    },
+    {
+      "store": "x-kom",
+      "url": "https://www.x-kom.pl/p/1321570-karta-graficzna-amd-sapphire-radeon-rx-9070-xt-pulse-16gb-gddr6.html",
+      "name": "Sapphire Radeon RX 9070 XT Pulse 16GB GDDR6",
+      "chip": "Radeon RX 9070 XT",
+      "vram_gb": 16,
+      "price_pln": 4899.0,
       "currency": "PLN",
       "in_stock": true,
       "is_outlet": false
@@ -3871,11 +3829,11 @@
     },
     {
       "store": "x-kom",
-      "url": "https://www.x-kom.pl/p/1328859-karta-graficzna-nvidia-msi-geforce-rtx-5060-ti-ventus-2x-oc-plus-16gb-gddr7-dlss5.html",
-      "name": "MSI GeForce RTX 5060 Ti Ventus 2X OC Plus 16GB GDDR7 DLSS5",
-      "chip": "GeForce RTX 5060 Ti",
-      "vram_gb": 16,
-      "price_pln": 3799.0,
+      "url": "https://www.x-kom.pl/p/1322992-karta-graficzna-nvidia-gainward-geforce-rtx-5070-python-iii-12gb-gddr7-dlss5.html",
+      "name": "Gainward GeForce RTX 5070 Python III 12GB GDDR7 DLSS5",
+      "chip": "GeForce RTX 5070",
+      "vram_gb": 12,
+      "price_pln": 4199.0,
       "currency": "PLN",
       "in_stock": true,
       "is_outlet": false
@@ -3981,6 +3939,17 @@
     },
     {
       "store": "x-kom",
+      "url": "https://www.x-kom.pl/p/1331018-karta-graficzna-nvidia-palit-geforce-rtx-5060-ti-infinity-3-oc-16gb-gddr7-dlss5.html",
+      "name": "Palit GeForce RTX 5060 Ti Infinity 3 OC 16GB GDDR7 DLSS5",
+      "chip": "GeForce RTX 5060 Ti",
+      "vram_gb": 16,
+      "price_pln": 3999.0,
+      "currency": "PLN",
+      "in_stock": true,
+      "is_outlet": false
+    },
+    {
+      "store": "x-kom",
       "url": "https://www.x-kom.pl/p/1331019-karta-graficzna-nvidia-palit-geforce-rtx-5060-ti-infinity-3-16gb-gddr7-dlss5.html",
       "name": "Palit GeForce RTX 5060 Ti Infinity 3 16GB GDDR7 DLSS5",
       "chip": "GeForce RTX 5060 Ti",
@@ -3994,6 +3963,17 @@
       "store": "x-kom",
       "url": "https://www.x-kom.pl/p/1332820-karta-graficzna-nvidia-asus-geforce-rtx-5060-dual-oc-8gb-gddr7-dlss5.html",
       "name": "ASUS GeForce RTX 5060 Dual OC 8GB GDDR7 DLSS5",
+      "chip": "GeForce RTX 5060",
+      "vram_gb": 8,
+      "price_pln": 2199.0,
+      "currency": "PLN",
+      "in_stock": true,
+      "is_outlet": false
+    },
+    {
+      "store": "x-kom",
+      "url": "https://www.x-kom.pl/p/1332831-karta-graficzna-nvidia-msi-geforce-rtx-5060-ventus-2x-oc-white-8gb-gddr7-dlss5.html",
+      "name": "MSI GeForce RTX 5060 Ventus 2X OC White 8GB GDDR7 DLSS5",
       "chip": "GeForce RTX 5060",
       "vram_gb": 8,
       "price_pln": 2199.0,
@@ -4124,28 +4104,6 @@
     },
     {
       "store": "x-kom",
-      "url": "https://www.x-kom.pl/p/1321570-karta-graficzna-amd-sapphire-radeon-rx-9070-xt-pulse-16gb-gddr6.html",
-      "name": "Sapphire Radeon RX 9070 XT Pulse 16GB GDDR6",
-      "chip": "Radeon RX 9070 XT",
-      "vram_gb": 16,
-      "price_pln": 4899.0,
-      "currency": "PLN",
-      "in_stock": true,
-      "is_outlet": false
-    },
-    {
-      "store": "x-kom",
-      "url": "https://www.x-kom.pl/p/1322992-karta-graficzna-nvidia-gainward-geforce-rtx-5070-python-iii-12gb-gddr7-dlss5.html",
-      "name": "Gainward GeForce RTX 5070 Python III 12GB GDDR7 DLSS5",
-      "chip": "GeForce RTX 5070",
-      "vram_gb": 12,
-      "price_pln": 4199.0,
-      "currency": "PLN",
-      "in_stock": true,
-      "is_outlet": false
-    },
-    {
-      "store": "x-kom",
       "url": "https://www.x-kom.pl/p/1330998-karta-graficzna-nvidia-gigabyte-geforce-rtx-5060-ti-windforce-oc-16gb-gddr7-dlss5.html",
       "name": "Gigabyte GeForce RTX 5060 Ti Windforce OC 16GB GDDR7 DLSS5",
       "chip": "GeForce RTX 5060 Ti",
@@ -4168,22 +4126,22 @@
     },
     {
       "store": "x-kom",
-      "url": "https://www.x-kom.pl/p/1331018-karta-graficzna-nvidia-palit-geforce-rtx-5060-ti-infinity-3-oc-16gb-gddr7-dlss5.html",
-      "name": "Palit GeForce RTX 5060 Ti Infinity 3 OC 16GB GDDR7 DLSS5",
+      "url": "https://www.x-kom.pl/p/1331023-karta-graficzna-nvidia-palit-geforce-rtx-5060-ti-dual-8gb-gddr7-dlss5.html",
+      "name": "Palit GeForce RTX 5060 Ti Dual 8GB GDDR7 DLSS5",
       "chip": "GeForce RTX 5060 Ti",
-      "vram_gb": 16,
-      "price_pln": 3999.0,
+      "vram_gb": 8,
+      "price_pln": 2499.0,
       "currency": "PLN",
       "in_stock": true,
       "is_outlet": false
     },
     {
       "store": "x-kom",
-      "url": "https://www.x-kom.pl/p/1331023-karta-graficzna-nvidia-palit-geforce-rtx-5060-ti-dual-8gb-gddr7-dlss5.html",
-      "name": "Palit GeForce RTX 5060 Ti Dual 8GB GDDR7 DLSS5",
-      "chip": "GeForce RTX 5060 Ti",
-      "vram_gb": 8,
-      "price_pln": 2499.0,
+      "url": "https://www.x-kom.pl/p/1333900-karta-graficzna-nvidia-gainward-geforce-rtx-5080-phoenix-v1-16gb-gddr7-dlss5.html",
+      "name": "Gainward GeForce RTX 5080 Phoenix V1 16GB GDDR7 DLSS5",
+      "chip": "GeForce RTX 5080",
+      "vram_gb": 16,
+      "price_pln": 8999.0,
       "currency": "PLN",
       "in_stock": true,
       "is_outlet": false
@@ -4228,6 +4186,17 @@
       "chip": "GeForce RTX 5070",
       "vram_gb": 12,
       "price_pln": 4099.0,
+      "currency": "PLN",
+      "in_stock": true,
+      "is_outlet": false
+    },
+    {
+      "store": "x-kom",
+      "url": "https://www.x-kom.pl/p/1486603-karta-graficzna-nvidia-palit-geforce-rtx-5060-infinity-2-oc-8gb-gddr7.html",
+      "name": "Palit GeForce RTX 5060 Infinity 2 OC 8GB GDDR7 ",
+      "chip": "GeForce RTX 5060",
+      "vram_gb": 8,
+      "price_pln": 2299.0,
       "currency": "PLN",
       "in_stock": true,
       "is_outlet": false
