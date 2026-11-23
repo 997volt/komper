@@ -1,5 +1,5 @@
 key,chip,vram_gb,arch,shaders,boost_mhz,bus_bits,mem_mhz,psu_w,length_mm,arch_eff,perf_adj,note
-arc-a310-4gb,Arc A310,4,Alchemist,768,,96,15500,350,156,1,1,specs from morele listing 13248526; arch_eff Alchemist=1.0; 2 offers across 1 store(s)
+arc-a310-4gb,Arc A310,4,Alchemist,768,2000,96,15500,450,169,1,1,specs from morele listing 600533118; arch_eff Alchemist=1.0; 3 offers across 1 store(s)
 arc-a380-6gb,Arc A380,6,Alchemist,1024,2250,96,15500,500,190,1,1,specs from morele listing 11807768; arch_eff Alchemist=1.0; 2 offers across 1 store(s)
 arc-a770-16gb,Arc A770,16,Alchemist,4096,2300,256,17500,650,281,1,1,specs from morele listing 13273511; arch_eff Alchemist=1.0; 1 offers across 1 store(s)
 arc-b570-10gb,Arc B570,10,Battlemage,2304,2600,160,19000,600,249,0.78,1,arch_eff Battlemage=0.78; specs from morele
